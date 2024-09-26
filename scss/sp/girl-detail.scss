@@ -1,0 +1,759 @@
+.f-girl-detail {
+  padding: 0 15px 0 15px;
+
+  .girl-profile {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .profile-left {
+      width: 275px;
+      position: relative;
+      margin: auto;
+
+      .avatar {
+        height: 368px;
+      }
+
+      .girls__star {
+        z-index: 1;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .girls__layout {
+        height: 84px;
+        width: 100%;
+        background: transparent
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(0, 0, 0, 0.6) 50%,
+            #000000 100%
+          )
+          0% 0% no-repeat padding-box;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px 0px 2px 2px;
+      }
+    }
+
+    .sub-image-container {
+      width: calc(100vw - 30px);
+      overflow: auto;
+      scrollbar-width: none;
+      margin-top: 16px;
+    }
+
+    .sub-image-sp {
+      display: flex;
+      gap: 8px;
+      margin: auto;
+      width: fit-content;
+
+      img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+      }
+    }
+
+    .profile-right {
+      width: 100%;
+      padding: 0 35px;
+      margin-top: 24px;
+
+      .person-profile {
+        display: flex;
+        border-bottom: 1px solid #dcdcdc;
+        margin-bottom: 36px;
+        padding-bottom: 12px;
+
+        .profile-name {
+          font: normal normal bold 25px/38px Meiryo;
+          margin-bottom: 4px;
+
+          span {
+            font: normal normal normal 15px/16px Meiryo;
+          }
+        }
+
+        .profile-height {
+          font: normal normal normal 15px/23px Meiryo;
+        }
+
+        .profile-social {
+          margin-left: auto;
+        }
+      }
+
+      .work-profile {
+        display: none;
+      }
+    }
+  }
+
+  .work-schedule {
+    margin-bottom: 48px;
+    position: relative;
+
+    .schedule-title {
+      font: normal normal bold 20px/30px Meiryo;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .schedule-item {
+      display: grid;
+      grid-template-columns: 105px auto;
+      padding: 15px 20px;
+      border-bottom: 1px solid #dcdcdc;
+
+      .title {
+        font: normal normal bold 14px/21px Meiryo;
+        color: #1f1c0d;
+      }
+
+      .schedule-content {
+        font: normal normal normal 13px/23px Meiryo;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 12px;
+        align-items: center;
+
+        .booking-btn {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 15px 8px;
+          background-color: #5193f4;
+          color: #ffffff;
+          border: 1px solid #dedede;
+          border-radius: 4px;
+          margin-left: 36px;
+          font: normal normal normal 12px/20px Meiryo;
+
+          &.web {
+            background-color: #ff4a4a;
+            font: normal normal normal 11px/19px Meiryo;
+            padding: 9px 13px 10px;
+          }
+
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 29px;
+    }
+
+    .show-btn {
+      position: absolute;
+      bottom: -15px;
+      left: calc((100vw - 30px) / 2);
+    }
+  }
+
+  .work-profile-sp {
+    .profile-title {
+      font: normal normal bold 16px/24px Meiryo;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .info-item {
+      display: grid;
+      grid-template-columns: 96px auto;
+      padding: 18px 16px;
+      border-bottom: 1px solid #dcdcdc;
+
+      .title {
+        font: normal normal normal 12px/20px Meiryo;
+      }
+
+      .content {
+        font: normal normal normal 13px/23px Meiryo;
+        text-align: right;
+      }
+    }
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  .shop-comment {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-top: 36px;
+
+    .shop-comment-title {
+      font: normal normal normal 17px/29px Meiryo;
+      color: #1f1c0d;
+      margin-bottom: 19px;
+    }
+
+    .comment-item {
+      font: normal normal normal 13px/20px Meiryo;
+      color: #1f1c0d;
+    }
+  }
+
+  .review-st {
+    margin-top: 32px;
+    .header-block {
+      font: normal normal bold 22px/30px Meiryo;
+      color: #1f1c0d;
+    }
+
+    .cmt__list {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+
+      .cmt__item {
+        width: 100%;
+        padding: 16px 20px 20px 20px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+
+        .cmt__item--header {
+          display: flex;
+          gap: 20px;
+
+          .cmt__item--header-avatar {
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .cmt__item--header-title {
+            margin-top: 8px;
+
+            .customer {
+              display: flex;
+              align-items: center;
+              margin-bottom: 14px;
+
+              img {
+                width: 25px;
+                height: 25px;
+              }
+
+              .profile {
+                font: normal normal bold 13px/17px Meiryo;
+                margin-left: 8px;
+              }
+            }
+
+            .title-text {
+              font: normal normal bold 16px/24px Meiryo;
+              color: #1f1c0d;
+            }
+
+            .rating {
+              display: flex;
+              align-items: center;
+              margin-top: 8px;
+
+              .rating-star {
+                img {
+                  height: 17.34px;
+                }
+              }
+
+              .rating-number {
+                margin-left: 7px;
+                font: normal normal bold 18px/27px Meiryo;
+                color: #1f1c0d;
+              }
+
+              .girl-review {
+                margin-left: 8px;
+                font: normal normal normal 13px/20px Meiryo;
+                color: #1f1c0d;
+              }
+
+              .date-review {
+                margin-left: 12px;
+                font: normal normal normal 12px/18px Meiryo;
+                color: #999999;
+              }
+            }
+          }
+        }
+
+        .cmt__item--content {
+          border-radius: 5px;
+          margin-top: 8px;
+          font: normal normal normal 14px/22px Meiryo;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+
+        .cmt__item--footer {
+          margin-top: 8px;
+          display: flex;
+          font: normal normal normal 13px/18px Meiryo;
+          letter-spacing: 0px;
+          color: #999999;
+
+          .more-btn {
+            font: normal normal normal 14px/22px Meiryo;
+            letter-spacing: 0px;
+            color: #006bc4;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .comments__btn--wrapper {
+      margin: 24px 20px 0;
+
+      .cmt__btn {
+        height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1f1c0d;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        margin: 0 auto 12px;
+        padding: 20px 42px;
+        font: normal normal normal 13px/20px Meiryo;
+
+        &.chat {
+          font: normal normal normal 14px/20px Meiryo;
+          background: #ffeb7e 0% 0% no-repeat padding-box;
+          border: none;
+          margin-bottom: 0px;
+        }
+
+        img {
+          width: 18px;
+          height: 17px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .shop-coupon {
+    background: #efefef;
+    padding: 19px 15px 24px 15px;
+    margin: 32px -15px 0;
+
+    .header-block {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .title {
+        font: normal normal bold 18px/18px Meiryo;
+        color: #1f1c0d;
+      }
+    }
+
+    .coupon-list {
+      display: flex;
+      gap: 16px;
+      margin: 14px 0 16px 0;
+      flex-wrap: wrap;
+
+      .coupon-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 3px 6px #0000001a;
+        border-radius: 4px;
+        padding: 12px 16px;
+
+        .off-rate {
+          display: none;
+        }
+
+        .content {
+          flex-grow: 1;
+
+          .tag-list {
+            padding: 0;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            .tag-item {
+              height: 23px;
+              padding: 6px 16px;
+              font: normal normal bold 11px/11px Meiryo;
+
+              &.orange {
+                background: #ffeb7e;
+              }
+
+              &.blue {
+                background: #0e70b7;
+              }
+
+              &.gray {
+                background: #efefef;
+              }
+
+              &.black {
+                background: #1f1c0d;
+                color: #ffffff;
+              }
+            }
+
+            .until-date {
+              color: #8b8b8b;
+              font-size: 10px;
+              font-family: Meiryo;
+              margin-left: auto;
+            }
+          }
+
+          .title {
+            margin-top: 14px;
+            color: #1f1c0d;
+            font: normal normal bold 14px/16px Meiryo;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            width: calc(100vw - 62px);
+            scrollbar-width: none;
+          }
+
+          .divider {
+            border: 1px dashed #c9c9c9;
+            margin: 12px 0 8px 0;
+          }
+
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: unset;
+
+            .off-rate-sp {
+              display: block;
+              background: #fb4b4b;
+              border-radius: 50%;
+              width: 58px;
+              height: 58px;
+              text-align: center;
+              padding: 15px 12px 13px 12px;
+            }
+
+            .price__wrapper {
+              flex-grow: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 9px;
+
+              .price__before {
+                font: normal normal normal 11px/11px Meiryo;
+
+                span {
+                  text-decoration-line: line-through;
+                }
+              }
+
+              .price__after {
+                font: normal normal bold 27px/27px Meiryo;
+                color: #ff4a4a;
+
+                .small {
+                  font: normal normal bold 14px/14px Meiryo;
+                }
+              }
+            }
+
+            .icon-sp {
+              display: contents;
+
+              img {
+                height: 12px;
+              }
+            }
+          }
+        }
+
+        .icon {
+          display: none;
+        }
+      }
+    }
+
+    .coupons__seeAll {
+      color: #1f1c0d;
+      font: normal normal normal 13px/13px Meiryo;
+      display: flex;
+      justify-content: center;
+      margin-bottom: unset;
+
+      a {
+        padding: 15px 65px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .shop-announcement {
+    margin-top: 32px;
+
+    .header-block {
+      font: normal normal bold 22px/33px Meiryo;
+      color: #1f1c0d;
+    }
+
+    .content-block {
+      margin-top: 16px;
+      background: #f5f5f5;
+      border-radius: 4px;
+
+      .content-card {
+        background: #ffffff;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        padding: 18px 20px 20px 20px;
+
+        .header-card {
+          line-height: 27px;
+          font: normal normal normal 15px Meiryo;
+          color: #1f1c0d;
+
+          .name {
+            font-weight: bold;
+            color: #006bc4;
+          }
+
+          .target {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333333;
+          }
+        }
+
+        .divider {
+          background: #e0dfdd;
+          height: 1px;
+          margin: 5px 0 17px 0;
+        }
+
+        .body-card {
+          .body-card__title {
+            font: normal normal bold 15px/23px Meiryo;
+            color: #333333;
+          }
+
+          .body-card__tag {
+            font: normal normal normal 11px/17px Meiryo;
+            letter-spacing: 0px;
+            color: #70828f;
+          }
+
+          .body-card__text {
+            margin-top: 12px;
+            font: normal normal normal 13px/22px Meiryo;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .working-girllist {
+    margin-top: 48px;
+    .girllist-header {
+      font: normal normal bold 22px/33px Meiryo;
+    }
+    .shop-girls-wrapper {
+      overflow-x: auto;
+      width: calc(100vw - 30px);
+      scrollbar-width: none;
+
+      .shop-girls {
+        display: flex;
+        margin-top: 16px;
+        column-gap: 4px;
+        width: 706px;
+
+        li {
+          width: calc((100% - 24px) / 4);
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 3px 0px 0px 3px;
+          overflow: hidden;
+
+          a {
+            position: relative;
+            display: block;
+            width: 100%;
+            z-index: 1;
+            border-radius: 3px 0px 0px 3px;
+
+            img {
+              width: 100%;
+              border-radius: 3px;
+              object-fit: cover;
+              height: 193px;
+            }
+
+            .girls__info {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              z-index: 1;
+              padding: 0 12px 16px;
+              text-align: center;
+
+              .girls__girlName {
+                font: normal normal bold 14px/21px Meiryo;
+                color: #ffffff;
+                height: 23px;
+
+                span {
+                  font: normal normal bold 8px/12px Meiryo;
+                }
+              }
+
+              .girls__schedule {
+                font: normal normal normal 13px/20px Meiryo;
+                color: #ffffff;
+              }
+            }
+
+            .girls__layout {
+              height: 90px;
+              width: 100%;
+              background: transparent
+                linear-gradient(
+                  180deg,
+                  transparent 0%,
+                  rgba(0, 0, 0, 0.6) 50%,
+                  #000000 100%
+                )
+                0% 0% no-repeat padding-box;
+              position: absolute;
+              bottom: 0;
+              border-radius: 0px 0px 3px 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .see-all {
+      font: normal normal normal 14px/22px Meiryo;
+      color: #006bc4;
+      display: flex;
+      justify-content: end;
+      margin-top: 16px;
+    }
+  }
+
+  .shop-info {
+    margin-top: 11px;
+
+    .info-header {
+      line-height: 33px;
+      font: normal normal bold 22px Meiryo;
+      color: #1f1c0d;
+    }
+
+    .info-list {
+      margin-top: 16px;
+      background: #ffffff;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+
+      .info-item {
+        display: grid;
+        grid-template-columns: 105px auto;
+        padding: 18px 24px 18px 20px;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .info-item__title {
+          width: 158px;
+          font: normal normal bold 15px/23px Meiryo;
+          color: #1f1c0d;
+        }
+
+        a {
+          font: normal normal normal 15px/23px Meiryo;
+          color: #006bc4;
+        }
+
+        .info-item__content {
+          flex-grow: 1;
+          font: normal normal normal 15px/23px Meiryo;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+    }
+  }
+
+  .shop__btn--wrapper {
+    margin: 68px;
+
+    .shop__btn {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      margin: 0 auto 12px;
+      font: normal normal normal 13px/20px Meiryo;
+
+      img {
+        width: 14px;
+        height: 11px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .sub-image {
+    display: none;
+  }
+
+  .twitter-link,
+  .instagram-link {
+    width: 45px;
+    height: 45px;
+
+    &.min {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

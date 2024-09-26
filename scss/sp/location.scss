@@ -1,0 +1,598 @@
+//overwrite set 1rem = 10px
+html {
+    font-size: 10px;
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.g-container {
+    margin: 0 1.5rem;
+}
+
+.l-breadcrumb-header {
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+
+    .l-breadcrumb {
+        height: 2.5rem;
+        padding: 0.75rem 0;
+        align-content: center;
+        font: normal normal normal 1.2rem/1.2rem Hiragino Kaku Gothic ProN;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        .breadcrumb-list {
+            overflow: hidden;
+            color: #41493B;
+            width: max-content;
+
+            .breadcrumb-item {
+                float: left;
+                padding-right: 0.915rem;
+
+                &:after {
+                    content: ">";
+                    display: inline-block;
+                    padding-left: 0.152rem;
+                }
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .breadcrumb-active {
+            font: normal normal normal 1.2rem/1.2rem Hiragino Kaku Gothic ProN;
+        }
+    }
+}
+
+.f-location {
+    background-color: #EBEBEB;
+
+    .section__top,
+    .section__bottom {
+        padding: 2rem 1.5rem;
+
+        .title {
+            padding: 0.1rem 0 0.1rem 0.9rem;
+            border-left: 0.9rem solid #1F1C0D;
+            font-weight: bold;
+            font: normal normal normal 1.8rem/1.8rem Hiragino Sans;
+        }
+
+        .actions {
+            padding: 2.05rem 0.9rem 2rem;
+
+            &>li {
+                margin-bottom: 2rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .section__content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &--notEmpty {
+            margin-top: 2.8rem;
+            margin-bottom: 1.8rem;
+        }
+
+        &--empty {
+            margin-top: 6.8rem;
+            margin-bottom: 8.8rem;
+        }
+    }
+}
+
+.curent-location {
+    overflow: hidden;
+
+    h2 {
+        background-color: #E7F1FD;
+        padding: 1.1rem 1.5rem;
+        font-weight: bold;
+        color: #1F1C0D;
+        font: normal normal normal 1.3rem/1.3rem Hiragino Sans;
+    }
+
+    .address {
+        padding: 0 1.5rem;
+
+        .list-address {
+            padding: 1.4rem 0 2rem;
+            background-color: #EBEBEB;
+
+            .adddress {
+                padding: 1.1rem 1.8rem;
+                border-radius: 2rem;
+                border: 0.1rem solid #DDDDDD;
+                background-color: #FFFFFF;
+                width: fit-content;
+                position: relative;
+                min-width: 8.2rem;
+                text-align: center;
+
+                &__name {
+                    color: #333333;
+                    font: normal normal normal 1.3rem/1.3rem Hiragino Sans Pr6N;
+                }
+
+                &__quantity {
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    background: #E7F1FD 0% 0% no-repeat padding-box;
+                    color: #1F1C0D;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    position: absolute;
+                    top: -1rem;
+                    right: 0;
+                    border-radius: 50%;
+                    font: normal normal normal 1rem/1rem Hiragino Sans;
+
+                }
+            }
+        }
+    }
+
+}
+
+.searchResult__content {
+    display: grid;
+    gap: 1.6rem;
+
+    .areaItem {
+        overflow: hidden;
+        background-color: #FFFBE8;
+        padding: 2rem 0;
+
+        .title {
+            display: flex;
+            align-items: center;
+            padding: 0 1.5rem 1.468rem;
+            font: normal normal normal 1.8rem/1.7rem Hiragino Sans;
+
+            &-color {
+                color: #007DD9;
+            }
+
+            img {
+                width: 1.422rem;
+                height: 2.032rem;
+                margin-right: 0.728rem;
+            }
+        }
+
+        .swiperShop {
+            padding: 0 1.6rem;
+
+            .mod-shop-list {
+                .shop-item {
+                    width: 100%;
+                    max-width: 30rem;
+                    min-height: 34.2rem;
+                    padding: 1rem 1.2rem 1.3rem;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0 0.1rem 0.6rem #0000001A;
+                    border-radius: 1rem;
+
+                    &__banner {
+                        width: fit-content;
+                        padding: 0.4rem 1rem;
+                        background: #FFEB7E 0% 0% no-repeat padding-box;
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        font: normal normal normal 1rem/1rem Hiragino Sans;
+                        margin-bottom: 1rem;
+                        display: block;
+                    }
+
+                    .shop-upper {
+                        display: flex;
+                        margin-bottom: 1rem;
+
+                        &__thumb {
+                            width: 10.5rem;
+                            height: 10.5rem;
+                            display: inline-block;
+                            margin-right: 1.5rem;
+
+                            img{
+                                object-fit: cover;
+                            }
+                        }
+
+                        &__action {
+                            .btn-top {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 15.6rem;
+                                height: 4rem;
+                                background-color: #FFF7F7;
+                                border: 0.1rem solid #FDDEDB;
+                                border-radius: 0.4rem;
+                                font: normal normal normal 1.3rem/1.3rem Hiragino Sans;
+                                color: #1F1C0D;
+                                position: relative;
+
+                                span {
+                                    color: #FE4A4A;
+                                    font: normal normal normal 1.8rem/1.8rem Hiragino Sans;
+                                }
+
+                                &::before {
+                                    content: '' !important;
+                                    position: absolute;
+                                    top: calc(50% - 0.35rem);
+                                    right: 1.147rem;
+                                    width: 0.7rem;
+                                    height: 0.7rem;
+                                    color: red;
+                                    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+                                    border-bottom: 0.1rem solid #fe4a4a;
+                                    border-right: 0.1rem solid #fe4a4a;
+                                    opacity: 1;
+
+                                }
+                            }
+
+                            .btn-bottom {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 15.6rem;
+                                height: 4rem;
+                                background: #FF4A4A;
+                                box-shadow: 0 0.3rem 0.6rem #00000029;
+                                border-radius: 0.3rem;
+                                font: normal normal normal 1.2rem/1.2rem Hiragino Sans;
+                                letter-spacing: 0.048rem;
+                                color: #ffffff;
+                                margin-top: 1.2rem;
+
+                                img {
+                                    width: 1.1rem;
+                                    height: 1.7rem;
+                                    background-size: 100%;
+                                    background-repeat: no-repeat;
+                                    margin-right: 0.741rem;
+                                }
+                            }
+                        }
+
+                        &__tell {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font: normal normal normal 1.2rem/2.5rem Hiragino Sans;
+                            color: #1F1C0D;
+
+                            .icon-tell {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 3.356rem;
+                                height: 3.356rem;
+                                border-radius: 50%;
+                                background: #ffffff;
+                                text-align: center;
+                                border: 0.1rem solid #E8E8E8;
+                                margin-right: 0.844rem;
+
+                                img {
+                                    width: 1.766rem;
+                                    height: 1.818rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .shop-info {
+                        &__title {
+                            display: flex;
+                            margin-bottom: 0.6rem;
+                            gap: 0.6rem;
+
+                            .name {
+                                display: block;
+                                max-width: 100%;
+                                text-align: left;
+                                width: 85%;
+                                font: normal normal normal 1.8rem/2.5rem Hiragino Sans;
+
+                                &__fullscreen {
+                                    width: 100% !important;
+                                }
+                            }
+
+                            .btn-keep-wrap {
+                                min-width: 4rem;
+                                height: 4rem;
+                                border-radius: 50%;
+                                padding: 0;
+                                background-color: transparent;
+                                overflow: hidden;
+                                box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+                            }
+                        }
+
+                        .shop-area {
+                            font: normal normal normal 1.1rem/1.1rem Hiragino Sans;
+                            color: #8B8B8B;
+                            margin-bottom: 0.6rem;
+                            display: block;
+                        }
+
+                        .shopReview {
+                            &-star45 {
+                                background-image: url(../../images/location/star-45.svg);
+                                background-size: 9.1rem auto;
+                                background-repeat: no-repeat;
+                                background-position: left center;
+                            }
+
+                            &-rating {
+                                font-size: 1.6rem;
+                                line-height: 1.6rem;
+                                font-weight: bold;
+                                padding: 0 0 0 9.7rem;
+                                height: 1.6rem;
+                            }
+
+                            &-number {
+                                font-weight: normal;
+                                text-decoration: none;
+                                border-bottom: 0.1rem solid #1F1C0D;
+                                font: normal normal normal 1.2rem/1.8rem Hiragino Sans;
+
+                                em {
+                                    color: #027DD9;
+                                }
+                            }
+
+                        }
+
+                        .line {
+                            border: 0.1rem solid #F0F0F0;
+                        }
+
+                        .shop-data {
+                            min-height: 5.7rem;
+                            position: relative;
+
+                            .shop-data-left {
+                                width: 71%;
+                            }
+
+                            .shop-data-left__no-phone {
+                                width: 100% !important;
+                            }
+
+                            .shop-carfare,
+                            .shop-open,
+                            .shop-location,
+                            .shop-tel,
+                            .shop-card {
+                                margin: 0 1rem 0.8rem 0;
+                                font: normal normal normal 1.2rem/1.4rem Hiragino Sans;
+                                padding-left: 2rem;
+                            }
+
+                            .shop-price {
+                                margin: 0 1rem 0rem 0;
+                                font: normal normal normal 1.2rem/1.4rem Hiragino Sans;
+                                padding-left: 2rem;
+                            }
+
+                            .shop-location {
+                                display: block;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+
+                            .btn-tel {
+                                align-content: center;
+                                display: block;
+                                width: 5.6rem;
+                                height: 5.6rem;
+                                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+                                border-radius: 50%;
+                                background: #fff;
+                                text-align: center;
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                transform: translateY(-50%);
+                                z-index: 1;
+                            }
+                        }
+                    }
+
+                    &-link {
+                        margin-top: 1.5rem;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        border: 0.1rem solid #D9D9D9;
+                        border-radius: 0.3rem;
+                        text-align: center;
+                        font: normal normal normal 1.4rem/1.7rem Hiragino Sans;
+                        padding: 1.15rem;
+                        color: #1F1C0D;
+                        width: 100%;
+                        position: relative;
+
+                        &::before {
+                            content: '' !important;
+                            position: absolute;
+                            top: calc(50% - 0.3rem);
+                            right: 1.874rem;
+                            width: 0.6rem;
+                            height: 0.6rem;
+                            transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+                            border-bottom: 0.1rem solid #1F1C0D;
+                            border-right: 0.1rem solid #1F1C0D;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .moreCard {
+                background-color: #FFFFFF;
+                border-radius: 1rem;
+                box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+                width: 30rem;
+
+                .moreCard__link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+
+                    &.moreCard__link:before {
+                        content: '';
+                        display: inline-block;
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        margin-bottom: 1.8rem;
+                        background-image: url(../../images/location/more-card-link.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+
+                    .text {
+                        display: block;
+                        font-size: 1.7rem;
+                        line-height: 2.9rem;
+                        color: #1F1C0D;
+
+                        em {
+                            color: #007DD9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.shop-open {
+    background: url(../../images/location/icon-clock.svg) no-repeat 0 0 / auto 1.4rem;
+}
+
+.shop-location {
+    width: 100%;
+    background: url(../../images/location/icon-markerBlack.svg) no-repeat 0.2rem 0 / auto 1.4rem;
+
+    .shopData-icon {
+        margin-left: 0.1rem;
+        margin-right: 0.7rem;
+    }
+}
+
+.shop-price {
+    background: url(../../images/location/icon-yenThin.svg) no-repeat 0.2rem 0 / auto 1.4rem;
+}
+
+.line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+
+    &--reSearch {
+        margin: 2.05rem 0 0;
+        border-radius: 0.4rem;
+        background-color: #FFFFFF;
+        padding: 1.45rem 0 1.45rem;
+        border: 0.2rem solid #007DD9;
+        display: flex;
+        justify-content: center;
+        color: #007DD9;
+        font: normal normal normal 1.5rem/1.5rem Hiragino Sans;
+
+        .box__text {
+            position: relative;
+
+            &:before {
+                content: '';
+                background-image: url(../../images/location/cached.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                position: absolute;
+                width: 2.19rem;
+                height: 1.6rem;
+                right: calc(100% + 0.85rem);
+            }
+        }
+
+    }
+
+    &--backPrevPage {
+        background-color: #FFFFFF;
+        padding: 1.3rem 0;
+        border-radius: 0.4rem;
+        border: 0.05rem solid #1F1C0D;
+        font: normal normal normal 1.3rem/1.3rem Hiragino Sans;
+        color: #1F1C0D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            width: fit-content;
+            position: relative;
+
+            &:before {
+                content: '<' !important;
+                right: 0.8rem;
+                position: absolute;
+                right: calc(100% + 0.8rem);
+            }
+        }
+
+
+    }
+
+    &--backToTop {
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 1.3rem 0;
+        border-radius: 0.4rem;
+        border: 0.05rem solid #1F1C0D;
+        color: #1F1C0D;
+        font: normal normal normal 1.3rem/1.3rem Hiragino Sans;
+
+    }
+}

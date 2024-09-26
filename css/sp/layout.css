@@ -1,0 +1,371 @@
+@charset "UTF-8";
+.g-container {
+  margin: 0 15px;
+}
+
+.g-header .g-header-upper {
+  background: #333333;
+  height: 22px;
+  text-align: center;
+}
+.g-header .g-header-upper__title {
+  font: normal normal normal 10px/10px Meiryo;
+  color: #ffffff;
+}
+.g-header .g-header-main {
+  height: 53px;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+}
+.g-header .g-header-main-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.g-header .g-header-main-content__logo {
+  width: 172px;
+  height: 25px;
+  background: url("../../images/layout/logo.svg") no-repeat center;
+}
+.g-header .g-header-main-content__left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.g-header .g-header-main-content__left .button {
+  display: flex;
+  height: 43px;
+  width: 43px;
+  background: #ffffff;
+  border: unset;
+  border-radius: 3px;
+  padding: 4px 0 6px 0;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+}
+.g-header .g-header-main-content__left .button .button-img {
+  width: 18px;
+  height: unset;
+}
+.g-header .g-header-main-content__left .button .button-text {
+  text-align: center;
+  font: normal normal normal 10px/10px Meiryo;
+  letter-spacing: 0px;
+  color: #1f1c0d;
+}
+
+.l-breadcrumb {
+  height: 25px;
+  padding: 7.5px 0;
+  align-content: center;
+  font: normal normal normal 10px/10px Meiryo;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.l-breadcrumb .breadcrumb-list {
+  overflow: hidden;
+  color: #1f1c0d;
+  width: max-content;
+}
+.l-breadcrumb .breadcrumb-list .breadcrumb-item {
+  float: left;
+  padding-right: 4px;
+}
+.l-breadcrumb .breadcrumb-list .breadcrumb-item:after {
+  content: ">";
+  display: inline-block;
+  padding-left: 5px;
+}
+.l-breadcrumb .breadcrumb-list .breadcrumb-item:last-child {
+  font-weight: bold;
+}
+.l-breadcrumb .breadcrumb-list .breadcrumb-item:last-child:after {
+  display: none;
+}
+
+.hero-section {
+  background: #ffffff;
+  box-shadow: 0px 9px 6px -6px #00000029;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 100;
+  margin-top: unset;
+}
+.hero-section .hero-section-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.hero-section .hero-section-left {
+  flex-grow: 1;
+  margin: 0 -15px;
+}
+.hero-section .hero-section-left img {
+  width: 100%;
+}
+.hero-section .hero-section-right .shop-tag {
+  background: #ffeb7e;
+  border-radius: 2px;
+  padding: 4px 10px;
+  width: fit-content;
+  font: normal normal normal 10px/10px Hiragino Sans;
+}
+.hero-section .hero-section-right .shop-title {
+  margin-top: 18px;
+  color: #1f1c0d;
+  font: normal normal bold 20px/20px Meiryo;
+}
+.hero-section .hero-section-right .shop-genre {
+  margin-top: 10px;
+  font: normal normal normal 12px/12px Meiryo;
+  color: #1f1c0d;
+}
+.hero-section .hero-section-right .shop-rating {
+  margin-top: 15px;
+  height: 16px;
+  display: flex;
+}
+.hero-section .hero-section-right .shop-rating .rating-star {
+  display: flex;
+  gap: 4px;
+}
+.hero-section .hero-section-right .shop-rating .rating-star .star-wrapper {
+  width: 16px;
+  height: 16px;
+  background: url("../../images/layout/star-sp.svg") no-repeat center;
+}
+.hero-section .hero-section-right .shop-rating .rating-star .star-wrapper.no-star {
+  background: url("../../images/layout/star-gray-sp.svg") no-repeat center;
+}
+.hero-section .hero-section-right .shop-rating .rating-star .star-wrapper.half-star {
+  background: url("../../images/layout/star-half-sp.svg") no-repeat left;
+}
+.hero-section .hero-section-right .shop-rating .rating-number {
+  margin-left: 5px;
+  font: normal normal bold 16px/16px Meiryo;
+  color: #1f1c0d;
+}
+.hero-section .hero-section-right .shop-rating .rating-review {
+  flex-grow: 1;
+  margin-left: 8px;
+  font: normal normal bold 10px/16px Meiryo;
+  color: #1f1c0d;
+}
+.hero-section .hero-section-right .shop-rating .rating-review a {
+  text-decoration: underline;
+  color: #006bc4;
+  font: normal normal bold 12px/16px Meiryo;
+}
+.hero-section .hero-section-right .shop-rating .favorite {
+  display: none;
+}
+.hero-section .hero-section-right .shop-type {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+.hero-section .hero-section-right .shop-type .shop-type__item {
+  height: 22px;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  font: normal normal normal 10px Meiryo;
+  padding: 6px 14px;
+  align-content: center;
+}
+.hero-section .hero-section-right .shop-type .shop-type__item.business-japan {
+  background: #ffffff;
+}
+.hero-section .hero-section-right .shop-type .shop-type__item.enable-place {
+  background: #ecf2f7;
+}
+.hero-section .hero-section-right .shop-open,
+.hero-section .hero-section-right .shop-location,
+.hero-section .hero-section-right .shop-price,
+.hero-section .hero-section-right .shop-payment-type {
+  margin-top: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 13px;
+}
+.hero-section .hero-section-right .shop-open img,
+.hero-section .hero-section-right .shop-location img,
+.hero-section .hero-section-right .shop-price img,
+.hero-section .hero-section-right .shop-payment-type img {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+.hero-section .hero-section-right .shop-open img.unit,
+.hero-section .hero-section-right .shop-location img.unit,
+.hero-section .hero-section-right .shop-price img.unit,
+.hero-section .hero-section-right .shop-payment-type img.unit {
+  height: 14px;
+}
+.hero-section .hero-section-right .shop-open span,
+.hero-section .hero-section-right .shop-location span,
+.hero-section .hero-section-right .shop-price span,
+.hero-section .hero-section-right .shop-payment-type span {
+  font: normal normal normal 13px Meiryo;
+}
+.hero-section .hero-section-right .info-inline {
+  display: flex;
+  gap: 14px;
+}
+.hero-section .hero-section-right .shop-open {
+  margin-top: 20px;
+}
+.hero-section .hero-section-right .booking-btn {
+  margin-top: 20px;
+  min-width: 300px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #ff4a4a;
+  border-radius: 3px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ff4a4a;
+  cursor: pointer;
+}
+.hero-section .hero-section-right .booking-btn img {
+  height: 25px;
+}
+.hero-section .hero-section-right .booking-btn span {
+  font: normal normal bold 15px Meiryo;
+}
+
+.shopNav-section {
+  background: #ffffff;
+  color: #1f1c0d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow-x: auto;
+  scrollbar-width: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+.shopNav-section .shopNav-list {
+  display: flex;
+  text-align: center;
+  width: 710px;
+}
+.shopNav-section .shopNav-list .shopNav-item {
+  flex-grow: 1;
+}
+.shopNav-section .shopNav-list .shopNav-item.active {
+  border-bottom: 1.5px solid #1f1c0d;
+}
+.shopNav-section .shopNav-list .shopNav-item .shopNav-item__wrapper {
+  border-right: 1px solid #1f1c0d;
+  height: 16px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.shopNav-section .shopNav-list .shopNav-item .shopNav-item__wrapper .shopNav-link {
+  font: normal normal bold 14px/21px Meiryo;
+  font-weight: bold;
+}
+
+.main-section {
+  display: flex;
+  margin-top: 48px;
+}
+.main-section .main-left {
+  flex-grow: 1;
+}
+.main-section .main-right {
+  display: none;
+}
+
+.g-footer {
+  background: #333333;
+  color: #ffffff;
+  padding-bottom: 70px;
+}
+.g-footer .g-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-footer .g-footer__inner .g-footer__logo {
+  display: none;
+}
+.g-footer .g-footer__inner .g-footer__nav {
+  font: normal normal normal 11px/11px Meiryo;
+  text-align: center;
+}
+.g-footer .g-footer__inner .g-footer__nav .g-footer__nav-list {
+  padding: 20px 0 17px 0;
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.g-footer .g-footer__inner .g-footer__nav .copyright {
+  background: #3c3c3c;
+  margin: 0 -15px;
+  font: normal normal normal 9px/9px ヒラギノ角ゴシック, W3;
+  padding: 3px 0 4px 0;
+}
+
+.mobile-fixed-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  height: 70px;
+  padding: 0 22px;
+}
+.mobile-fixed-footer .ft-favorite,
+.mobile-fixed-footer .ft-phone-call {
+  display: flex;
+  flex-direction: column;
+  color: #1f1c0d;
+  font: normal normal normal 10px/10px Meiryo;
+  gap: 5px;
+  align-items: center;
+}
+.mobile-fixed-footer .ft-favorite img {
+  width: 30px;
+}
+.mobile-fixed-footer .ft-phone-call img {
+  width: 30px;
+}
+.mobile-fixed-footer .ft-booking {
+  flex-grow: 1;
+  min-width: 209px;
+  height: 48px;
+  background: #ff4a4a;
+  border: 1px solid #ff4a4a;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.mobile-fixed-footer .ft-booking img {
+  height: 25px;
+}
+.mobile-fixed-footer .ft-booking span {
+  font: normal normal normal 14px/15px Meiryo;
+  letter-spacing: 0.56px;
+}

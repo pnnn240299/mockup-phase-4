@@ -1,0 +1,490 @@
+.main-right {
+  display: none;
+}
+
+.shopSchedule {
+  width: 100%;
+  padding: 0 16px 48px;
+
+  .shopSch {
+    &__head {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      color: #1f1c0d;
+      gap: 12px;
+    }
+
+    &__line {
+      border: none;
+      border-bottom: 1px solid #eaeaea !important;
+      margin: 12px 0 8px !important;
+    }
+
+    &__title {
+      font: normal normal normal 17px/29px Hiragino Sans;
+    }
+
+    &__today {
+      font: normal normal normal 13px/23px Hiragino Sans;
+    }
+
+    &__days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      width: 100%;
+      align-items: center;
+      gap: 0px;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+
+      li {
+        border: 1px solid #dddddd;
+        border-radius: 0;
+        width: 100%;
+
+        &:first-child {
+          border-radius: 3px 0 0 3px;
+        }
+
+        &:last-child {
+          border-radius: 0 3px 3px 0;
+        }
+
+        a {
+          width: 100%;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font: normal normal normal 11px/16px Hiragino Sans;
+          color: #1f1c0d;
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+        }
+
+        &.shopSch {
+          &__days {
+            &--active {
+              background: #ff4a4a;
+              border: 1px solid #ff4a4a;
+              position: relative;
+
+              a {
+                color: #ffffff;
+              }
+
+              span {
+                font: normal normal normal 14px/17px Hiragino Sans;
+              }
+
+              &:after {
+                content: none;
+              }
+            }
+
+            &--sat {
+              span {
+                color: #0967b9;
+              }
+            }
+
+            &--sun {
+              span {
+                color: #fe4a4a;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__numGirls {
+      display: flex;
+      font: normal normal normal 13px/16px Hiragino Sans;
+      margin-bottom: 10px;
+
+      .shopSch {
+        &__numGirls {
+          &--red {
+            color: #ff4a4a;
+            font: normal normal normal 16px/16px Hiragino Sans;
+          }
+
+          &--bold {
+            font: normal normal normal 15px/16px Hiragino Sans;
+          }
+        }
+      }
+    }
+
+    &__girls {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      margin-bottom: 32px;
+
+      li {
+        box-shadow: 0px 2px 6px #0000001a;
+        border: 0.5px solid #dcdcdc;
+        border-radius: 3px;
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 2px 0px 0px 2px;
+
+        img {
+          width: auto;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .girls {
+          &__image {
+            position: relative;
+            height: 195px;
+          }
+
+          &__info {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 17px 16px 14px;
+            width: 100%;
+            color: #1f1c0d;
+            align-items: center;
+
+            .girls {
+              &__girlName {
+                font: normal normal normal 17px/16px Hiragino Sans;
+                margin-bottom: 10px;
+              }
+
+              &__girlInfo {
+                width: 100%;
+                text-align: center;
+                font: normal normal normal 12px/12px Hiragino Sans;
+                color: #b7b7b7;
+                border-bottom: 1px dashed #d8d8d8;
+                padding-bottom: 9px;
+              }
+
+              &__socials {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font: normal normal normal 12px/24px Hiragino Sans;
+                margin: 8px 0;
+
+                .socials {
+                  height: 28px;
+                }
+
+                img {
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+
+              &__schedule {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 34px;
+                background: #fff2f2;
+                color: #ff4a4a;
+                gap: 8px;
+                font: normal normal normal 15px/24px Hiragino Sans;
+
+                &.date {
+                  background: #fefae6;
+                  color: #1f1c0d;
+                }
+
+                &.disable {
+                  background: #f2f2f2;
+                  color: #1f1c0d;
+                }
+              }
+
+              &__call {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 30px;
+                background: #5193f4;
+                border-radius: 3px;
+                color: #ffffff;
+                gap: 8px;
+                margin-top: 8px;
+                font: normal normal normal 12px/20px Hiragino Sans;
+
+                &.web {
+                  background: #ff4a4a;
+                }
+
+                img {
+                  height: 19px;
+                }
+              }
+            }
+          }
+
+          &__star {
+            position: absolute;
+            width: 31px;
+            height: 31px;
+            right: 8px;
+            bottom: 10px;
+            cursor: pointer;
+
+            &:hover {
+              .star-keep {
+                fill: #ffc015;
+              }
+
+              .border-keep {
+                stroke: #ffc015;
+              }
+            }
+
+            &.on {
+              .star-keep {
+                fill: #ffc015;
+              }
+
+              .border-keep {
+                stroke: #ffc015;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 48px;
+
+      li {
+        a {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid #dddddd;
+          align-items: center;
+          justify-content: center;
+          font: normal normal normal 12px/17px Hiragino Sans;
+        }
+
+        &.preNext {
+          a {
+            border: none;
+
+            svg {
+              height: 10px;
+            }
+          }
+        }
+
+        &.hide {
+          display: none;
+        }
+
+        &.active {
+          a {
+            background: #1f1c0d;
+            border: 1px solid #1f1c0d;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    &__storeInfo {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      margin-bottom: 40px;
+
+      li {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+        padding: 18px 20px;
+        font: normal normal normal 12px/20px Hiragino Sans;
+
+        .shopSch__storeInfo {
+          &_title {
+            width: 100px;
+            flex-grow: 1;
+            font: normal normal normal 13px/23px Hiragino Sans;
+          }
+
+          &_detail {
+            width: calc(100% - 100px);
+
+            .socials {
+              height: 48px;
+            }
+
+            a {
+              color: #1d9bf0;
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: normal normal normal 13px/20px Hiragino Sans;
+      color: #1f1c0d;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      margin: 0 auto 12px;
+
+      img {
+        margin-right: 10px;
+        height: 13px;
+      }
+    }
+  }
+}
+
+.therapistsList {
+  .shopSch {
+    &__head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    &__title {
+      font: normal normal normal 17px/17px Hiragino Sans;
+    }
+
+    &__numGirls {
+      font: normal normal normal 13px/16px Hiragino Sans;
+      margin: 0;
+
+      .shopSch {
+        &__numGirls {
+          &--red {
+            font: normal normal normal 16px/16px Hiragino Sans;
+          }
+
+          &--bold {
+            font: normal normal normal 15px/16px Hiragino Sans;
+          }
+        }
+      }
+    }
+
+    &__line {
+      margin: 16px 0 12px !important;
+    }
+
+    &__girls {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+
+      li {
+        a {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          border-radius: 3px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 2px;
+          }
+
+          .girls {
+            &__info {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              padding: 11px 36px 14px 10px !important;
+              width: 100%;
+              color: #ffffff;
+              gap: 6px;
+              bottom: 0;
+              z-index: 1;
+
+              .girls {
+                &__girlName {
+                  font: normal normal normal 10px/10px Hiragino Sans;
+                  width: 100%;
+                  margin-bottom: 0;
+
+                  &__text {
+                    font: normal normal normal 14px/16px Hiragino Sans;
+
+                    span {
+                      font: normal normal normal 10px/16px Meiryo;
+                    }
+                  }
+                }
+
+                &__star {
+                  right: 10px;
+                  bottom: 17px;
+                  margin-right: 0;
+                }
+
+                &__schedule {
+                  display: block;
+                  background: transparent;
+                  height: unset;
+                  color: #ffffff;
+                  font: normal normal normal 13px/13px Hiragino Sans;
+                }
+              }
+            }
+
+            &__layout {
+              height: 90px;
+              width: 100%;
+              background: transparent
+                linear-gradient(
+                  180deg,
+                  transparent 0%,
+                  rgba(0, 0, 0, 0.6) 50%,
+                  #000000 100%
+                )
+                0% 0% no-repeat padding-box;
+              position: absolute;
+              bottom: 0;
+              border-radius: 0px 0px 3px 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

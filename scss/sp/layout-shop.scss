@@ -1,0 +1,138 @@
+body {
+    background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.g-header {
+    opacity: 1;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: relative;
+
+    .g-header-upper {
+        text-align: center;
+        background: #333333;
+        height: 22px;
+
+        .g-container {
+            height: 100%;
+        }
+
+        &__title {
+            font: normal normal normal 10px/10px ヒラギノ角ゴシック, W3;
+            color: #ffffff;
+            align-content: center;
+            height: 100%;
+        }
+    }
+
+    .g-header-main {
+        background-color: #ffffff;
+        height: 53px;
+        opacity: 1;
+        display: flex;
+
+        &-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+
+            &__logo {
+                width: 172px;
+                height: 25px;
+                background: url("../../images/top-v2/レイヤー 2@2x.png") no-repeat center;
+                background-size: cover;
+            }
+
+            &__left {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .button {
+                    display: flex;
+                    height: 43px;
+                    width: 43px;
+                    background: #ffffff;
+                    border: unset;
+                    border-radius: 3px;
+                    padding: 4px 0 6px 0;
+                    justify-content: center;
+                    gap: 6px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .button-img {
+                        width: 18px;
+                        height: unset;
+                    }
+
+                    .button-text {
+                        text-align: center;
+                        font: normal normal normal 10px/10px Meiryo;
+                        letter-spacing: 0px;
+                        color: #1f1c0d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.g-footer {
+    background: #1f1c0d 0% 0% no-repeat padding-box;
+    color: #ffffff;
+
+    .g-footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .g-footer__logo {
+            display: none;
+        }
+
+        .g-footer__nav {
+            width: 100%;
+            font: normal normal normal 11px/11px Meiryo;
+            text-align: center;
+            margin-top: 20px;
+
+            .g-footer__nav-list {
+                display: flex;
+                row-gap: 9px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .g-footer__nav-item {
+                    padding: 0 19px;
+                    border-right: 1px solid #ffffff;
+                }
+
+                .g-footer__nav-item:last-child {
+                    border-right: none !important;
+                }
+
+                .g-footer__nav-item-last {
+                    padding: 0 19px;
+                    border: none;
+                }
+
+            }
+
+            .list__footer-second{
+                padding-bottom: 17px;
+                margin-top: 10px;
+            }
+
+            .copyright {
+                background: #3c3c3c;
+                margin: 0 -15px;
+                font: normal normal normal 9px/9px ヒラギノ角ゴシック, W3;
+                padding: 3px 0 4px 0;
+            }
+        }
+    }
+}

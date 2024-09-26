@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/sp/reset.css" />
+  <link rel="stylesheet" href="../../css/sp/layout.css" />
+  <!-- PAGE CSS -->
+  <link rel="stylesheet" href="../../css/sp/history.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+  <body>
+    <div class="g-wrap">
+      <header class="sticky">
+        <div class="g-header">
+          <div class="g-header-upper">
+            <div class="g-container g-header-overflow">
+              <div class="head-txt">【テスト】メンエスじゃぱん</div>
+            </div>
+          </div>
+          <div class="g-header-main g-header-main-keeplist">
+            <div class="g-container g-header-main-content">
+              <a
+                class="g-header-main-content__logo"
+                href="https://dev.mens-est.jp/"
+              >
+                <img
+                  src="/assets/img/user/common/v2/layout/logo.svg"
+                  alt="メンエスじゃぱん"
+                />
+              </a>
+              <div class="g-header-main-content__left">
+                <a
+                  class="button history-is-active"
+                  href="https://dev.mens-est.jp/history/"
+                >
+                  <img
+                    class="button-img"
+                    alt=""
+                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time-headerhistory-is-active.svg?1727333512"
+                  />
+                  <span class="button-text">最近見た</span>
+                </a>
+                <a
+                  href="https://dev.mens-est.jp/history/?keeplist=1"
+                  class="button star star-border-yellow"
+                >
+                  <img
+                    class="button-img"
+                    alt=""
+                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/starstar-border-yellow.png?1727333512"
+                  />
+                  <span class="button-text">キープ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="txt-addKeep"><span>キープに追加しました</span></p>
+          <p class="txt-removeKeep"><span>キープから削除しました</span></p>
+        </div>
+      </header>
+      <nav class="l-breadcrumb g-container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="https://dev.mens-est.jp/" class="breadcrumb-link"
+              >メンエスじゃぱん</a
+            >
+          </li>
+          <li class="breadcrumb-item">
+            <span>最近見た</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mod-keepListHead">
+        <div class="keepListHead-bottom">
+          <ul class="listChange-list">
+            <li class="listChange-item js-listChangeBtn active">
+              セラピスト
+              <span class="counter girl" id="">2</span>
+            </li>
+            <li class="listChange-item js-listChangeBtn">
+              お店
+              <span class="counter shop">1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="f-keepList">
+        <div class="keepList-body">
+          <div class="select-wrap">
+            <select class="sort-select">
+              <option value="sort_new">最新順</option>
+              <option value="sort_each_shop">お店ごと</option>
+            </select>
+          </div>
+          <div class="keepList-head">
+            <h1 class="keepList-ttl">
+              最近見た
+              <p class="mypage-category" style="display: inline">セラピスト</p>
+              ：<em class="txt-green"><em class="history-count">2</em></em
+              >件
+            </h1>
+          </div>
+          <div class="keep_list_girl">
+            <div class="keepGirl-list">
+              <ul id="sort_new">
+                <li
+                  class="keepList-item girl 56269_1"
+                  data-selectshopid="hmmtespa"
+                  data-selectshopbiz="一般エステ"
+                  data-selectshoppref="静岡県"
+                  data-selectshopmainarea="浜松駅周辺"
+                  data-selectshopregionarea="東海"
+                  data-selectpagetype="履歴ページ(セラピスト)"
+                  data-selectgirlname="神楽まりあ"
+                >
+                  <ul class="keepGirl-list">
+                    <div class="item-table">
+                      <a
+                        href="https://dev.mens-est.jp/shop/hmmtespa/girllist/girl/56269/"
+                        class="p-imgWrap"
+                      >
+                        <img
+                          alt="神楽まりあ"
+                          class=""
+                          width="180"
+                          height="240"
+                          src="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240806161839979.jpg?width=540&amp;height=720&amp;type=resize&amp;quality=50"
+                        />
+                      </a>
+                      <div class="info-area">
+                        <a
+                          href="https://dev.mens-est.jp/shop/hmmtespa/girllist/girl/56269/"
+                          class="girl-name"
+                        >
+                          <em class="p-ellipsis">name:神楽まりあ</em></a
+                        >
+                        <p class="girl-data">22歳　154cm</p>
+                        <table class="status-tbl today">
+                          <tbody>
+                            <tr>
+                              <th>本日出勤</th>
+                              <td><span class="justnow">13:00～18:00</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                          <a
+                            href="#"
+                            class="girl-book ga-girlHistoryBook"
+                            target="_blank"
+                            rel="noopener"
+                            >WEB予約する</a
+                          >
+                          <a class="wrap-link">
+                            <img
+                              class="twitter"
+                              src="../../images/history/icon-X.svg"
+                              alt="Twitter"
+                              style="width: 100%; height: 100%"
+                            />
+                          </a>
+                          <a class="wrap-link">
+                            <img
+                              src="../../images/history/icon-instagram.svg"
+                              alt="Instagram"
+                            />
+                          </a>
+                        </div>
+                        <p
+                          class="btn-keep js-keep on"
+                          data-type="3"
+                          data-id="56269"
+                          data-name="神楽まりあ"
+                          data-onmousedown="javascript:ga('send','event','sp+キープ解除(セラピスト)','東海+静岡県+浜松駅周辺','hmmtespa+浜松駅周辺+一般エステ+履歴ページ(セラピスト)+神楽まりあ');"
+                        >
+                          <svg
+                            class="star-keep on"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 21 21"
+                          >
+                            <g
+                              id="icon_keep"
+                              transform="translate(9.286 16.786)"
+                              fill="none"
+                            >
+                              <path
+                                class="a"
+                                d="M11.714-8.648c0-.4-.4-.556-.707-.609l-6.335-.966-2.84-6.021c-.114-.251-.328-.543-.618-.543s-.5.291-.618.543l-2.84,6.021-6.335.966c-.316.053-.707.212-.707.609a1.047,1.047,0,0,0,.316.635l4.594,4.684L-5.462,3.288a1.877,1.877,0,0,0-.025.265c0,.344.164.662.53.662a1.03,1.03,0,0,0,.5-.159L1.214.933,6.881,4.055a.991.991,0,0,0,.5.159c.366,0,.517-.318.517-.662a1.859,1.859,0,0,0-.013-.265L6.805-3.328l4.581-4.684A1,1,0,0,0,11.714-8.648Z"
+                                stroke="none"
+                              ></path>
+                              <path
+                                class="a"
+                                d="M 1.214280724525452 -14.74118614196777 L -1.158295154571533 -9.710518836975098 L -1.430925130844116 -9.132449150085449 L -2.062765121459961 -9.03610897064209 L -7.482781410217285 -8.209701538085938 L -3.519695281982422 -4.168478965759277 L -3.09383487701416 -3.734218597412109 L -3.192295074462891 -3.134018898010254 L -4.116554737091064 2.500333786010742 L 0.635084867477417 -0.1183691024780273 L 1.214284896850586 -0.4375791549682617 L 1.793484926223755 -0.1183691024780273 L 6.54512357711792 2.500337600708008 L 5.62085485458374 -3.134018898010254 L 5.522564888000488 -3.733199119567871 L 5.947104930877686 -4.167299270629883 L 9.901878356933594 -8.211145401000977 L 4.491334915161133 -9.03610897064209 L 3.85950493812561 -9.132449150085449 L 3.586864948272705 -9.710518836975098 L 1.214280724525452 -14.74118614196777 M 1.214284896850586 -16.78573989868164 C 1.504544973373413 -16.78573989868164 1.71909487247467 -16.49460983276367 1.832664966583252 -16.24318885803223 L 4.672214984893799 -10.22239875793457 L 11.00755500793457 -9.256428718566895 C 11.31043529510498 -9.203498840332031 11.71428489685059 -9.044709205627441 11.71428489685059 -8.647739410400391 C 11.71428489685059 -8.40955924987793 11.55021476745605 -8.184598922729492 11.386155128479 -8.012578964233398 L 6.805025100708008 -3.328269004821777 L 7.890365123748779 3.287981033325195 C 7.902985095977783 3.380611419677734 7.902985095977783 3.460010528564453 7.902985095977783 3.552631378173828 C 7.902985095977783 3.89668083190918 7.751534938812256 4.214262008666992 7.385554790496826 4.214262008666992 C 7.208864688873291 4.214262008666992 7.032185077667236 4.148090362548828 6.880744934082031 4.055471420288086 L 1.214284896850586 0.932591438293457 L -4.452185153961182 4.055471420288086 C -4.616245269775391 4.148090362548828 -4.780304908752441 4.214262008666992 -4.956995010375977 4.214262008666992 C -5.322975158691406 4.214262008666992 -5.487035274505615 3.89668083190918 -5.487035274505615 3.552631378173828 C -5.487035274505615 3.460010528564453 -5.474415302276611 3.380611419677734 -5.461795330047607 3.287981033325195 L -4.376465320587158 -3.328269004821777 L -8.970205307006836 -8.012578964233398 C -9.121644973754883 -8.184598922729492 -9.285715103149414 -8.40955924987793 -9.285715103149414 -8.647739410400391 C -9.285715103149414 -9.044709205627441 -8.894495010375977 -9.203498840332031 -8.578985214233398 -9.256428718566895 L -2.243645191192627 -10.22239875793457 L 0.5958949327468872 -16.24318885803223 C 0.7094749212265015 -16.49460983276367 0.9240149259567261 -16.78573989868164 1.214284896850586 -16.78573989868164 Z"
+                                stroke="none"
+                                fill="#a0a0a0"
+                              ></path>
+                            </g>
+                          </svg>
+                        </p>
+                      </div>
+                    </div>
+                  </ul>
+                  <div class="mod-shopInfo" data-girlcount="1">
+                    <figure class="shop-thumb p-imgWrap">
+                      <a href="https://dev.mens-est.jp/shop/hmmtespa/">
+                        <img
+                          alt="DEV_浜松超E-SPA"
+                          src="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240315204649379.jpg?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                          data-original="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240315204649379.jpg?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                          class="lazy"
+                          style="display: block"
+                        />
+                      </a>
+                    </figure>
+                    <a href="#"> </a>
+
+                    <div class="shop-info">
+                      <a href="#"> </a>
+                      <div class="contents-wrap">
+                        <a href="#"> </a>
+                        <a href="#" class="shop-name p-ellipsis">
+                          DEV_浜松超E-SPA
+                        </a>
+                        <p class="shop-genre">
+                          <a href="#" class="shop-name p-ellipsis"> </a>
+                          <a href="#"> <span class="shop-genre"> </span></a>
+                          <a href="#">浜松駅周辺メンズエステ（一般）</a>
+                        </p>
+                        <ul class="shop-tags">
+                          <li class="tag active">日本人</li>
+                          <li class="tag">日本人</li>
+                          <li class="tag">日本人</li>
+                        </ul>
+                      </div>
+
+                      <a href="tel:000-0000-0000" class="btn-tel teltap">
+                        <img
+                          src="../../images/history/icon-telBlue.png"
+                          class="icon-tel"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="keepList-item girl 56269_1"
+                  data-selectshopid="hmmtespa"
+                  data-selectshopbiz="一般エステ"
+                  data-selectshoppref="静岡県"
+                  data-selectshopmainarea="浜松駅周辺"
+                  data-selectshopregionarea="東海"
+                  data-selectpagetype="履歴ページ(セラピスト)"
+                  data-selectgirlname="神楽まりあ"
+                >
+                  <ul class="keepGirl-list">
+                    <div class="item-table">
+                      <a
+                        href="https://dev.mens-est.jp/shop/hmmtespa/girllist/girl/56269/"
+                        class="p-imgWrap"
+                      >
+                        <img
+                          alt="神楽まりあ"
+                          class=""
+                          width="180"
+                          height="240"
+                          src="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240806161839979.jpg?width=540&amp;height=720&amp;type=resize&amp;quality=50"
+                        />
+                      </a>
+                      <div class="info-area">
+                        <a
+                          href="https://dev.mens-est.jp/shop/hmmtespa/girllist/girl/56269/"
+                          class="girl-name"
+                        >
+                          <em class="p-ellipsis">name:神楽まりあ</em></a
+                        >
+                        <p class="girl-data">22歳　154cm</p>
+                        <table class="status-tbl today">
+                          <tbody>
+                            <tr>
+                              <th>本日出勤</th>
+                              <td><span class="justnow">13:00～18:00</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="btn-wrap">
+                          <a
+                            href="#"
+                            class="girl-book ga-girlHistoryBook"
+                            target="_blank"
+                            rel="noopener"
+                            >WEB予約する</a
+                          >
+                          <a class="wrap-link">
+                            <img
+                              class="twitter"
+                              src="../../images/history/icon-X.svg"
+                              alt="Twitter"
+                              style="width: 100%; height: 100%"
+                            />
+                          </a>
+                          <a class="wrap-link">
+                            <img
+                              src="../../images/history/icon-instagram.svg"
+                              alt="Instagram"
+                            />
+                          </a>
+                        </div>
+                        <p
+                          class="btn-keep js-keep on"
+                          data-type="3"
+                          data-id="56269"
+                          data-name="神楽まりあ"
+                          data-onmousedown="javascript:ga('send','event','sp+キープ解除(セラピスト)','東海+静岡県+浜松駅周辺','hmmtespa+浜松駅周辺+一般エステ+履歴ページ(セラピスト)+神楽まりあ');"
+                        >
+                          <svg
+                            class="star-keep on"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 21 21"
+                          >
+                            <g
+                              id="icon_keep"
+                              transform="translate(9.286 16.786)"
+                              fill="none"
+                            >
+                              <path
+                                class="a"
+                                d="M11.714-8.648c0-.4-.4-.556-.707-.609l-6.335-.966-2.84-6.021c-.114-.251-.328-.543-.618-.543s-.5.291-.618.543l-2.84,6.021-6.335.966c-.316.053-.707.212-.707.609a1.047,1.047,0,0,0,.316.635l4.594,4.684L-5.462,3.288a1.877,1.877,0,0,0-.025.265c0,.344.164.662.53.662a1.03,1.03,0,0,0,.5-.159L1.214.933,6.881,4.055a.991.991,0,0,0,.5.159c.366,0,.517-.318.517-.662a1.859,1.859,0,0,0-.013-.265L6.805-3.328l4.581-4.684A1,1,0,0,0,11.714-8.648Z"
+                                stroke="none"
+                              ></path>
+                              <path
+                                class="a"
+                                d="M 1.214280724525452 -14.74118614196777 L -1.158295154571533 -9.710518836975098 L -1.430925130844116 -9.132449150085449 L -2.062765121459961 -9.03610897064209 L -7.482781410217285 -8.209701538085938 L -3.519695281982422 -4.168478965759277 L -3.09383487701416 -3.734218597412109 L -3.192295074462891 -3.134018898010254 L -4.116554737091064 2.500333786010742 L 0.635084867477417 -0.1183691024780273 L 1.214284896850586 -0.4375791549682617 L 1.793484926223755 -0.1183691024780273 L 6.54512357711792 2.500337600708008 L 5.62085485458374 -3.134018898010254 L 5.522564888000488 -3.733199119567871 L 5.947104930877686 -4.167299270629883 L 9.901878356933594 -8.211145401000977 L 4.491334915161133 -9.03610897064209 L 3.85950493812561 -9.132449150085449 L 3.586864948272705 -9.710518836975098 L 1.214280724525452 -14.74118614196777 M 1.214284896850586 -16.78573989868164 C 1.504544973373413 -16.78573989868164 1.71909487247467 -16.49460983276367 1.832664966583252 -16.24318885803223 L 4.672214984893799 -10.22239875793457 L 11.00755500793457 -9.256428718566895 C 11.31043529510498 -9.203498840332031 11.71428489685059 -9.044709205627441 11.71428489685059 -8.647739410400391 C 11.71428489685059 -8.40955924987793 11.55021476745605 -8.184598922729492 11.386155128479 -8.012578964233398 L 6.805025100708008 -3.328269004821777 L 7.890365123748779 3.287981033325195 C 7.902985095977783 3.380611419677734 7.902985095977783 3.460010528564453 7.902985095977783 3.552631378173828 C 7.902985095977783 3.89668083190918 7.751534938812256 4.214262008666992 7.385554790496826 4.214262008666992 C 7.208864688873291 4.214262008666992 7.032185077667236 4.148090362548828 6.880744934082031 4.055471420288086 L 1.214284896850586 0.932591438293457 L -4.452185153961182 4.055471420288086 C -4.616245269775391 4.148090362548828 -4.780304908752441 4.214262008666992 -4.956995010375977 4.214262008666992 C -5.322975158691406 4.214262008666992 -5.487035274505615 3.89668083190918 -5.487035274505615 3.552631378173828 C -5.487035274505615 3.460010528564453 -5.474415302276611 3.380611419677734 -5.461795330047607 3.287981033325195 L -4.376465320587158 -3.328269004821777 L -8.970205307006836 -8.012578964233398 C -9.121644973754883 -8.184598922729492 -9.285715103149414 -8.40955924987793 -9.285715103149414 -8.647739410400391 C -9.285715103149414 -9.044709205627441 -8.894495010375977 -9.203498840332031 -8.578985214233398 -9.256428718566895 L -2.243645191192627 -10.22239875793457 L 0.5958949327468872 -16.24318885803223 C 0.7094749212265015 -16.49460983276367 0.9240149259567261 -16.78573989868164 1.214284896850586 -16.78573989868164 Z"
+                                stroke="none"
+                                fill="#a0a0a0"
+                              ></path>
+                            </g>
+                          </svg>
+                        </p>
+                      </div>
+                    </div>
+                  </ul>
+                  <div class="mod-shopInfo" data-girlcount="1">
+                    <figure class="shop-thumb p-imgWrap">
+                      <a href="https://dev.mens-est.jp/shop/hmmtespa/">
+                        <img
+                          alt="DEV_浜松超E-SPA"
+                          src="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240315204649379.jpg?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                          data-original="https://d2k35eg21pkznw.cloudfront.net/devfiles.mens-est.jp/img/shop/hmmtespa/gimg/20240315204649379.jpg?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                          class="lazy"
+                          style="display: block"
+                        />
+                      </a>
+                    </figure>
+                    <a href="#"> </a>
+
+                    <div class="shop-info">
+                      <a href="#"> </a>
+                      <div class="contents-wrap">
+                        <a href="#"> </a>
+                        <a href="#" class="shop-name p-ellipsis">
+                          DEV_浜松超E-SPA
+                        </a>
+                        <p class="shop-genre">
+                          <a href="#" class="shop-name p-ellipsis"> </a>
+                          <a href="#"> <span class="shop-genre"> </span></a>
+                          <a href="#">浜松駅周辺メンズエステ（一般）</a>
+                        </p>
+                        <ul class="shop-tags">
+                          <li class="tag active">日本人</li>
+                          <li class="tag">日本人</li>
+                          <li class="tag">日本人</li>
+                        </ul>
+                      </div>
+
+                      <a href="tel:000-0000-0000" class="btn-tel teltap">
+                        <img
+                          src="../../images/history/icon-telBlue.png"
+                          class="icon-tel"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <span class="js-btnToggle btn-toggle">
+            <img
+              class="svg-arr"
+              src="/assets/img/user/pc/keeplist/btn-toggle.svg"
+              alt=""
+            />
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <footer class="g-footer">
+      <div class="g-footer__inner g-container">
+        <img
+          class="g-footer__logo"
+          src="../../images/layout/logo-white.svg"
+          alt=""
+        />
+
+        <div class="g-footer__nav">
+          <ul class="g-footer__nav-list">
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">お客様意見箱</a>
+            </li>
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">利用規約</a>
+            </li>
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">プライバシーポリシー</a>
+            </li>
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">掲載店舗募集</a>
+            </li>
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">リンクについて</a>
+            </li>
+            <li class="g-footer__nav-item">
+              <a href="" class="g-footer__nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+          <div class="copyright">
+            (C) 2020 メンエスじゃぱん All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1466 @@
+//overwrite set 1rem = 10px
+html {
+  font-size: 10px;
+}
+
+.g-container {
+  margin: 0 15px;
+}
+
+.l-breadcrumb {
+  height: 25px;
+  padding: 7.5px 15px;
+  align-content: center;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: normal;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 0;
+  background: #f7f7f7;
+
+  .breadcrumb-list {
+    overflow: hidden;
+    color: #1f1c0d;
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    .breadcrumb-item {
+      position: relative;
+      margin-right: 15px;
+
+      &:after {
+        content: "";
+        background: url("../../images/top-tokyo/chevron-right-gray.svg")
+          no-repeat center;
+        display: block;
+        width: 4px;
+        height: 15px;
+        background-size: 100% 100%;
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  background: #f7f8fb 0% 0% no-repeat padding-box;
+
+  .section-ttl.pref-ttl {
+    height: 5.9rem;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+
+    > em {
+      height: 1.9rem;
+      padding-left: 0.8rem;
+      border-left: 0.6rem #1f1c0d solid;
+      font: normal normal 600 1.9rem/2rem ヒラギノ角ゴシック, W6;
+      color: #1f1c0d;
+    }
+  }
+
+  .section-search {
+    .section-ttl.pref-ttl {
+      background: #ffffff 0% 0% no-repeat padding-box;
+    }
+
+    .group-content {
+      margin: 1rem 1.5rem 0 1.5rem;
+
+      .dataTab-list {
+        display: flex;
+
+        .dataTab-click {
+          width: 50%;
+          height: 5.1rem;
+          border-radius: 3px 0px 0px 3px;
+          border: 1px solid #eaeaea;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font: normal normal normal 1.5rem/2.6rem ヒラギノ角ゴシック, W6;
+          position: relative;
+
+          &.on {
+            background: #00356a 0% 0% no-repeat padding-box;
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 98%;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              width: 0;
+              height: 0;
+              border-top: solid 10px #00356a;
+              border-left: solid 3px transparent;
+              border-right: solid 3px transparent;
+            }
+
+            .txt {
+              color: #ffffff;
+            }
+          }
+
+          &.off {
+            background: #efefef 0% 0% no-repeat padding-box;
+
+            .txt {
+              color: #b1b1b1;
+            }
+          }
+        }
+      }
+
+      .dataTab-content {
+        background: #ffffff 0% 0% no-repeat padding-box;
+
+        &.on {
+          display: block;
+        }
+
+        &.off {
+          display: none;
+        }
+
+        &.area-data {
+          height: 26.1rem;
+
+          .area-list {
+            padding: 1.6rem 2rem 2rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem;
+            list-style-type: none;
+
+            .area-item {
+              height: 3.8rem;
+              background: #edf3f3 0% 0% no-repeat padding-box;
+              border-radius: 3px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .txt {
+                text-align: center;
+                font: normal normal normal 1.4rem/2.4rem Hiragino Sans;
+                letter-spacing: 0px;
+                color: #1f1c0d;
+              }
+            }
+          }
+
+          .all-area {
+            width: 30.5rem;
+            height: 4.1rem;
+            background: #01356a 0% 0% no-repeat padding-box;
+            border-radius: 3px;
+            margin: 0 2rem 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .txt {
+              text-align: center;
+              font: normal normal normal 1.3rem/2.3rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+
+            .arrow {
+              border: solid #ffffff;
+              border-width: 0 0.2rem 0.2rem 0;
+              display: inline-block;
+              padding: 0.2rem;
+              transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+              margin-left: 1rem;
+              margin-top: -3px;
+            }
+          }
+        }
+
+        &.osaka-data {
+          .content-child {
+            padding: 0 2rem;
+
+            &-heading-txt {
+              padding-top: 2.4rem;
+              font: normal normal 600 1.6rem/2.7rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+              color: #1f1c0d;
+            }
+
+            &:last-child {
+              .city-item {
+                &:last-child {
+                  margin-bottom: 3rem;
+                }
+              }
+            }
+          }
+        }
+
+        .city-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          .city-item {
+            height: 3.3rem;
+            background: #edf3f3 0% 0% no-repeat padding-box;
+            border-radius: 200px;
+            font: normal normal 600 1.3rem/2.3rem ヒラギノ角ゴシック, W6;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+            margin: 1rem 0.6rem 0 0;
+            box-sizing: border-box;
+            display: block;
+            padding: 0.5rem 1.8rem;
+            text-align: center;
+          }
+        }
+
+        &.tokyo-data {
+          padding: 0 2rem;
+
+          .tokyo-data-heading-txt {
+            padding-top: 2.7rem;
+            font: normal normal 600 1.3rem/2.3rem ヒラギノ角ゴシック, W6;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+          }
+
+          .accordion {
+            margin-top: 1rem;
+
+            &-item {
+              list-style: none;
+              display: block;
+              overflow: hidden;
+
+              .expand {
+                display: block;
+                text-decoration: none;
+                // cursor: pointer;
+                border-top: 1px solid #e3e3e3;
+                padding: 1.1rem;
+
+                & h2 {
+                  font: normal normal 600 1.5rem/2.6rem ヒラギノ角ゴシック, W6;
+                  letter-spacing: 0px;
+                  color: #1f1c0d;
+                }
+
+                .right-arrow {
+                  width: 1.1rem;
+                  height: 1.1rem;
+                  float: right;
+                  font-weight: bold;
+                  font-size: 20px;
+                  color: #01356a;
+                }
+              }
+
+              .detail {
+                margin-top: 1rem;
+                display: none;
+
+                &:last-child {
+                  .city-item {
+                    &:last-child {
+                      margin-bottom: 1.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .map-pin-st {
+    /* Layout Properties */
+    margin: 2rem 1.5rem 0px 1.5rem;
+    padding: 0.9rem 0 1.3rem 1.9rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 3px;
+    display: flex;
+
+    .map-pin-st-icon-map-pin {
+      align-self: center;
+      opacity: 1;
+
+      .map-pin-img {
+        width: 42px;
+        height: 45px;
+      }
+    }
+
+    .map-pin-st-text {
+      align-self: center;
+      margin-left: 2rem;
+
+      .map-pin-st-text-header {
+        .map-pin-st-text-header__a {
+          text-align: left;
+          font: normal normal normal 2rem/2.6rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0.2px;
+          color: #01356a;
+        }
+
+        .map-pin-st-text-header__span {
+          text-align: left;
+          font: normal normal normal 1.5rem/2.6rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+
+      .map-pin-st-text-body {
+        text-align: left;
+        font: normal normal normal 1.1rem/1.9rem ヒラギノ角ゴシック;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+        opacity: 1;
+      }
+    }
+
+    .map-pin-st-next-link {
+      margin-left: 20px;
+      align-self: center;
+      background: #e0e0e0 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+      width: 2.8rem;
+      height: 2.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+
+      .map-pin-st-next-link__a {
+        align-self: center;
+        background: url("../../images/top-v2/シンボル 85.png") no-repeat;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-position: center;
+      }
+    }
+  }
+
+  .section-menu {
+    .menu-list {
+      margin-top: 2.8rem;
+      margin-left: 1.5rem;
+      display: flex;
+      overflow: auto;
+
+      .menu-item {
+        width: 5.5rem;
+        margin-right: 1.6rem;
+
+        .menu-icon {
+          width: 5.5rem;
+          height: 5rem;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 1px solid #edf0fa;
+          border-radius: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .menu-txt {
+          margin-top: 0.8rem;
+          text-align: center;
+          font: normal normal 600 1.1rem/1.7rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+    }
+  }
+
+  .section-ranking {
+    margin-top: 2.8rem;
+    background: #f7f8fb 0% 0% no-repeat padding-box;
+    padding-bottom: 2rem;
+
+    .ranking-banner-wrap {
+      height: 9rem;
+
+      .ranking-banner-img {
+        width: 100%;
+        height: 9rem;
+        background: url("../../images/top-v2/グループ 572276@2x.png") no-repeat
+          center / cover;
+        position: absolute;
+
+        .ranking-banner-text {
+          font: normal normal normal 1.6rem/1.6rem ヒラギノ角ゴシック;
+          color: #ffffff;
+          padding-left: 1.7rem;
+          margin-top: 5.5rem;
+        }
+      }
+    }
+
+    .therapist-ranking {
+      height: 38.8rem;
+      background: #fff 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 3px 3px;
+      margin: 0 1.5rem 0 1.5rem;
+      padding: 2rem 0 0 2rem;
+
+      &-heading-txt {
+        text-align: left;
+        font: normal normal 600 1.7rem/2.9rem ヒラギノ角ゴシック, W6;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+      }
+
+      .ranking-breadCrumbs {
+        margin-top: 1rem;
+
+        &-list {
+          display: flex;
+        }
+
+        &-item {
+          text-align: left;
+          font: normal normal 300 1.4rem/2.4rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          margin-right: 1.4rem;
+          padding: 0 0.4rem 0.5rem 0.4rem;
+
+          &.on {
+            color: #1f1c0d;
+            border-bottom: 3px solid #aa953d;
+          }
+
+          &.off {
+            color: #a9953c;
+          }
+        }
+
+        &-txt {
+          padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+          font: normal normal 200 1.1rem/2rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #a3a3a3;
+          margin-left: 2.2rem;
+        }
+      }
+
+      .ranking-content {
+        margin-top: 1.4rem;
+
+        &.on {
+          display: block;
+        }
+
+        &.off {
+          display: none;
+        }
+
+        .ranking-girl {
+          display: flex;
+          overflow: auto;
+
+          .ranking-girl-item {
+            border-radius: 2px;
+            margin-right: 0.4rem;
+            display: flex;
+            position: relative;
+            opacity: 1;
+
+            .ranking-girl-img {
+              .girl-img {
+                width: 13.8rem;
+                object-fit: cover;
+              }
+            }
+
+            .ranking-number-wrap {
+              width: 4rem;
+              height: 4rem;
+              position: absolute;
+              display: flex;
+              justify-content: center;
+
+              .ranking-number-wrap__text {
+                text-align: left;
+                font: normal normal bold 1.6rem/2.7rem Arial;
+                letter-spacing: 0.48px;
+                color: #ffffff;
+                margin-right: 1.5rem;
+                opacity: 1;
+              }
+            }
+
+            .ranking-girl-info {
+              border-radius: 0px 0px 0.2rem 0.2rem;
+              background: transparent
+                linear-gradient(
+                  180deg,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 0.6) 50%,
+                  #000000 100%
+                )
+                0% 0% no-repeat padding-box;
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              padding: 1.4rem 1.6rem;
+              width: 100%;
+              color: #ffffff;
+              gap: 0.8rem;
+              bottom: 0;
+              z-index: 1;
+              text-align: center;
+
+              .ranking-girl-name {
+                .name {
+                  font: normal normal 600 1.4rem/1.6rem ヒラギノ角ゴシック, W6;
+                  letter-spacing: 0px;
+                  color: #ffffff;
+                  word-wrap: break-word;
+                }
+
+                .year-old {
+                  font: normal normal 100 1rem/1.6rem ヒラギノ角ゴシック, W3;
+                  letter-spacing: 0px;
+                  color: #ffffff;
+                }
+              }
+
+              .ranking-girl-time {
+                font: normal normal 100 1.3rem/1.5rem ヒラギノ角ゴシック, W3;
+                letter-spacing: 0px;
+                color: #ffffff;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .ranking-button {
+        margin: 2rem 3.6rem 2.4rem 1.6rem;
+        height: 4.5rem;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: solid 1px #333333;
+        border-radius: 2px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+          font: normal normal 600 1.4rem/2rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .section-currently {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title-header {
+        font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+        opacity: 1;
+      }
+
+      .title-sub-header {
+        font: normal normal 200 1.2rem/2rem ヒラギノ角ゴシック, W3;
+        letter-spacing: 0px;
+        color: #a3a3a3;
+        opacity: 1;
+      }
+    }
+
+    .currently-girl-list {
+      margin-top: 0.8rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.5rem;
+      list-style-type: none;
+
+      .currently-girl-item {
+        height: 22.7rem;
+        border-radius: 2px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .girl-info {
+          border-radius: 0px 0px 2px 2px;
+          background: transparent
+            linear-gradient(
+              180deg,
+              transparent 0%,
+              rgba(0, 0, 0, 0.6) 50%,
+              #000000 100%
+            )
+            0% 0% no-repeat padding-box;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          padding: 14px 16px;
+          width: 100%;
+          color: #ffffff;
+          gap: 8px;
+          bottom: 0;
+          z-index: 1;
+          text-align: center;
+
+          .girl-name {
+            .name {
+              font: normal normal 600 1.4rem/1.6rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+              color: #ffffff;
+              word-wrap: break-word;
+            }
+
+            .year-old {
+              font: normal normal 100 1rem/1.6rem ヒラギノ角ゴシック, W3;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+          }
+
+          .girl-time {
+            font: normal normal 100 1.3rem/1.5rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .currently-button {
+      width: 27.4rem;
+      height: 4.5rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #333333;
+      border-radius: 2px;
+      opacity: 1;
+      margin: 2.4rem 0 0 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .currently-button__text {
+        font: normal normal 600 1.4rem/2rem ヒラギノ角ゴシック, W6;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+        opacity: 1;
+      }
+    }
+  }
+
+  .section-review {
+    margin: 4rem 1.5rem 0 1.5rem;
+
+    &-heading-txt {
+      text-align: left;
+      font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+      opacity: 1;
+    }
+
+    .review-list {
+      margin-top: 0.8rem;
+
+      .review-item {
+        height: 20.6rem;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 4px #0000001a;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        opacity: 1;
+        margin-bottom: 1.6rem;
+        padding: 1.6rem 2rem 0 2rem;
+
+        .reviewer-info {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .name {
+            margin-left: 0.7rem;
+            font: normal normal 600 1.1rem/2.2rem ヒラギノ角ゴシック, W6;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+          }
+
+          .old {
+            font: normal normal 300 1.1rem/2.2rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+            margin-left: 0.5rem;
+          }
+        }
+
+        .review-title {
+          margin-top: 0.65rem;
+          text-align: left;
+          font: normal normal 600 1.7rem/2.9rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+          opacity: 1;
+        }
+
+        .review-star {
+          margin-top: 0.65rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .star {
+            img {
+              height: 1.2rem;
+            }
+
+            .rating-number {
+              font: normal normal normal 1.4rem/0.9rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+              color: #1f1c0d;
+              opacity: 1;
+            }
+          }
+
+          .time {
+            font: normal normal 200 1.1rem/1.8rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #a3a3a3;
+            opacity: 1;
+          }
+        }
+
+        .review-txt {
+          margin-top: 0.65rem;
+          text-align: left;
+          font: normal normal 300 1.3rem/1.9rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .shop-txt {
+          margin-top: 0.65rem;
+          font: normal normal 300 1.1rem/1.5rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .section-exp-report {
+    margin: 4rem 1.5rem 0 1.5rem;
+
+    &-heading-txt {
+      text-align: left;
+      font: normal normal 600 1.8rem/3.1rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+      opacity: 1;
+    }
+
+    .report-girl-list {
+      margin-top: 1.6rem;
+
+      .report-girl-item {
+        height: 16.3rem;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        opacity: 1;
+        margin-bottom: 1.6rem;
+        padding: 1.4rem 1.5rem 0 1.4rem;
+        display: flex;
+
+        .girl-img {
+          width: 10rem;
+          height: 13.3rem;
+          border-radius: 2px;
+
+          img {
+            height: 100%;
+            // width: 100%;
+          }
+        }
+
+        .girl-info {
+          margin-left: 1.6rem;
+
+          .time {
+            display: inline-block;
+            background: #62554f 0% 0% no-repeat padding-box;
+            color: #ffffff;
+            border-radius: 1px;
+
+            p {
+              font: normal normal 400 1rem / 1rem ヒラギノ角ゴシック, W6;
+              margin: 0.4rem 1.2rem;
+            }
+          }
+
+          .title {
+            margin-top: 0.6rem;
+            font: normal normal 600 1.5rem/2.3rem ヒラギノ角ゴシック, W6;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+
+          .therapist {
+            margin-top: 0.5rem;
+
+            &__txt {
+              font: normal normal 300 1.1rem/1.7rem ヒラギノ角ゴシック, W3;
+              letter-spacing: 0px;
+              color: #a3a3a3;
+            }
+
+            &__girl_name {
+              font: normal normal 600 1.2rem/1.7rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+              color: #1f1c0d;
+            }
+          }
+
+          .shop-name {
+            margin-top: 0.4rem;
+            font: normal normal 300 1.1rem/1.7rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+          }
+        }
+      }
+    }
+
+    .report-button {
+      margin: 2.4rem 3.6rem 0 3.6rem;
+      width: 27.4rem;
+      height: 4.5rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #333333;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        font: normal normal 600 1.4rem/2rem ヒラギノ角ゴシック, W6;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+      }
+    }
+  }
+
+  .section-newly-store {
+    margin: 4rem 1.5rem 0 1.5rem;
+
+    &-heading-txt {
+      font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+    }
+
+    .newly-list {
+      margin-top: 1.6rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #e8e8e8;
+      border-radius: 5px;
+
+      .newly-item {
+        margin: 1.6rem;
+        height: 7.9rem;
+        border-bottom: 1px solid #e8e8e8;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .new-icon {
+            width: 5.6rem;
+            height: 2rem;
+            background: #ff4a4a 0% 0% no-repeat padding-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__txt {
+              font: normal normal 200 1rem/1.4rem ヒラギノ角ゴシック, W3;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+          }
+
+          .time {
+            font: normal normal 300 1.1rem/2rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #a3a3a3;
+          }
+        }
+
+        .store-name {
+          margin-top: 0.55rem;
+          font: normal normal 600 1.5rem/1.8rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+
+        .store-type {
+          margin-top: 0.55rem;
+          font: normal normal 300 1.1rem/1.5rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+    }
+  }
+
+  .section-coupon {
+    margin-top: 4rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+
+    &-heading-txt {
+      padding: 2.2rem 1.5rem 0 1.5rem;
+      font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+    }
+
+    .coupon-list {
+      margin: 1.6rem 1.5rem 0 1.5rem;
+
+      .coupon-item {
+        height: 20.6rem;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-heading {
+          padding: 1.2rem 1.6rem 0 1.6rem;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .shop-icon {
+            height: 2.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.bg-yellow {
+              width: 14.2rem;
+              background: #ffeb7e 0% 0% no-repeat padding-box;
+              margin-right: 0.4rem;
+
+              span {
+                color: #1f1c0d;
+              }
+            }
+
+            &.bg-black {
+              width: 8.7rem;
+              background: #1f1c0d 0% 0% no-repeat padding-box;
+              margin-right: 0.4rem;
+
+              span {
+                color: #ffffff;
+              }
+            }
+
+            &.bg-grey {
+              width: 7.6rem;
+              background: #efefef 0% 0% no-repeat padding-box;
+              margin-right: 0.4rem;
+
+              span {
+                color: #1f1c0d;
+              }
+            }
+
+            span {
+              font: normal normal 600 1.1rem/1.7rem ヒラギノ角ゴシック, W6;
+              letter-spacing: 0px;
+            }
+          }
+
+          .time {
+            font: normal normal 200 1rem ヒラギノ角ゴシック, W3;
+            letter-spacing: 0px;
+            color: #a3a3a3;
+            position: absolute;
+            right: 1.6rem;
+          }
+        }
+
+        .coupon-name {
+          padding: 0 1.6rem 0 1.6rem;
+          margin-top: 1.4rem;
+          font: normal normal 600 1.4rem ヒラギノ角ゴシック, W6;
+          -webkit-line-clamp: 1;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .div-percent {
+          background: #fffbea 0% 0% no-repeat padding-box;
+          height: 7.8rem;
+          margin-top: 0.6rem;
+          display: flex;
+
+          .div-percent-number {
+            width: 5.8rem;
+            height: 5.8rem;
+            margin: 1rem 0 1rem 1.6rem;
+            background: #ff4a4a 0% 0% no-repeat padding-box;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #f0f0f0;
+            font: normal normal 500 1.3rem ヒラギノ角ゴシック, W6;
+
+            > em {
+              &:after {
+                content: "%";
+              }
+            }
+          }
+
+          .div-percent-price {
+            margin: 1rem 0 1rem 1.2rem;
+            width: 16.9rem;
+            height: 4.8rem;
+            font: normal normal 200 1.2rem ヒラギノ角ゴシック, W3;
+
+            .current-price {
+              &__txt {
+                text-decoration: line-through;
+                text-decoration-color: #333333;
+                text-decoration-thickness: 1px;
+              }
+
+              &__arrow {
+                margin-left: 0.5rem;
+              }
+            }
+
+            .percent-price {
+              color: #ff4a4a;
+              font: normal normal 600 1.2rem ヒラギノ角ゴシック, W6;
+
+              .large-txt {
+                font: normal normal 600 2.4rem ヒラギノ角ゴシック, W6;
+              }
+            }
+          }
+
+          .div-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6.3rem;
+          }
+        }
+
+        .coupon-shop-name {
+          padding: 0.5rem 1.6rem 0 1.6rem;
+          font: normal normal 600 1.2rem/1.8rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+
+        .coupon-type {
+          padding: 0.5rem 1.6rem 0 1.6rem;
+          font: normal normal 300 1rem/1.5rem ヒラギノ角ゴシック, W3;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+    }
+
+    .coupon-button {
+      margin: 2.4rem 5.2rem 3rem 5.2rem;
+      width: 27.4rem;
+      height: 4.5rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        font: normal normal 600 1.4rem/2rem ヒラギノ角ゴシック, W6;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+      }
+    }
+  }
+
+  .section-men-data {
+    margin-top: 2.8rem;
+
+    &-heading-txt {
+      padding: 0 1.5rem 0 1.5rem;
+      font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+    }
+
+    .men-data-wrap {
+      height: 58.7rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #f4f4f4;
+      border-radius: 4px;
+      margin: 0.8rem 1.5rem 0 1.5rem;
+
+      .men-data-heading {
+        height: 1.3rem;
+        border-left: 0.6rem #1f1c0d solid;
+        font: normal normal 600 1.3rem/2.3rem ヒラギノ角ゴシック, W6;
+        color: #1f1c0d;
+      }
+
+      .price-range {
+        margin: 1.6rem;
+        height: 16.7rem;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .business-formats {
+        margin: 1.6rem;
+        height: 16.7rem;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      .number-stores {
+        margin: 1.6rem;
+        height: 16.7rem;
+      }
+    }
+  }
+
+  .beauty__salon {
+    .header-main {
+      padding-top: 2.8rem;
+      font: normal normal 600 19px/19px ヒラギノ角ゴシック, W6;
+      color: #1f1c0d;
+    }
+
+    .content {
+      border-bottom: solid 1px black;
+      margin-top: 16px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #f4f4f4;
+      border-radius: 4px;
+      padding: 0 16px;
+      padding-bottom: 24px;
+
+      &__top {
+        border-bottom: solid 1px #efefef;
+      }
+
+      .header {
+        font: normal normal 600 13px/13px ヒラギノ角ゴシック, W6;
+        color: #1f1c0d;
+        margin-top: 20px;
+        border-left: solid 4px black;
+        padding-left: 7px;
+      }
+
+      .main__price {
+        margin-top: 16px;
+        background: #f5fbff 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 16px;
+        align-items: center;
+
+        &-first {
+          font: normal normal 600 13px/13px ヒラギノ角ゴシック, W6;
+          color: #333333;
+        }
+
+        &-number {
+          font: normal normal 600 26px/26px ヒラギノ角ゴシック, W6;
+          color: #007dd9;
+        }
+
+        &-text {
+          font: normal normal 600 16px/16px ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #333333;
+        }
+      }
+
+      .price__detail {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        &-content {
+          display: flex;
+          align-items: center;
+
+          &-info {
+            align-content: center;
+            text-align: center;
+            background: #f5f5f5 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            width: 53px;
+            height: 23px;
+            font: normal normal normal 11px/19px ヒラギノ角ゴシック, W3;
+            color: #333333;
+          }
+
+          &-detail {
+            margin-left: 8px;
+          }
+
+          &-number {
+            font: normal normal normal 17px/17px ヒラギノ角ゴシック, W3;
+            color: #007dd9;
+          }
+          &-text {
+            font: normal normal normal 12px/12px ヒラギノ角ゴシック, W3;
+            color: #333333;
+          }
+        }
+
+        &-note {
+          display: grid;
+          margin: 20px 0;
+          gap: 8px;
+          span {
+            font: normal normal normal 10px/10px ヒラギノ角ゴシック, W3;
+            color: #333333;
+          }
+        }
+      }
+
+      &__mid-value {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-bottom: solid 1px #efefef;
+        padding-bottom: 20px;
+        img {
+          width: 106px;
+          height: 105px;
+        }
+
+        &-statistic {
+          ul {
+            gap: 10px;
+            display: grid;
+            li {
+              width: 120px;
+              font: normal normal normal 12px/12px ヒラギノ角ゴシック, W3;
+              color: #1f1c0d;
+              .left {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                .circle1 {
+                  background: #db1d58 0% 0% no-repeat padding-box;
+                }
+                .circle2 {
+                  background: #ff2957 0% 0% no-repeat padding-box;
+                }
+                .circle3 {
+                  background: #ff9aa6 0% 0% no-repeat padding-box;
+                }
+                .circle4 {
+                  background: #ffdbd4 0% 0% no-repeat padding-box;
+                }
+                .circle {
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                }
+              }
+
+              .right {
+                font: normal normal normal 12px/12px ヒラギノ角ゴシック, W3;
+              }
+
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+      &__bottom-value {
+        margin-top: 22px;
+
+        ul {
+          gap: 10px;
+          display: grid;
+          li {
+            display: flex;
+            gap: 17px;
+            align-items: center;
+
+            .ruler {
+              width: 180px;
+              height: 8px;
+              background: #eeeeee 0% 0% no-repeat padding-box;
+              border-radius: 100px;
+
+              .load {
+                display: block;
+                background: linear-gradient(
+                  to right,
+                  #ff5d71 100%,
+                  #ff5d71 100%
+                );
+                height: 8px;
+                border-radius: 100px;
+              }
+            }
+
+            .text {
+              width: 40px;
+              font: normal normal normal 12px/12px ヒラギノ角ゴシック, W3;
+              color: #1f1c0d;
+            }
+
+            .number {
+              font: normal normal normal 11px/11px ヒラギノ角ゴシック, W3;
+              color: #1f1c0d;
+            }
+          }
+        }
+      }
+      &__bottom-footer {
+        margin-top: 20px;
+        font: normal normal normal 10px/10px ヒラギノ角ゴシック, W3;
+        letter-spacing: 0px;
+        color: #1f1c0d;
+      }
+    }
+  }
+
+  .section-search-men {
+    margin-top: 1.2rem;
+
+    .pref-content {
+      margin: 0 1.5rem 0 1.5rem;
+      height: 72.4rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+
+      .pref-list {
+        padding: 2rem 2rem 2rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        list-style-type: none;
+
+        .pref-item {
+          width: 15rem;
+          height: 3.8rem;
+          background: #edf3f3 0% 0% no-repeat padding-box;
+          border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font: normal normal 600 1.4rem/2.4rem ヒラギノ角ゴシック, W6;
+          letter-spacing: 0px;
+          color: #1f1c0d;
+        }
+      }
+    }
+  }
+
+  .section-kind-area {
+    margin-top: 3.2rem;
+    height: 82.2rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 0 1.5rem 0 1.5rem;
+
+    &-heading-txt {
+      padding-top: 2.8rem;
+      font: normal normal 600 1.9rem/3.3rem ヒラギノ角ゴシック, W6;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+    }
+
+    &__txt {
+      margin-top: 1rem;
+      font: normal normal 300 1.3rem/2.3rem ヒラギノ角ゴシック, W3;
+      letter-spacing: 0px;
+      color: #1f1c0d;
+    }
+  }
+}

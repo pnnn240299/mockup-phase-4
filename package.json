@@ -1,0 +1,40 @@
+{
+  "name": "source_git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/mens_est"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "minimist": "^1.2.8"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "natives": "^1.1.6"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  }
+}

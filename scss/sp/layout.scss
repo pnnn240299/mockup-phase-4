@@ -1,0 +1,427 @@
+.g-container {
+  margin: 0 15px;
+}
+
+.g-header {
+  .g-header-upper {
+    background: #333333;
+    height: 22px;
+    text-align: center;
+
+    &__title {
+      font: normal normal normal 10px/10px Meiryo;
+      color: #ffffff;
+    }
+  }
+
+  .g-header-main {
+    height: 53px;
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+
+    &-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+
+      &__logo {
+        width: 172px;
+        height: 25px;
+        background: url("../../images/layout/logo.svg") no-repeat center;
+      }
+
+      &__left {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .button {
+          display: flex;
+          height: 43px;
+          width: 43px;
+          background: #ffffff;
+          border: unset;
+          border-radius: 3px;
+          padding: 4px 0 6px 0;
+          justify-content: center;
+          gap: 6px;
+          flex-direction: column;
+          align-items: center;
+
+          .button-img {
+            width: 18px;
+            height: unset;
+          }
+
+          .button-text {
+            text-align: center;
+            font: normal normal normal 10px/10px Meiryo;
+            letter-spacing: 0px;
+            color: #1f1c0d;
+          }
+        }
+      }
+    }
+  }
+}
+
+.l-breadcrumb {
+  height: 25px;
+  padding: 7.5px 0;
+  align-content: center;
+  font: normal normal normal 10px/10px Meiryo;
+  overflow-x: auto;
+  scrollbar-width: none;
+
+  .breadcrumb-list {
+    overflow: hidden;
+    color: #1f1c0d;
+    width: max-content;
+
+    .breadcrumb-item {
+      float: left;
+      padding-right: 4px;
+
+      &:after {
+        content: ">";
+        display: inline-block;
+        padding-left: 5px;
+      }
+
+      &:last-child {
+        font-weight: bold;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+.hero-section {
+  background: #ffffff;
+  box-shadow: 0px 9px 6px -6px #00000029;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 100;
+  margin-top: unset;
+
+  .hero-section-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .hero-section-left {
+    flex-grow: 1;
+    margin: 0 -15px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero-section-right {
+    .shop-tag {
+      background: #ffeb7e;
+      border-radius: 2px;
+      padding: 4px 10px;
+      width: fit-content;
+      font: normal normal normal 10px/10px Hiragino Sans;
+    }
+
+    .shop-title {
+      margin-top: 18px;
+      color: #1f1c0d;
+      font: normal normal bold 20px/20px Meiryo;
+    }
+
+    .shop-genre {
+      margin-top: 10px;
+      font: normal normal normal 12px/12px Meiryo;
+      color: #1f1c0d;
+    }
+
+    .shop-rating {
+      margin-top: 15px;
+      height: 16px;
+      display: flex;
+
+      .rating-star {
+        display: flex;
+        gap: 4px;
+
+        .star-wrapper {
+          width: 16px;
+          height: 16px;
+          background: url("../../images/layout/star-sp.svg") no-repeat center;
+
+          &.no-star {
+            background: url("../../images/layout/star-gray-sp.svg") no-repeat
+              center;
+          }
+
+          &.half-star {
+            background: url("../../images/layout/star-half-sp.svg") no-repeat
+              left;
+          }
+        }
+      }
+
+      .rating-number {
+        margin-left: 5px;
+        font: normal normal bold 16px/16px Meiryo;
+        color: #1f1c0d;
+      }
+
+      .rating-review {
+        flex-grow: 1;
+        margin-left: 8px;
+        font: normal normal bold 10px/16px Meiryo;
+        color: #1f1c0d;
+
+        a {
+          text-decoration: underline;
+          color: #006bc4;
+          font: normal normal bold 12px/16px Meiryo;
+        }
+      }
+
+      .favorite {
+        display: none;
+      }
+    }
+
+    .shop-type {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+
+      .shop-type__item {
+        height: 22px;
+        border: 1px solid #dcdcdc;
+        border-radius: 2px;
+        font: normal normal normal 10px Meiryo;
+        padding: 6px 14px;
+        align-content: center;
+
+        &.business-japan {
+          background: #ffffff;
+        }
+
+        &.enable-place {
+          background: #ecf2f7;
+        }
+      }
+    }
+
+    .shop-open,
+    .shop-location,
+    .shop-price,
+    .shop-payment-type {
+      margin-top: 13px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      height: 13px;
+
+      img {
+        height: 14px;
+        width: 14px;
+        object-fit: contain;
+
+        &.unit {
+          height: 14px;
+        }
+      }
+
+      span {
+        font: normal normal normal 13px Meiryo;
+      }
+    }
+
+    .info-inline {
+      display: flex;
+      gap: 14px;
+    }
+
+    .shop-open {
+      margin-top: 20px;
+    }
+
+    .booking-btn {
+      margin-top: 20px;
+      min-width: 300px;
+      height: 46px;
+      background: #ffffff;
+      border: 1px solid #ff4a4a;
+      border-radius: 3px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #ff4a4a;
+      cursor: pointer;
+
+      img {
+        height: 25px;
+      }
+
+      span {
+        font: normal normal bold 15px Meiryo;
+      }
+    }
+  }
+}
+
+.shopNav-section {
+  background: #ffffff;
+  color: #1f1c0d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow-x: auto;
+  scrollbar-width: none;
+  box-shadow: 0px 3px 6px rgba(#000000, 0.15);
+
+  .shopNav-list {
+    display: flex;
+    text-align: center;
+    width: 710px;
+
+    .shopNav-item {
+      &.active {
+        border-bottom: 1.5px solid #1f1c0d;
+      }
+
+      flex-grow: 1;
+
+      .shopNav-item__wrapper {
+        border-right: 1px solid #1f1c0d;
+        height: 16px;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+
+        .shopNav-link {
+          font: normal normal bold 14px/21px Meiryo;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.main-section {
+  display: flex;
+  margin-top: 48px;
+
+  .main-left {
+    flex-grow: 1;
+  }
+
+  .main-right {
+    display: none;
+  }
+}
+
+.g-footer {
+  background: #333333;
+  color: #ffffff;
+  padding-bottom: 70px;
+
+  .g-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .g-footer__logo {
+      display: none;
+    }
+
+    .g-footer__nav {
+      font: normal normal normal 11px/11px Meiryo;
+      text-align: center;
+
+      .g-footer__nav-list {
+        padding: 20px 0 17px 0;
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .copyright {
+        background: #3c3c3c;
+        margin: 0 -15px;
+        font: normal normal normal 9px/9px ヒラギノ角ゴシック, W3;
+        padding: 3px 0 4px 0;
+      }
+    }
+  }
+}
+
+.mobile-fixed-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  height: 70px;
+  padding: 0 22px;
+
+  .ft-favorite,
+  .ft-phone-call {
+    display: flex;
+    flex-direction: column;
+    color: #1f1c0d;
+    font: normal normal normal 10px/10px Meiryo;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .ft-favorite img {
+    width: 30px;
+  }
+
+  .ft-phone-call img {
+    width: 30px;
+  }
+
+  .ft-booking {
+    flex-grow: 1;
+    min-width: 209px;
+    height: 48px;
+    background: #ff4a4a;
+    border: 1px solid #ff4a4a;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: #ffffff;
+    cursor: pointer;
+
+    img {
+      height: 25px;
+    }
+
+    span {
+      font: normal normal normal 14px/15px Meiryo;
+      letter-spacing: 0.56px;
+    }
+  }
+}

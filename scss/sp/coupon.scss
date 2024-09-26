@@ -1,0 +1,201 @@
+/* ==================================
+クーポン
+================================== */
+.f-coupon {
+    width: 100%;
+    padding: 0 15px;
+
+    .contents-head {
+        font: normal normal bold 17px/24px Meiryo;
+
+        .count {
+            font: normal normal bold 16px/24px Meiryo;
+        }
+    }
+    .divider {
+        background: #EAEAEA;
+        height: 1px;
+        margin: 12px 0 15px 0;
+    }
+    .coupon-body {
+        .coupon_empty {
+            font-size: 17px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .coupon-list {
+            margin-bottom: 48px;
+
+            .coupon-item {
+                padding: 16px 16px;
+                margin-bottom: 24px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #DCDCDC;
+                border-radius: 5px;
+                overflow: hidden;
+
+                .counponHead-upper {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    font-size: 14px;
+
+                    .couponTag-list {
+                        display: flex;
+                        margin-right: 10px;
+
+                        .couponTag-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 23px;
+                            padding: 0 20px;
+                            margin-right: 10px;
+                            background: #F2F2F2;
+                            font: normal normal bold 11px/17px Meiryo;
+                            &.free {
+                                background: #1F1C0D;
+                                color: #fff;
+                            }
+                            &.japan {
+                                background: #FFEB7E;
+                                color: #1F1C0D;
+                            }
+                        }
+                    }
+
+                    .coupon-update {
+                        margin-left: auto;
+                        font: normal normal normal 12px/18px Meiryo;
+                        color: #8B8B8B;
+                    }
+                }
+
+                .coupon-name {
+                    max-width: 100%;
+                    font: normal normal bold 16px/24px Meiryo;
+                }
+
+                .coupon-contents {
+
+                    .couponContents-upper {
+                      display: flex;
+                      align-items: center;
+                      min-height: 75px;
+                      margin-bottom: 24px;
+                      padding: 10px 0 12px 0px;
+                      border-bottom: 1px dashed #B7B7B7;
+                      &:after {
+                          content: "";
+                          width: 36px;
+                          height: 36px;
+                          border-radius: 50%;
+                          background: #fff;
+                          position: absolute;
+                          right:0;
+                          top: 50%;
+                          transform: translateY(-50%);
+                      }
+
+                        .coupon-discount {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            min-width: 58px;
+                            height: 58px;
+                            margin-right: 20px;
+                            background: #FF4A4A;
+                            border-radius: 50%;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: bold;
+                            font-family: Meiryo;
+
+                            .coupon-percent {
+                                margin-bottom: 8px;
+                                font-size: 16px;
+                                &:after {
+                                    content: "%";
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .coupon-content {
+                            display: flex;
+                            font-weight: bold;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            .sub-txt {
+                                display: block;
+                                flex-direction: row;
+                                font: normal normal normal 13px/22px Meiryo;
+                                text-decoration: line-through;
+                                &::after{
+                                  content: ">>";
+                                  padding-left: 5px ;
+                                }
+                            }
+
+                            .main-txt {
+                                font-size: 17px;
+                                color: #FF4A4A;
+                                font-family: Meiryo;
+                                font-weight: bold;
+
+                                .large-txt {
+                                    font-size: 32px;
+                                }
+                            }
+
+                            .transform {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .coupon-info {
+                    font: normal normal normal 13px/19px Meiryo;
+
+                    .couponAnno-list {
+
+                        .couponAnno-item {
+                            font-size: 15px;
+                            &:before {
+                                content: "※";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-wrap {
+        margin: 0 50px 48px;
+
+        .shop-btn {
+            width: 100%;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0px;
+            color: #1F1C0D;
+            border: 1px solid #DEDEDE;
+            border-radius: 4px;
+            margin: 0 auto 12px;
+            font: normal normal normal 13px/20px Meiryo;
+
+            img {
+                width: 14px;
+                height: 11px;
+                margin-right: 10px;
+            }
+        }
+    }
+  }

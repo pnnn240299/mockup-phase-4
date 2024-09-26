@@ -1,0 +1,426 @@
+.main-right {
+  display: none;
+}
+
+.shopSchedule {
+  width: 100%;
+  padding: 0 16px 48px;
+
+  .shopSch {
+    &__head {
+      margin-bottom: 12px;
+      color: #1f1c0d;
+    }
+
+    &__title {
+      font: normal normal normal 18px/18px Hiragino Sans;
+    }
+
+    &__banner {
+      width: 100%;
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
+
+    &__line {
+      border: none;
+      border-bottom: 1px solid #eaeaea !important;
+      margin: 20px 0 24px !important;
+    }
+
+    &__recommend {
+      margin-bottom: 12px;
+    }
+
+    &__pickup {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 16px;
+      width: 100%;
+
+      a {
+        width: 100%;
+      }
+
+      .pickup__left {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0px 3px 6px #00000029;
+
+        img {
+          width: calc(100% + 2px);
+          height: 100%;
+          object-fit: cover;
+          border-radius: 3px 0px 0px 3px;
+          box-shadow: 0px 3px 6px #00000029;
+        }
+
+        &::after {
+          position: absolute;
+          content: "PICK UP";
+          font: normal normal bold 9px/9px Hiragino Sans;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          height: 19px;
+          padding-left: 11px;
+          padding-right: 11px;
+          background: #ff4a4a 0% 0% no-repeat padding-box;
+          text-align: center;
+          color: #ffffff;
+          z-index: 1;
+        }
+      }
+
+      .pickup__right {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        box-shadow: 0px 2px 6px #0000001a;
+        border: 1px solid #fe4a4a;
+        border-radius: 3px;
+        padding: 14px 16px 8px;
+
+        .title {
+          justify-content: center;
+
+          .name {
+            font: normal normal normal 19px/19px Hiragino Sans;
+          }
+
+          .star {
+            display: none;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+
+            &:hover {
+              .star-keep {
+                fill: #ffc015;
+              }
+
+              .border-keep {
+                stroke: #ffc015;
+              }
+            }
+
+            &.on {
+              .star-keep {
+                fill: #ffc015;
+              }
+
+              .border-keep {
+                stroke: #ffc015;
+              }
+            }
+          }
+        }
+
+        .badges {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 5px;
+
+          .badge {
+            width: 100%;
+            background: #fef1f0 0% 0% no-repeat padding-box;
+            border-radius: 170px;
+            text-align: center;
+            font: normal normal normal 10px/10px Hiragino Sans;
+            padding: 3px;
+          }
+        }
+
+        .desc {
+          font: normal normal normal 12px/17px Hiragino Sans;
+          overflow: hidden;
+          white-space: normal;
+          display: -webkit-box;
+          -webkit-line-clamp: 7;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    &__girls {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+
+      li {
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 3px;
+        overflow: hidden;
+        height: 270px;
+
+        a {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+            object-fit: cover;
+          }
+
+          .girls {
+            &__info {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              padding: 0 12px 16px;
+              width: 100%;
+              color: #ffffff;
+              gap: 6px;
+              bottom: 0;
+              z-index: 1;
+
+              .girls {
+                &__girlName {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  &__text {
+                    font: normal normal bold 16px/16px Meiryo;
+
+                    span {
+                      font: normal normal normal 11px/16px Meiryo;
+                    }
+                  }
+                }
+
+                &__schedule {
+                  font: normal normal normal 14px/15px Meiryo;
+                }
+              }
+            }
+
+            &__star {
+              width: 25px;
+              height: 25px;
+              margin-right: -4px;
+
+              &:hover {
+                .star-keep {
+                  fill: #ffc015;
+                }
+
+                .border-keep {
+                  stroke: #ffc015;
+                }
+              }
+
+              &.on {
+                .star-keep {
+                  fill: #ffc015;
+                }
+
+                .border-keep {
+                  stroke: #ffc015;
+                }
+              }
+            }
+
+            &__layout {
+              height: 90px;
+              width: 100%;
+              background: transparent linear-gradient(180deg,
+                  transparent 0%,
+                  rgba(0, 0, 0, 0.6) 50%,
+                  #000000 100%) 0% 0% no-repeat padding-box;
+              position: absolute;
+              bottom: 0;
+              border-radius: 0px 0px 3px 3px;
+            }
+          }
+        }
+      }
+    }
+
+    &__all {
+      text-align: center;
+      font: normal normal normal 13px/13px Hiragino Sans;
+      color: #1f1c0d;
+      margin: 0 35px;
+      width: calc(100% - 70px);
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      padding: 16px;
+      margin-bottom: 48px;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &__storeInfo {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      margin-bottom: 40px;
+
+      li {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+        padding: 18px 20px;
+        font: normal normal normal 12px/20px Hiragino Sans;
+
+        .shopSch__storeInfo {
+          &_title {
+            width: 100px;
+            flex-grow: 1;
+            font: normal normal normal 13px/23px Hiragino Sans;
+          }
+
+          &_detail {
+            width: calc(100% - 100px);
+
+            .socials {
+              height: 48px;
+            }
+
+            a {
+              color: #1d9bf0;
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: normal normal normal 13px/20px Hiragino Sans;
+      color: #1f1c0d;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      margin: 0 auto 12px;
+
+      img {
+        margin-right: 10px;
+        height: 13px;
+      }
+    }
+  }
+}
+
+.girls {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 12px 16px;
+    width: 100%;
+    color: #ffffff;
+    gap: 6px;
+    bottom: 0;
+    z-index: 1;
+    padding: 11px 36px 14px 10px !important;
+
+    .girls {
+      &__girlName {
+        font: normal normal normal 10px/10px Hiragino Sans;
+        width: 100%;
+        margin-bottom: 0;
+
+        &__text {
+          font: normal normal normal 14px/10px Hiragino Sans;
+        }
+      }
+
+      &__star {
+        right: 10px;
+        bottom: 17px;
+        margin-right: 0;
+      }
+
+      &__schedule {
+        display: block;
+        background: transparent;
+        height: unset;
+        color: #ffffff;
+        font: normal normal normal 13px/13px Hiragino Sans;
+      }
+    }
+  }
+
+  &__star {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    right: 8px;
+    bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      .star-keep {
+        fill: #ffc015;
+      }
+
+      .border-keep {
+        stroke: #ffc015;
+      }
+    }
+
+    &.on {
+      .star-keep {
+        fill: #ffc015;
+      }
+
+      .border-keep {
+        stroke: #ffc015;
+      }
+    }
+  }
+
+  &__star {
+    right: 10px;
+    bottom: 17px;
+    margin-right: 0;
+  }
+
+  &__schedule {
+    display: block;
+    background: transparent;
+    height: unset;
+    color: #ffffff;
+    font: normal normal normal 13px/13px Hiragino Sans;
+  }
+
+  &__layout {
+    height: 90px;
+    width: 100%;
+    background: transparent linear-gradient(180deg,
+        transparent 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        #000000 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 3px 3px;
+  }
+}
