@@ -3789,6 +3789,11 @@ footer.blur {
 
 
 /* Duy Nhân*/
+ul.calender-list {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
 .calenderList-day {
     justify-content: flex-end;
 }
@@ -3796,14 +3801,19 @@ footer.blur {
 .content {
     justify-content: space-around !important;
     height: 8.2rem !important;
+    padding: 7px !important;
 }
 
 .content.current .wrap-day { /*active*/
     border-bottom: 1px solid #fff;
 }
 
-.wrap-day {
-    padding: 10px;
+.content .wrap-day {
+    padding: 0px 11px 11px 10px;
     border-bottom: 1px solid #4B454E;
+}
+
+.weekday {
+    margin-top: 4px;
 }
 
