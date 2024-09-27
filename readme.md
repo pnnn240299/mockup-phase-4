@@ -8,7 +8,7 @@
 
 2. history-shop.html
 - sai lable ở trên cùng
-- icon star ngang hàng với tên shop
+- ~~icon star ngang hàng với tên shop~~
 - thiếu icon > (arrow right)
 
 3. keeplist-attendance.html
