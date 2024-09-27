@@ -2507,13 +2507,13 @@ footer .link-sf-index .link-fu-ja:first-child {
   top: 5.5rem;
 }
 
-.f-keepList .keepList-item.rookie .girl-name:after {
+/* .f-keepList .keepList-item.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.5rem;
   background: url(/assets/img/user/sp/common/ico-rookie.svg) no-repeat center/auto 1.7rem;
-}
+} */
 
 .f-keepList .keepList-item.rookie .girl-name .p-ellipsis {
   max-width: 90%;
@@ -2613,13 +2613,13 @@ footer .link-sf-index .link-fu-ja:first-child {
   position: relative;
 }
 
-.f-keepList .info-area.rookie .girl-name:after {
+/* .f-keepList .info-area.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.5rem;
   background: url(/assets/img/user/sp/common/ico-rookie.svg) no-repeat center/auto 1.7rem;
-}
+} */
 
 .f-keepList .info-area.rookie .girl-name .p-ellipsis {
   max-width: 90%;
@@ -3850,3 +3850,11 @@ footer.blur {
   box-shadow: 0 0.2rem 0.8rem #0000001a;
   border: 1px solid #ffc015;
 }
+
+.f-keepList .info-area.rookie .girl-name::after {
+    content: "";
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 0.5rem;
+    background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+  }

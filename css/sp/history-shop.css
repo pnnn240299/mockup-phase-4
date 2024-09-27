@@ -2319,13 +2319,13 @@ footer .link-sf-index .link-fu-ja:first-child {
   padding-left: 1.5rem;
   position: relative;
 }
-.f-keepList .info-area.rookie .girl-name:after {
+/* .f-keepList .info-area.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.5rem;
-  background: url(/assets/img/user/sp/common/ico-rookie.svg) no-repeat center/auto 1.7rem;
-}
+  background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+} */
 .f-keepList .info-area.rookie .girl-name .p-ellipsis {
   max-width: 90%;
 }
@@ -3178,11 +3178,12 @@ footer.blur {
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -1rem;
+  top: 0rem;
   right: 0;
   z-index: 1;
   -webkit-tap-highlight-color: #000;
   box-shadow: 0 0.2rem 0.8rem #0000001a;
+  border: 1px solid #ffc015;
 }
 .btn-keep:active .star-keep {
   animation: large 0.1s;
@@ -3309,6 +3310,13 @@ footer.blur {
 .f-keepList {
   background: #FAFAFA;
 }
+.f-keepList .info-area.rookie .girl-name:after {
+    content: "";
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 0.5rem;
+    background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+  }
 .f-keepList .sort-select {
   width: 10.8rem;
   height: 3.2rem;
