@@ -2168,7 +2168,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   padding-top: 1rem;
   margin-bottom: 3rem;
 }
-.f-keepList .sort-select {
+/* .f-keepList .sort-select {
   width: 10.8rem;
   height: 3.2rem;
   padding-left: 1rem;
@@ -2180,7 +2180,7 @@ footer .link-sf-index .link-fu-ja:first-child {
 .f-keepList .sort-select:disabled {
   color: #ddd;
   background: #fafafa url("/assets/img/user/sp/keeplist/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
-}
+} */
 .history .f-keepList {
   background: #f5fcfb;
 }
@@ -2212,7 +2212,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   height: 15.2rem;
 }
 .f-keepList .keepList-item.shop {
-  padding: 2rem 1rem 0;
+  padding: 1rem 1rem 0;
 }
 .f-keepList .keepList-item.shop .item-table .p-imgWrap {
   width: 13rem;
@@ -2512,7 +2512,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   font-size: 2.2rem;
   color: #ff007b;
 }
-.f-keepList .btn-tel {
+/* .f-keepList .btn-tel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2527,7 +2527,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   /* top: 0; */
   top: 1.3rem;
   right: 0.4rem;
-}
+} */
 .f-keepList .keepGirl-item + .keepGirl-item {
   padding-top: 2.2em;
 }
@@ -3306,6 +3306,22 @@ footer.blur {
 
 
 /* Duy Nhan*/
+.f-keepList {
+  background: #FAFAFA;
+}
+.f-keepList .sort-select {
+  width: 10.8rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  appearance: none;
+}
+.f-keepList .sort-select:disabled {
+  color: #ddd;
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+}
 .shop-recommend {
   display: flex;
   gap: 4px;
@@ -3320,7 +3336,7 @@ footer.blur {
   font-size: 10px;
   line-height: 10px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .shop-genre {
   margin-top: 8px;
@@ -3364,9 +3380,10 @@ footer.blur {
   line-height: 18px;
   font-weight: bold;
   margin-left: 8px;
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 1px;
 }
 .shop-rating .shopReview-number span.num {
-  text-decoration: underline;
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
@@ -3436,7 +3453,7 @@ footer.blur {
   gap: 14px;
 }
 .shop-open {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .btn-keep {
@@ -3449,13 +3466,13 @@ footer.blur {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 2.8rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3.8rem;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
   position: absolute;
   top: 0rem !important;
-  right: 0.4rem;
+  right: 0.1rem;
 }
 
 .count-girl-work {
@@ -3464,6 +3481,7 @@ footer.blur {
   text-align: center;
   border: 1px solid #fddedb;
   border-radius: 4px;
+  /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
   margin-bottom: 10px;
   font-size: 13px;
   height: 4rem;

@@ -3678,6 +3678,20 @@ footer.blur {
 
 /* Duy Nhan ////////////////////////////////////////*/
 
+.f-keepList .sort-select {
+  width: 10.8rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  appearance: none;
+}
+.f-keepList .sort-select:disabled {
+  color: #ddd;
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+}
+
 .mod-keepListHead .listChange-item {
   display: flex;
   align-items: center;
