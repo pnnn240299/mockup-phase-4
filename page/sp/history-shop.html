@@ -1,263 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/sp/reset.css" />
-  <link rel="stylesheet" href="../../css/sp/layout.css" />
-  <!-- PAGE CSS -->
-  <link rel="stylesheet" href="../../css/sp/history-shop.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../css/sp/reset.css" />
+<link rel="stylesheet" href="../../css/sp/layout.css" />
+<!-- PAGE CSS -->
+<link rel="stylesheet" href="../../css/sp/history-shop.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
-  <body>
+<body>
     <div class="g-wrap">
-      <header class="sticky">
-        <div class="g-header">
-          <div class="g-header-upper">
-            <div class="g-container g-header-overflow">
-              <div class="head-txt">【テスト】メンエスじゃぱん</div>
-            </div>
-          </div>
-          <div class="g-header-main g-header-main-keeplist">
-            <div class="g-container g-header-main-content">
-              <a
-                class="g-header-main-content__logo"
-                href="https://dev.mens-est.jp/"
-              >
-                <img
-                  src="/assets/img/user/common/v2/layout/logo.svg"
-                  alt="メンエスじゃぱん"
-                />
-              </a>
-              <div class="g-header-main-content__left">
-                <a
-                  class="button history-is-active"
-                  href="https://dev.mens-est.jp/history/"
-                >
-                  <img
-                    class="button-img"
-                    alt=""
-                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time-headerhistory-is-active.svg?1727333512"
-                  />
-                  <span class="button-text">最近見た</span>
-                </a>
-                <a
-                  href="https://dev.mens-est.jp/history/?keeplist=1"
-                  class="button star star-border-yellow"
-                >
-                  <img
-                    class="button-img"
-                    alt=""
-                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/starstar-border-yellow.png?1727333512"
-                  />
-                  <span class="button-text">キープ</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="txt-addKeep"><span>キープに追加しました</span></p>
-          <p class="txt-removeKeep"><span>キープから削除しました</span></p>
-        </div>
-      </header>
-      <nav class="l-breadcrumb g-container">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-item">
-            <a href="https://dev.mens-est.jp/" class="breadcrumb-link"
-              >メンエスじゃぱん</a
-            >
-          </li>
-          <li class="breadcrumb-item">
-            <span>最近見た</span>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="mod-keepListHead">
-        <div class="keepListHead-bottom">
-          <ul class="listChange-list">
-            <li class="listChange-item js-listChangeBtn ">
-              セラピスト
-              <span class="counter girl" id="">2</span>
-            </li>
-            <li class="listChange-item js-listChangeBtn active">
-              お店
-              <span class="counter shop">1</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="f-keepList">
-        <div class="keepList-body">
-          <div class="select-wrap">
-            <select class="sort-select">
-              <option value="sort_new">最新順</option>
-              <option value="sort_each_shop">お店ごと</option>
-            </select>
-          </div>
-          <div class="keepList-head">
-            <h1 class="keepList-ttl">
-              最近見た
-              <p class="mypage-category" style="display: inline">セラピスト</p>
-              ：<em class="txt-green"><em class="history-count">2</em></em
-              >件
-            </h1>
-          </div>
-          <div class="keep_list_shop" style="display: block">
-            <ul class="keepList-list shop">
-              <li class="keepList-item shop angespa_1">
-                <div class="shop-inner">
-                  <div class="shop-recommend ">
-                    <div class="shop-tag">じゃぱんオススメ</div>
-                  </div>
-
-                  <div class="item-table">
-                    <a href="#" class="p-imgWrap">
-                      <img
-                        alt="Ange Spa～アンジュスパ"
-                        src="https://d1ywb8dvwodsnl.cloudfront.net/files.mens-est.jp/img/shop/angespa/gimg/Ange Spa～アンジュスパ.png?width=345&amp;height=345&amp;type=resize&amp;quality=50"
-                        data-original="https://d1ywb8dvwodsnl.cloudfront.net/files.mens-est.jp/img/shop/angespa/gimg/Ange Spa～アンジュスパ.png?width=345&amp;height=345&amp;type=resize&amp;quality=50"
-                        class="lazy"
-                        style="display: block"
-                      />
-                    </a>
-
-                    <!-- phan ben phai -->
-                    <div class="info-area">
-                      <div class="count-girl-work">
-                        <a href="#">本日出勤 <em>8</em>名</a>
-                      </div>
-                      <div class="girl-book">
-                        <a href="#" class="" target="_blank">WEB予約する</a>
-                      </div>
-                     
+        <header class="sticky">
+            <div class="g-header">
+                <div class="g-header-upper">
+                    <div class="g-container g-header-overflow">
+                        <div class="head-txt">【テスト】メンエスじゃぱん</div>
                     </div>
-                  </div>
-
-                  <div class="" style="margin-top: 20px; position: relative;">
-                    <div class="wrap-name" style="border-bottom: 0.1rem solid #e6e6e6;">
-                      <h2 class="shop-title shop-name">
-                        <a href="#">DELIJA MENESTH SPA 新宿店</a>
-                      </h2>
-  
-                      <div class="shop-genre"><a href="#">国分寺/メンズエステ</a></div>
-  
-                      <div class="shop-rating">
-                        <p class="shopReview-rating shopReview-star45">4.7
-                          <span class="shopReview-number">口コミ（
-                            <a href="#" class="ga-shopCardReview">
-                              <span class="num">3件</span>
+                </div>
+                <div class="g-header-main g-header-main-keeplist">
+                    <div class="g-container g-header-main-content">
+                        <a class="g-header-main-content__logo" href="https://dev.mens-est.jp/">
+                            <img src="/assets/img/user/common/v2/layout/logo.svg" alt="メンエスじゃぱん" />
+                        </a>
+                        <div class="g-header-main-content__left">
+                            <a class="button history-is-active" href="https://dev.mens-est.jp/history/">
+                                <img class="button-img" alt=""
+                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time-headerhistory-is-active.svg?1727333512" />
+                                <span class="button-text">最近見た</span>
                             </a>
-                            ）
-                          </span>
-                        </p>
-                      </div>
-
-                       <!-- hinh ngoi sao -->
-                      <p class="btn-keep js-keep on">
-                        <svg class="star-keep on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
-                            <g id="icon_keep" transform="translate(9.286 16.786)" fill="none">
-                                <path class="a"
-                                    d="M11.714-8.648c0-.4-.4-.556-.707-.609l-6.335-.966-2.84-6.021c-.114-.251-.328-.543-.618-.543s-.5.291-.618.543l-2.84,6.021-6.335.966c-.316.053-.707.212-.707.609a1.047,1.047,0,0,0,.316.635l4.594,4.684L-5.462,3.288a1.877,1.877,0,0,0-.025.265c0,.344.164.662.53.662a1.03,1.03,0,0,0,.5-.159L1.214.933,6.881,4.055a.991.991,0,0,0,.5.159c.366,0,.517-.318.517-.662a1.859,1.859,0,0,0-.013-.265L6.805-3.328l4.581-4.684A1,1,0,0,0,11.714-8.648Z"
-                                    stroke="none"></path>
-                                <path class="a"
-                                    d="M 1.214280724525452 -14.74118614196777 L -1.158295154571533 -9.710518836975098 L -1.430925130844116 -9.132449150085449 L -2.062765121459961 -9.03610897064209 L -7.482781410217285 -8.209701538085938 L -3.519695281982422 -4.168478965759277 L -3.09383487701416 -3.734218597412109 L -3.192295074462891 -3.134018898010254 L -4.116554737091064 2.500333786010742 L 0.635084867477417 -0.1183691024780273 L 1.214284896850586 -0.4375791549682617 L 1.793484926223755 -0.1183691024780273 L 6.54512357711792 2.500337600708008 L 5.62085485458374 -3.134018898010254 L 5.522564888000488 -3.733199119567871 L 5.947104930877686 -4.167299270629883 L 9.901878356933594 -8.211145401000977 L 4.491334915161133 -9.03610897064209 L 3.85950493812561 -9.132449150085449 L 3.586864948272705 -9.710518836975098 L 1.214280724525452 -14.74118614196777 M 1.214284896850586 -16.78573989868164 C 1.504544973373413 -16.78573989868164 1.71909487247467 -16.49460983276367 1.832664966583252 -16.24318885803223 L 4.672214984893799 -10.22239875793457 L 11.00755500793457 -9.256428718566895 C 11.31043529510498 -9.203498840332031 11.71428489685059 -9.044709205627441 11.71428489685059 -8.647739410400391 C 11.71428489685059 -8.40955924987793 11.55021476745605 -8.184598922729492 11.386155128479 -8.012578964233398 L 6.805025100708008 -3.328269004821777 L 7.890365123748779 3.287981033325195 C 7.902985095977783 3.380611419677734 7.902985095977783 3.460010528564453 7.902985095977783 3.552631378173828 C 7.902985095977783 3.89668083190918 7.751534938812256 4.214262008666992 7.385554790496826 4.214262008666992 C 7.208864688873291 4.214262008666992 7.032185077667236 4.148090362548828 6.880744934082031 4.055471420288086 L 1.214284896850586 0.932591438293457 L -4.452185153961182 4.055471420288086 C -4.616245269775391 4.148090362548828 -4.780304908752441 4.214262008666992 -4.956995010375977 4.214262008666992 C -5.322975158691406 4.214262008666992 -5.487035274505615 3.89668083190918 -5.487035274505615 3.552631378173828 C -5.487035274505615 3.460010528564453 -5.474415302276611 3.380611419677734 -5.461795330047607 3.287981033325195 L -4.376465320587158 -3.328269004821777 L -8.970205307006836 -8.012578964233398 C -9.121644973754883 -8.184598922729492 -9.285715103149414 -8.40955924987793 -9.285715103149414 -8.647739410400391 C -9.285715103149414 -9.044709205627441 -8.894495010375977 -9.203498840332031 -8.578985214233398 -9.256428718566895 L -2.243645191192627 -10.22239875793457 L 0.5958949327468872 -16.24318885803223 C 0.7094749212265015 -16.49460983276367 0.9240149259567261 -16.78573989868164 1.214284896850586 -16.78573989868164 Z"
-                                    stroke="none" fill="#a0a0a0"></path>
-                            </g>
-                        </svg>
-                      </p>
-                    </div>
-
-                    <div class="wrap-detail-time" style="position: relative;">
-                      <div class="shop-open">
-                        <img class="button-img" alt="" src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time.svg?1727345036">
-                        <span>8:00～LAST（受付 : 7:30～翌2:00）</span>
-                      </div>
-  
-                      <div class="shop-location">
-                        <img class="button-img" alt="" src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/location.svg?1727345036"> 
-                        <span>国分寺駅から徒歩5分</span>
-                      </div>
-  
-                      <div class="info-inline">
-                        <div class="shop-price">
-                            <img class="button-img unit" alt="" src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/unit.svg?1727345036">                        <span>60分12,000円〜</span>
+                            <a href="https://dev.mens-est.jp/history/?keeplist=1"
+                                class="button star star-border-yellow">
+                                <img class="button-img" alt=""
+                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/starstar-border-yellow.png?1727333512" />
+                                <span class="button-text">キープ</span>
+                            </a>
                         </div>
-                        <div class="shop-payment-type">
-                          <img class="button-img" alt="" src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/card.svg?1727345036">                            <span>カード利用可</span>
-                        </div>
-                      </div>
-
-                      <a href="tel:000-0000-0000" class="btn-tel teltap">
-                        <img
-                          src="../../images/history/icon-telBlue.png"
-                          class="icon-tel"
-                          alt=""
-                        />
-                      </a>
                     </div>
-
-                  </div>
-            
-
-                
-              </li>
+                </div>
+                <p class="txt-addKeep"><span>キープに追加しました</span></p>
+                <p class="txt-removeKeep"><span>キープから削除しました</span></p>
+            </div>
+        </header>
+        <nav class="l-breadcrumb g-container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="https://dev.mens-est.jp/" class="breadcrumb-link">メンエスじゃぱん</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span>最近見た</span>
+                </li>
             </ul>
-            <span
-              class="btn-delete"
-              data-type="2"
-              data-id="shop"
-              data-name="お店"
-              >「最近見たお店」を全て削除する</span
-            >
-          </div>
-          <span class="js-btnToggle btn-toggle">
-            <img
-              class="svg-arr"
-              src="/assets/img/user/pc/keeplist/btn-toggle.svg"
-              alt=""
-            />
-          </span>
+        </nav>
+
+        <div class="mod-keepListHead">
+            <div class="keepListHead-bottom">
+                <ul class="listChange-list">
+                    <li class="listChange-item js-listChangeBtn ">
+                        セラピスト
+                        <span class="counter girl" id="">2</span>
+                    </li>
+                    <li class="listChange-item js-listChangeBtn active">
+                        お店
+                        <span class="counter shop">1</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </section>
+        <section class="f-keepList">
+            <div class="keepList-body">
+                <div class="select-wrap">
+                    <select class="sort-select">
+                        <option value="sort_new">最新順</option>
+                        <option value="sort_each_shop">お店ごと</option>
+                    </select>
+                </div>
+                <div class="keepList-head">
+                    <h1 class="keepList-ttl">
+                        最近見た
+                        <p class="mypage-category" style="display: inline">セラピスト</p>
+                        ：<em class="txt-green"><em class="history-count">2</em></em>件
+                    </h1>
+                </div>
+                <div class="keep_list_shop" style="display: block">
+                    <ul class="keepList-list shop">
+                        <li class="keepList-item shop angespa_1">
+                            <div class="shop-inner">
+                                <div class="shop-recommend ">
+                                    <div class="shop-tag">じゃぱんオススメ</div>
+                                </div>
+
+                                <div class="item-table">
+                                    <a href="#" class="p-imgWrap">
+                                        <img alt="Ange Spa～アンジュスパ"
+                                            src="https://d1ywb8dvwodsnl.cloudfront.net/files.mens-est.jp/img/shop/angespa/gimg/Ange Spa～アンジュスパ.png?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                                            data-original="https://d1ywb8dvwodsnl.cloudfront.net/files.mens-est.jp/img/shop/angespa/gimg/Ange Spa～アンジュスパ.png?width=345&amp;height=345&amp;type=resize&amp;quality=50"
+                                            class="lazy" style="display: block" />
+                                    </a>
+
+                                    <!-- phan ben phai -->
+                                    <div class="info-area">
+                                        <div class="count-girl-work">
+                                            <a href="#">本日出勤 <em>8</em>名</a>
+                                        </div>
+                                        <div class="girl-book">
+                                            <a href="#" class="" target="_blank">WEB予約する</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="" style="margin-top: 20px; position: relative;">
+                                    <div class="wrap-name" style="border-bottom: 0.1rem solid #e6e6e6;">
+                                        <h2 class="shop-title shop-name">
+                                            <a href="#">DELIJA MENESTH SPA 新宿店</a>
+                                        </h2>
+
+                                        <div class="shop-genre"><a href="#">国分寺/メンズエステ</a></div>
+
+                                        <div class="shop-rating">
+                                            <p class="shopReview-rating shopReview-star45">4.7
+                                                <span class="shopReview-number">口コミ（
+                                                    <a href="#" class="ga-shopCardReview">
+                                                        <span class="num">3件</span>
+                                                    </a>
+                                                    ）
+                                                </span>
+                                            </p>
+                                        </div>
+
+                                        <!-- hinh ngoi sao -->
+                                        <p class="btn-keep js-keep on">
+                                            <svg class="star-keep on" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 21 21">
+                                                <g id="icon_keep" transform="translate(9.286 16.786)" fill="none">
+                                                    <path class="a"
+                                                        d="M11.714-8.648c0-.4-.4-.556-.707-.609l-6.335-.966-2.84-6.021c-.114-.251-.328-.543-.618-.543s-.5.291-.618.543l-2.84,6.021-6.335.966c-.316.053-.707.212-.707.609a1.047,1.047,0,0,0,.316.635l4.594,4.684L-5.462,3.288a1.877,1.877,0,0,0-.025.265c0,.344.164.662.53.662a1.03,1.03,0,0,0,.5-.159L1.214.933,6.881,4.055a.991.991,0,0,0,.5.159c.366,0,.517-.318.517-.662a1.859,1.859,0,0,0-.013-.265L6.805-3.328l4.581-4.684A1,1,0,0,0,11.714-8.648Z"
+                                                        stroke="none"></path>
+                                                    <path class="a"
+                                                        d="M 1.214280724525452 -14.74118614196777 L -1.158295154571533 -9.710518836975098 L -1.430925130844116 -9.132449150085449 L -2.062765121459961 -9.03610897064209 L -7.482781410217285 -8.209701538085938 L -3.519695281982422 -4.168478965759277 L -3.09383487701416 -3.734218597412109 L -3.192295074462891 -3.134018898010254 L -4.116554737091064 2.500333786010742 L 0.635084867477417 -0.1183691024780273 L 1.214284896850586 -0.4375791549682617 L 1.793484926223755 -0.1183691024780273 L 6.54512357711792 2.500337600708008 L 5.62085485458374 -3.134018898010254 L 5.522564888000488 -3.733199119567871 L 5.947104930877686 -4.167299270629883 L 9.901878356933594 -8.211145401000977 L 4.491334915161133 -9.03610897064209 L 3.85950493812561 -9.132449150085449 L 3.586864948272705 -9.710518836975098 L 1.214280724525452 -14.74118614196777 M 1.214284896850586 -16.78573989868164 C 1.504544973373413 -16.78573989868164 1.71909487247467 -16.49460983276367 1.832664966583252 -16.24318885803223 L 4.672214984893799 -10.22239875793457 L 11.00755500793457 -9.256428718566895 C 11.31043529510498 -9.203498840332031 11.71428489685059 -9.044709205627441 11.71428489685059 -8.647739410400391 C 11.71428489685059 -8.40955924987793 11.55021476745605 -8.184598922729492 11.386155128479 -8.012578964233398 L 6.805025100708008 -3.328269004821777 L 7.890365123748779 3.287981033325195 C 7.902985095977783 3.380611419677734 7.902985095977783 3.460010528564453 7.902985095977783 3.552631378173828 C 7.902985095977783 3.89668083190918 7.751534938812256 4.214262008666992 7.385554790496826 4.214262008666992 C 7.208864688873291 4.214262008666992 7.032185077667236 4.148090362548828 6.880744934082031 4.055471420288086 L 1.214284896850586 0.932591438293457 L -4.452185153961182 4.055471420288086 C -4.616245269775391 4.148090362548828 -4.780304908752441 4.214262008666992 -4.956995010375977 4.214262008666992 C -5.322975158691406 4.214262008666992 -5.487035274505615 3.89668083190918 -5.487035274505615 3.552631378173828 C -5.487035274505615 3.460010528564453 -5.474415302276611 3.380611419677734 -5.461795330047607 3.287981033325195 L -4.376465320587158 -3.328269004821777 L -8.970205307006836 -8.012578964233398 C -9.121644973754883 -8.184598922729492 -9.285715103149414 -8.40955924987793 -9.285715103149414 -8.647739410400391 C -9.285715103149414 -9.044709205627441 -8.894495010375977 -9.203498840332031 -8.578985214233398 -9.256428718566895 L -2.243645191192627 -10.22239875793457 L 0.5958949327468872 -16.24318885803223 C 0.7094749212265015 -16.49460983276367 0.9240149259567261 -16.78573989868164 1.214284896850586 -16.78573989868164 Z"
+                                                        stroke="none" fill="#a0a0a0"></path>
+                                                </g>
+                                            </svg>
+                                        </p>
+                                    </div>
+
+                                    <div class="wrap-detail-time" style="position: relative;">
+                                        <div class="shop-open">
+                                            <img class="button-img" alt=""
+                                                src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time.svg?1727345036">
+                                            <span>8:00～LAST（受付 : 7:30～翌2:00）</span>
+                                        </div>
+
+                                        <div class="shop-location">
+                                            <img class="button-img" alt=""
+                                                src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/location.svg?1727345036">
+                                            <span>国分寺駅から徒歩5分</span>
+                                        </div>
+
+                                        <div class="info-inline">
+                                            <div class="shop-price">
+                                                <img class="button-img unit" alt=""
+                                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/unit.svg?1727345036">
+                                                <span>60分12,000円〜</span>
+                                            </div>
+                                            <div class="shop-payment-type">
+                                                <img class="button-img" alt=""
+                                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/card.svg?1727345036">
+                                                <span>カード利用可</span>
+                                            </div>
+                                        </div>
+
+                                        <a href="tel:000-0000-0000" class="btn-tel teltap">
+                                            <img src="../../images/history/icon-telBlue.png" class="icon-tel" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+
+                        </li>
+                    </ul>
+                    <span class="btn-delete" data-type="2" data-id="shop" data-name="お店">「最近見たお店」を全て削除する</span>
+                </div>
+                <span class="js-btnToggle btn-toggle">
+                    <img class="svg-arr" src="/assets/img/user/pc/keeplist/btn-toggle.svg" alt="" />
+                </span>
+            </div>
+        </section>
     </div>
 
     <footer class="g-footer">
-      <div class="g-footer__inner g-container">
-        <img
-          class="g-footer__logo"
-          src="../../images/layout/logo-white.svg"
-          alt=""
-        />
+        <div class="g-footer__inner g-container">
+            <img class="g-footer__logo" src="../../images/layout/logo-white.svg" alt="" />
 
-        <div class="g-footer__nav">
-          <ul class="g-footer__nav-list">
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">お客様意見箱</a>
-            </li>
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">利用規約</a>
-            </li>
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">プライバシーポリシー</a>
-            </li>
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">掲載店舗募集</a>
-            </li>
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">リンクについて</a>
-            </li>
-            <li class="g-footer__nav-item">
-              <a href="" class="g-footer__nav-link">お問い合わせ</a>
-            </li>
-          </ul>
-          <div class="copyright">
-            (C) 2020 メンエスじゃぱん All rights reserved.
-          </div>
+            <div class="g-footer__nav">
+                <ul class="g-footer__nav-list">
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">お客様意見箱</a>
+                    </li>
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">利用規約</a>
+                    </li>
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">プライバシーポリシー</a>
+                    </li>
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">掲載店舗募集</a>
+                    </li>
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">リンクについて</a>
+                    </li>
+                    <li class="g-footer__nav-item">
+                        <a href="" class="g-footer__nav-link">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    (C) 2020 メンエスじゃぱん All rights reserved.
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
