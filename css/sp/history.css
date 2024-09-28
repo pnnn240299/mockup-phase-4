@@ -14,18 +14,75 @@ Twitter: @rich_clark
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -40,8 +97,17 @@ body {
   line-height: 1;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -49,12 +115,15 @@ nav ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -88,7 +157,8 @@ del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
@@ -108,7 +178,8 @@ hr {
   padding: 0;
 }
 
-input, select {
+input,
+select {
   vertical-align: middle;
 }
 
@@ -118,7 +189,13 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input[type="text"], input[type="date"], input[type="tel"], input[type="url"], input[type="email"], input[type="time"], textarea {
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="time"],
+textarea {
   margin: 0;
   padding: 0;
   background: none;
@@ -159,11 +236,18 @@ textarea {
   resize: none;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -261,7 +345,7 @@ img {
 }
 
 /* max幅、高さは各ページで設定 */
-.p-imgWrap img {
+/* .p-imgWrap img {
   max-width: 100%;
   width: auto;
   height: auto;
@@ -271,7 +355,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-}
+} */
 
 /* 1行のみ3点リーダー */
 .p-ellipsis {
@@ -523,7 +607,9 @@ img {
   flex-wrap: wrap;
 }
 
-.modalList-list .modalList-ddWrap.genre, .modalList-list .modalList-ddWrap.costume, .modalList-list .modalList-ddWrap.service .modalList-list .modalList-ddWrap.cose .modalList-list .modalList-ddWrap.timezone {
+.modalList-list .modalList-ddWrap.genre,
+.modalList-list .modalList-ddWrap.costume,
+.modalList-list .modalList-ddWrap.service .modalList-list .modalList-ddWrap.cose .modalList-list .modalList-ddWrap.timezone {
   margin-bottom: 1.2rem;
 }
 
@@ -761,7 +847,10 @@ img {
   opacity: 0.6;
 }
 
-.f-select-prefMenu, .f-select-areaMenu, .f-select-genreMenu, .f-select-businessMenu {
+.f-select-prefMenu,
+.f-select-areaMenu,
+.f-select-genreMenu,
+.f-select-businessMenu {
   display: none;
   padding: 1.6rem 1.6rem;
   position: absolute;
@@ -777,7 +866,10 @@ img {
   transition: 5s;
 }
 
-.f-select-prefMenu.active, .f-select-areaMenu.active, .f-select-genreMenu.active, .f-select-businessMenu.active {
+.f-select-prefMenu.active,
+.f-select-areaMenu.active,
+.f-select-genreMenu.active,
+.f-select-businessMenu.active {
   display: block;
   width: 100vw;
   left: 0;
@@ -872,7 +964,8 @@ img {
   position: relative;
 }
 
-.l-breadCrumbs .bc-item a:before, .l-breadCrumbs .bc-item a:after,
+.l-breadCrumbs .bc-item a:before,
+.l-breadCrumbs .bc-item a:after,
 .l-breadCrumbs .bc-item>span:before,
 .l-breadCrumbs .bc-item>span:after {
   content: "";
@@ -924,7 +1017,8 @@ img {
   position: relative;
 }
 
-.l-breadCrumbs-search .bc-item a:before, .l-breadCrumbs-search .bc-item a:after,
+.l-breadCrumbs-search .bc-item a:before,
+.l-breadCrumbs-search .bc-item a:after,
 .l-breadCrumbs-search .bc-item>span:before,
 .l-breadCrumbs-search .bc-item>span:after {
   content: "";
@@ -1041,7 +1135,8 @@ header .g-header .g-header-main-content__left .button .button-text {
   color: #1f1c0d;
 }
 
-header .g-header .txt-addKeep, header .g-header .txt-removeKeep {
+header .g-header .txt-addKeep,
+header .g-header .txt-removeKeep {
   width: 100%;
   background: #ffc015;
   text-align: center;
@@ -1052,7 +1147,8 @@ header .g-header .txt-addKeep, header .g-header .txt-removeKeep {
   transition: 0.5s;
 }
 
-header .g-header .txt-addKeep span, header .g-header .txt-removeKeep span {
+header .g-header .txt-addKeep span,
+header .g-header .txt-removeKeep span {
   display: inline-block;
   height: 46px;
   padding-left: 22px;
@@ -1062,7 +1158,8 @@ header .g-header .txt-addKeep span, header .g-header .txt-removeKeep span {
   font-size: 14px;
 }
 
-header .g-header .txt-addKeep.active, header .g-header .txt-removeKeep.active {
+header .g-header .txt-addKeep.active,
+header .g-header .txt-removeKeep.active {
   top: 0;
 }
 
@@ -2123,21 +2220,21 @@ footer .link-sf-index .link-fu-ja:first-child {
   flex: 1;
 }
 
-.g-header-main-keeplist .g-header-main-content__left .star {
+/* .g-header-main-keeplist .g-header-main-content__left .star {
   border: 1px solid #FFC015 !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .star .button-text {
   color: #FFC015 !important;
-}
+} */
 
-.g-header-main-keeplist .g-header-main-content__left .history-is-active {
+/* .g-header-main-keeplist .g-header-main-content__left .history-is-active {
   background: #4B454E 0% 0% no-repeat padding-box !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
   color: #FFF !important;
-}
+} */
 
 .g-header-main-keeplist .g-header-main-content__left .star-is-active {
   background: #FFC015 0% 0% no-repeat padding-box !important;
@@ -2407,10 +2504,10 @@ footer .link-sf-index .link-fu-ja:first-child {
 */
 
 /* キープのリスト */
-.f-keepList {
+/* .f-keepList {
   padding: 2rem 1rem 6rem;
-  background: #f5fcfb;
-}
+  background: #FAFAFA;
+} */
 
 .f-keepList.keep {
   padding: 2rem 1rem 6rem;
@@ -2507,13 +2604,13 @@ footer .link-sf-index .link-fu-ja:first-child {
   top: 5.5rem;
 }
 
-/* .f-keepList .keepList-item.rookie .girl-name:after {
+.f-keepList .keepList-item.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.5rem;
   background: url(/assets/img/user/sp/common/ico-rookie.svg) no-repeat center/auto 1.7rem;
-} */
+}
 
 .f-keepList .keepList-item.rookie .girl-name .p-ellipsis {
   max-width: 90%;
@@ -2646,15 +2743,15 @@ footer .link-sf-index .link-fu-ja:first-child {
   max-width: 70%;
 }
 
-.f-keepList .girl-data {
+/* .f-keepList .girl-data {
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
-}
+} */
 
-.f-keepList .icon-tel {
+/* .f-keepList .icon-tel {
   width: 3rem;
   height: auto;
-}
+} */
 
 /* 
 .f-keepList .status-tbl {
@@ -2679,7 +2776,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   border: 0.1rem solid #00ada6;
   color: #00ada6;
 } */
-
+/* 
 .f-keepList .status-tbl.next {
   background: #fff8e7;
 }
@@ -2699,15 +2796,15 @@ footer .link-sf-index .link-fu-ja:first-child {
   vertical-align: middle;
   font-size: 1.2rem;
   font-weight: bold;
-}
+} */
 
-.f-keepList .status-tbl td:only-child {
+/* .f-keepList .status-tbl td:only-child {
   border: none;
   border-radius: 3px;
   background: #eaeaea;
   color: inherit;
   font-weight: normal;
-}
+} */
 
 .f-keepList .schedule-status-tbl {
   width: 100%;
@@ -2900,20 +2997,20 @@ footer .link-sf-index .link-fu-ja:first-child {
   font-size: 1.2rem;
 }
 
-.mod-shopInfo .contents-wrap {
+/* .mod-shopInfo .contents-wrap {
   padding-left: 6.7rem;
   position: relative;
   z-index: 3;
-}
+} */
 
-.mod-shopInfo .shop-thumb {
+/* .mod-shopInfo .shop-thumb {
   width: 5.1rem;
   height: 5.1rem;
   position: absolute;
   top: 1.6rem;
   left: 0rem;
   z-index: 5;
-}
+} */
 
 .mod-shopInfo .shop-info {
   overflow: hidden;
@@ -3676,7 +3773,42 @@ footer.blur {
   color: #BF1212;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Duy Nhan ////////////////////////////////////////*/
+.f-keepList {
+  padding: 2rem 1rem 6rem;
+  background: #FAFAFA;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .star {
+  border: 1px solid #FFC015 !important;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .star .button-text {
+  color: #FFC015 !important;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .history-is-active {
+  background: #00356A 0% 0% no-repeat padding-box !important;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
+  color: #FFFFFF !important;
+}
 
 .f-keepList .sort-select {
   width: 10.8rem;
@@ -3687,9 +3819,16 @@ footer.blur {
   background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
   appearance: none;
 }
+
 .f-keepList .sort-select:disabled {
   color: #ddd;
   background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+}
+
+.f-keepList .girl-data {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #59595F;
 }
 
 .mod-keepListHead .listChange-item {
@@ -3734,6 +3873,8 @@ footer.blur {
   right: 0;
 }
 
+/* status-tbl start*/
+
 .f-keepList .status-tbl {
   width: 100%;
   table-layout: fixed;
@@ -3742,22 +3883,55 @@ footer.blur {
   text-align: center;
 }
 
+.f-keepList .status-tbl.today {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 .f-keepList .status-tbl.today th {
   width: 8.5rem;
   background: #FCDD59;
   border: 0.1rem solid #FCDD59;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.3rem 0 0 0.3rem;
   color: #1F1C0D;
   vertical-align: middle;
 }
 
 .f-keepList .status-tbl.today td {
-  border-radius: 0 3px 3px 0;
   border: 0.1rem solid #FCDD59;
+  border-radius: 0 0.3rem 0.3rem 0;
   color: #1F1C0D;
   background-color: #FFFCF2;
 }
 
+.f-keepList .status-tbl.next {
+  background: #fff8e7;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.3rem;
+}
+
+.f-keepList .status-tbl.next th {
+  width: 7rem;
+  vertical-align: middle;
+}
+
+.f-keepList .status-tbl td {
+  height: 4.2rem;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.f-keepList .status-tbl td:only-child {
+  border: none;
+  border-radius: 0.3rem;
+  background: #EAEAEA;
+  color: inherit;
+  font-weight: normal;
+}
+
+/* table end */
 
 .f-keepList .btn-wrap {
   display: flex;
@@ -3781,8 +3955,8 @@ footer.blur {
 
 /* them*/
 .wrap-link {
-  width: 28px;
-  height: 28px;
+  width: 3.6rem;
+  height: 3.6rem;
   background-color: #F7F7F7;
   border-radius: 50%;
   position: relative;
@@ -3807,54 +3981,97 @@ footer.blur {
   display: flex;
 }
 
-.mod-shopInfo .tag {
-  background-color: #F7F7F7;
+.mod-shopInfo li.tag {
+  background: #F7F7F7 0% 0% no-repeat padding-box;
   color: #1F1C0D;
-  padding: 5px 20px;
-  margin-right: 5px;
+  padding: 4px 16px;
+  margin-right: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 3px;
 }
 
 .mod-shopInfo .tag.active {
   background-color: #E7F3FC;
 }
 
+.mod-shopInfo .contents-wrap {
+  padding-left: 7.7rem;
+  position: relative;
+  z-index: 3;
+}
+
+.mod-shopInfo .shop-thumb {
+  width: 6.9rem;
+  height: 6.9rem;
+  position: absolute;
+  top: 1.6rem;
+  left: 0rem;
+  z-index: 2;
+  object-fit: fill;
+}
+
+/* max幅、高さは各ページで設定 */
+.p-imgWrap img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  /* top: 0;
+  right: 0; */
+  bottom: 0;
+  left: 0;
+}
+
 /*duy thêm end*/
+
+.f-keepList .icon-tel {
+  width: 3rem;
+  height: auto;
+}
 
 .f-keepList .btn-tel {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  /* width: 5.6rem;
-  height: 5.6rem; */
+  width: 4.9rem;
+  height: 4.9rem;
   border-radius: 2.8rem;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
   background: #FFFFFF;
   position: absolute;
-  /* top: 0; */
-  top: 1.3rem;
-  right: 0.4rem;
+  top: 2rem;
+  right: 0.3rem;
 }
 
 .btn-keep {
-  width: 4rem;
-  height: 4rem;
+  width: 3.8rem;
+  height: 3.8rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -1rem;
+  top: 0rem;
   right: 0;
   z-index: 1;
   -webkit-tap-highlight-color: #000;
   box-shadow: 0 0.2rem 0.8rem #0000001a;
+}
+
+/* lưu ý trong html phải có thêm on trong <div class="btn-keep on"> 
+  thay đổi trạng thái ngôi sao
+*/
+.btn-keep.on {
   border: 1px solid #ffc015;
 }
 
-.f-keepList .info-area.rookie .girl-name::after {
-    content: "";
-    width: 1.7rem;
-    height: 1.7rem;
-    margin-left: 0.5rem;
-    background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
-  }
+/* lưu ý trong html phải có thêm rookie trong <div class="info-area rookie"> 
+  trạng thái hình ảnh màu xanh lá có hoặc không có
+*/
+.f-keepList .info-area.rookie .girl-name:after {
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: 0.5rem;
+  background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+}

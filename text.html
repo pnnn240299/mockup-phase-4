@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LI Width Example</title>
+    <style>
+        ul {
+            /* padding: 0;
+            margin: 0;
+            list-style-type: none; */
+            /* Loại bỏ dấu bullet */
+            display: flex;
+        }
+
+        li {
+            display: inline-block;
+            /* Thẻ li mở rộng theo nội dung */
+            margin-right: 10px;
+            /* Khoảng cách giữa các thẻ li */
+            padding: 5px 10px;
+            /* Tạo khoảng đệm trong thẻ li */
+            border: 1px solid #ccc;
+            /* Viền cho thẻ li */
+            background-color: #9d6060;
+            /* Màu nền cho thẻ li */
+        }
+
+        /* table */
+        .status-tbl.today th {
+            width: 8.5rem;
+            background: #FCDD59;
+            border: 0.1rem solid #FCDD59;
+            border-radius: 0.3rem 0 0 0.3rem;
+            color: #1F1C0D;
+            vertical-align: middle;
+        }
+
+        .status-tbl.today td {
+            border: 0.1rem solid #FCDD59;
+            border-radius: 0 1.3rem 5.3rem 0;
+            color: #1F1C0D;
+            background-color: #FFFCF2;
+            /* overflow: hidden; */
+        }
+
+        /* next */
+        .status-tbl.next {
+            background: #3c2c07;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .status-tbl.next th {
+            width: 7rem;
+            border-radius: 0.3rem 0px 0px 0.3rem;
+            vertical-align: middle;
+        }
+
+        .status-tbl.next td {
+            border-radius: 0px 0.3rem 0.3rem 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Short</li>
+        <li>Medium Length</li>
+        <li>This is a longer text</li>
+    </ul>
+    <!-- today -->
+    <table class="status-tbl today">
+        <tbody>
+            <tr>
+                <th>本日出勤</th>
+                <td><span class="justnow">13:00～翌1:00</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- next -->
+    <table class="status-tbl next">
+        <tbody>
+            <tr>
+                <th>次回出勤</th>
+                <td>
+                    <span class="justnow">9/28 11:00～16:30</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
