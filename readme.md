@@ -7,9 +7,9 @@
 - ~~icon call nên to hơn và ngang hàng với tên shop~~
 
 2. history-shop.html
-- sai lable ở trên cùng
+- ~~sai lable ở trên cùng~~
 - ~~icon star ngang hàng với tên shop~~
-- thiếu icon > (arrow right)
+- ~~thiếu icon > (arrow right)~~
 
 3. keeplist-attendance.html
 - chỉnh lại màu border-bottom của chỗ ngày

@@ -3483,9 +3483,9 @@ footer.blur {
   right: 0.1rem;
 }
 
-.count-girl-work {
+.wrap-count-girl-work {
   background-color: #fff7f7;
-  padding: 13px;
+  /* padding: 13px; */
   text-align: center;
   border: 1px solid #fddedb;
   border-radius: 4px;
@@ -3493,6 +3493,7 @@ footer.blur {
   margin-bottom: 10px;
   font-size: 13px;
   height: 4rem;
+  position: relative;
 }
 
 .count-girl-work em {
@@ -3513,4 +3514,21 @@ footer.blur {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFFFFF;
+}
+
+.arrow-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #FE4A4A;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 56%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
