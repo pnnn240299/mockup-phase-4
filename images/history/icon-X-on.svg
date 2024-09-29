@@ -10,10 +10,10 @@
   </defs>
   <g id="グループ_571058" data-name="グループ 571058" transform="translate(-659 -5362)">
     <g transform="matrix(1, 0, 0, 1, 659, 5362)" filter="url(#楕円形_114)">
-      <circle id="楕円形_114-2" data-name="楕円形 114" cx="18" cy="18" r="18" transform="translate(6 5)" fill="#F2F2F2"/>
+      <circle id="楕円形_114-2" data-name="楕円形 114" cx="18" cy="18" r="18" transform="translate(6 5)"/>
     </g>
     <g id="layer1" transform="translate(671.549 5374.842)">
-      <path id="path1009" d="M484,356.79l8.895,11.893-8.951,9.67h2.015l7.837-8.466,6.332,8.466h6.855l-9.4-12.562,8.332-9H503.9l-7.217,7.8-5.831-7.8Zm2.963,1.484h3.149l13.907,18.6h-3.149Z" transform="translate(-483.94 -356.79)" fill="#c3c3c3"/>
+      <path id="path1009" d="M484,356.79l8.895,11.893-8.951,9.67h2.015l7.837-8.466,6.332,8.466h6.855l-9.4-12.562,8.332-9H503.9l-7.217,7.8-5.831-7.8Zm2.963,1.484h3.149l13.907,18.6h-3.149Z" transform="translate(-483.94 -356.79)" fill="#fff"/>
     </g>
   </g>
 </svg>

@@ -1102,7 +1102,7 @@ header .g-header .g-header-main-content__left {
   gap: 4px;
 }
 
-header .g-header .g-header-main-content__left .button {
+/* header .g-header .g-header-main-content__left .button {
   display: flex;
   height: 43px;
   width: 43px;
@@ -1114,7 +1114,7 @@ header .g-header .g-header-main-content__left .button {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-}
+} */
 
 header .g-header .g-header-main-content__left .button .button-img {
   width: 18px;
@@ -2191,7 +2191,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   color: #FFF;
 }
 
-.g-header-main-keeplist .g-header-main-content__left .button {
+/* .g-header-main-keeplist .g-header-main-content__left .button {
   display: flex;
   height: 38px !important;
   width: 80px !important;
@@ -2203,7 +2203,7 @@ footer .link-sf-index .link-fu-ja:first-child {
   align-items: center;
   cursor: pointer;
   border: 1px solid #4B454E !important;
-}
+} */
 
 .g-header-main-keeplist .g-header-main-content__left .button .button-img {
   width: 14px !important;
@@ -3642,7 +3642,7 @@ footer.blur {
   animation-fill-mode: forwards;
 }
 
-.star-keep {
+/* .star-keep {
   width: 1.8rem;
   margin: auto;
   position: absolute;
@@ -3650,7 +3650,7 @@ footer.blur {
   right: 0;
   bottom: 0;
   left: 0;
-}
+} */
 
 .star-keep .a {
   transition: 0.2s;
@@ -3789,9 +3789,38 @@ footer.blur {
 
 
 /* Duy Nhan ////////////////////////////////////////*/
+header .g-header .g-header-main-content__logo {
+  width: 215px;
+  height: auto;
+}
+
 .f-keepList {
   padding: 2rem 1rem 6rem;
   background: #FAFAFA;
+}
+
+/* button history */
+.g-header-main-keeplist .g-header-main-content__left .history-is-active {
+  background: #00356A 0% 0% no-repeat padding-box !important;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .button {
+  display: flex;
+  height: 38px !important;
+  width: 80px !important;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 6px !important;
+  justify-content: space-between;
+  flex-direction: unset !important;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00356A !important;
+}
+
+/* button keeplist */
+.g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
+  color: #FFFFFF !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .star {
@@ -3802,12 +3831,18 @@ footer.blur {
   color: #FFC015 !important;
 }
 
-.g-header-main-keeplist .g-header-main-content__left .history-is-active {
-  background: #00356A 0% 0% no-repeat padding-box !important;
-}
-
-.g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
-  color: #FFFFFF !important;
+header .g-header .g-header-main-content__left .button {
+  display: flex;
+  height: 43px;
+  width: 43px;
+  background: #ffffff;
+  border: unset;
+  border-radius: 3px;
+  padding: 4px 0 6px 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .f-keepList .sort-select {
@@ -3823,6 +3858,16 @@ footer.blur {
 .f-keepList .sort-select:disabled {
   color: #ddd;
   background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+}
+
+.star-keep {
+  width: 3.8rem;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .f-keepList .girl-data {
@@ -3957,24 +4002,24 @@ footer.blur {
 .wrap-link {
   width: 3.6rem;
   height: 3.6rem;
-  background-color: #F7F7F7;
+  /* background-color: #F7F7F7; */
   border-radius: 50%;
   position: relative;
 }
 
-.wrap-link img {
+/* .wrap-link img {
   width: 50%;
   height: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-.wrap-link img.twitter {
+/* .wrap-link img.twitter {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* duy thêm*/
 .mod-shopInfo ul.shop-tags {
@@ -4046,8 +4091,8 @@ footer.blur {
 }
 
 .btn-keep {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 3.9rem;
+  height: 3.9rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
@@ -4055,14 +4100,7 @@ footer.blur {
   right: 0;
   z-index: 1;
   -webkit-tap-highlight-color: #000;
-  box-shadow: 0 0.2rem 0.8rem #0000001a;
-}
-
-/* lưu ý trong html phải có thêm on trong <div class="btn-keep on"> 
-  thay đổi trạng thái ngôi sao
-*/
-.btn-keep.on {
-  border: 1px solid #ffc015;
+  /* box-shadow: 0 0.2rem 0.8rem #0000001a; */
 }
 
 /* lưu ý trong html phải có thêm rookie trong <div class="info-area rookie"> 

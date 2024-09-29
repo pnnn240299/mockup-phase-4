@@ -12,7 +12,7 @@
 - ~~thiếu icon > (arrow right)~~
 
 3. keeplist-attendance.html
-- chỉnh lại màu border-bottom của chỗ ngày
+- ~~chỉnh lại màu border-bottom của chỗ ngày~~
 - ~~thiếu icon màu xanh, cạnh tên girl (copy từ history.html)~~
 - ~~icon star ngang hàng với tên shop (copy từ history.html)~~
 - ~~chỉnh lại màu chữ tuổi, chiều cao~~
