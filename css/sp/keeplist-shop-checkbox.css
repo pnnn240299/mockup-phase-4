@@ -3898,7 +3898,9 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .keepList-item {
-  padding: 10px 34px 0px 34px !important;
+  /* padding: 10px 34px 0px 34px !important; */
+  padding: 10px 34px 0px 50px !important; /*có padding để show checkbox*/
+  position: relative;
 }
 
 .btn-release-keep {
@@ -4004,6 +4006,16 @@ header .g-header .g-header-main-content__left .button {
 
 
 .shop-info {
-  /* padding: 1.6rem 0 1.5rem; */
   padding: 1rem 0 !important;
+}
+
+.btn-check {
+    width: 35px; height: 35px;   
+    position: absolute;
+    top: 28%;
+    left: 8px;
+}
+
+.keepList-item.shop .shop-name {
+    margin-bottom: 0 !important;
 }

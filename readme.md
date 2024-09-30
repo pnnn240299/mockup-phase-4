@@ -27,7 +27,7 @@
 - thiếu checkbox bên tay trái mỗi girl
 
 5. keeplist-shop.html
-- chỉnh lại 2 button
-- thêm thẻ tag ở đầu image
-- thiếu checkbox bên tay trái mỗi shop
-- vùng shop-data đang thiếu icon
+- ~~chỉnh lại 2 button~~
+- ~~thêm thẻ tag ở đầu image~~
+- ~~thiếu checkbox bên tay trái mỗi shop~~
+- ~~vùng shop-data đang thiếu icon~~
