@@ -3172,7 +3172,7 @@ footer.blur {
   filter: blur(0.4rem);
 }
 
-.btn-keep {
+/* .btn-keep {
   width: 4rem;
   height: 4rem;
   background: #fff;
@@ -3184,13 +3184,13 @@ footer.blur {
   -webkit-tap-highlight-color: #000;
   box-shadow: 0 0.2rem 0.8rem #0000001a;
   border: 1px solid #ffc015;
-}
+} */
 .btn-keep:active .star-keep {
   animation: large 0.1s;
   animation-fill-mode: forwards;
 }
 
-.star-keep {
+/* .star-keep {
   width: 1.8rem;
   margin: auto;
   position: absolute;
@@ -3198,7 +3198,7 @@ footer.blur {
   right: 0;
   bottom: 0;
   left: 0;
-}
+} */
 .star-keep .a {
   transition: 0.2s;
 }

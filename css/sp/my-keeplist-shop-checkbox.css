@@ -54,6 +54,21 @@ header .g-header .g-header-main-content__left .button {
   cursor: pointer;
 }
 
+.f-keepList .sort-select {
+  width: 10.8rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  appearance: none;
+}
+
+.f-keepList .sort-select:disabled {
+  color: #ddd;
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+}
+
 .wh-full {
   width: 100% !important;
   height: 100% !important;
@@ -65,20 +80,21 @@ header .g-header .g-header-main-content__left .button {
 
 .keepList-item {
   /* padding: 10px 34px 0px 34px !important; */
-  padding: 10px 34px 0px 50px !important; /*có padding để show checkbox*/
+  padding: 10px 34px 0px 50px !important;
+  /*có padding để show checkbox*/
   position: relative;
 }
 
-.btn-release-keep {
-  background-color: #EDEDED !important;
+/* .btn-release-keep {
+  background-color: #D7E5F7 !important;
   padding: 9px 25px !important;
   border-radius: 20px !important;
 }
 
 .wrap-release-keep {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: right;
-}
+} */
 
 .call-shop {
   background-color: #FFFFFF;
@@ -91,20 +107,24 @@ header .g-header .g-header-main-content__left .button {
   font-size: 13px;
   height: 4rem;
 
-  display: flex;  
-  align-items: center; /* Căn giữa theo chiều dọc */
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
 }
 
-.call-shop em{
+.call-shop em {
   color: #027DD9;
   font-weight: 600;
   /* font-size: 18px; */
 }
 
 .call-shop img {
-  width: 1.3rem; /* Thay đổi theo kích thước mong muốn */
-  margin-right: 10px; /* Khoảng cách giữa hình ảnh và số điện thoại */
+  width: 1.3rem;
+  /* Thay đổi theo kích thước mong muốn */
+  margin-right: 10px;
+  /* Khoảng cách giữa hình ảnh và số điện thoại */
 }
 
 .count-girl-work {
@@ -176,12 +196,13 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .btn-check {
-    width: 35px; height: 35px;   
-    position: absolute;
-    top: 28%;
-    left: 8px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 28%;
+  left: 8px;
 }
 
 .keepList-item.shop .shop-name {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }

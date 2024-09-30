@@ -9,12 +9,39 @@ header .g-header .g-header-main-content__logo {
 }
 
 .f-keepList .keepList-item.girl {
-    padding: 1.5rem 3rem 0;
+    padding: 1rem 1rem 0;
 }
 
 .f-keepList .keepList-item.girl .item-table .p-imgWrap {
-    width: 11.4rem;
+    width: 13.4rem;
     height: 15.2rem;
+}
+
+.f-keepList .keepGirl-list {
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.btn-keep {
+    width: 2.9rem;
+    height: 2.9rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: 1;
+    /* -webkit-tap-highlight-color: #000; */
+}
+
+.star-keep {
+    width: 2.8rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /* button history */
@@ -116,7 +143,7 @@ ul.calender-list {
     margin-top: 4px;
 }
 
-.btn-release-keep {
+/* .btn-release-keep {
     background-color: #EDEDED !important;
     padding: 9px 25px !important;
     border-radius: 20px !important;
@@ -125,7 +152,7 @@ ul.calender-list {
 .wrap-release-keep {
     margin-bottom: 2rem;
     text-align: right;
-}
+} */
 
 .girl-data {
     color: #A8A8A8;
@@ -179,7 +206,7 @@ ul.calender-list {
 }
 
 .keepGirl-list {
-    width: 98%;
+    /* width: 98%; */
     /* background: red; */
     /* margin-left: 0 auto; */
     margin: 0 auto;
@@ -188,13 +215,10 @@ ul.calender-list {
 /* max幅、高さは各ページで設定 */
 .p-imgWrap img {
     max-width: 100%;
-    width: auto;
     height: auto;
     margin: auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    /* bottom: 0; */
+    bottom: 0;
     left: 0;
 }
 
