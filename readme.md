@@ -31,3 +31,5 @@
 - ~~thêm thẻ tag ở đầu image~~
 - ~~thiếu checkbox bên tay trái mỗi shop~~
 - ~~vùng shop-data đang thiếu icon~~
+- button top-right chưa cách button dưới
+- text dưới to hơn
