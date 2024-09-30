@@ -1,213 +1,214 @@
+@charset "UTF-8";
 header .g-header .g-header-main-content__logo {
-    width: 215px;
-    height: auto;
+  width: 215px;
+  height: auto;
 }
 
 .f-keepList {
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
+  padding: 2rem 1rem 6rem;
+  background: #FAFAFA;
 }
 
 .f-keepList .keepList-item.girl {
-    padding: 1.5rem 3rem 0;
+  padding: 1.5rem 3rem 0;
 }
 
 .f-keepList .keepList-item.girl .item-table .p-imgWrap {
-    width: 11.4rem;
-    height: 15.2rem;
+  width: 11.4rem;
+  height: 15.2rem;
 }
 
 /* button history */
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
-    background: #FAFAFA 0% 0% no-repeat padding-box !important;
+  background: #FAFAFA 0% 0% no-repeat padding-box !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
-    color: #00356A !important;
+  color: #00356A !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .button {
-    display: flex;
-    height: 38px !important;
-    width: 80px !important;
-    background: #ffffff;
-    border-radius: 3px;
-    padding: 6px !important;
-    justify-content: space-between;
-    flex-direction: unset !important;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid #00356A !important;
+  display: flex;
+  height: 38px !important;
+  width: 80px !important;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 6px !important;
+  justify-content: space-between;
+  flex-direction: unset !important;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00356A !important;
 }
 
 /* button keeplist */
 .g-header-main-keeplist .g-header-main-content__left .star {
-    border: 1px solid #FFC015 !important;
+  border: 1px solid #FFC015 !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .star .button-text {
-    color: #FFFFFF !important;
+  color: #FFFFFF !important;
 }
 
 header .g-header .g-header-main-content__left .button {
-    display: flex;
-    height: 43px;
-    width: 43px;
-    background: #FFC015;
-    border: unset;
-    border-radius: 3px;
-    padding: 4px 0 6px 0;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  height: 43px;
+  width: 43px;
+  background: #FFC015;
+  border: unset;
+  border-radius: 3px;
+  padding: 4px 0 6px 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .therapistList-count .colored {
-    color: #FE4A4A;
+  color: #FE4A4A;
 }
 
 .f-keepList .sort-select {
-    width: 10.8rem;
-    height: 3.2rem;
-    padding-left: 1rem;
-    border-radius: 0.2rem;
-    border: none;
-    background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
-    appearance: none;
+  width: 10.8rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  appearance: none;
 }
 
 .f-keepList .sort-select:disabled {
-    color: #ddd;
-    background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+  color: #ddd;
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
 
 .wh-full {
-    width: 100% !important;
-    height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 ul.calender-list {
-    overflow-x: auto;
-    scrollbar-width: none;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .calenderList-day {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .content {
-    justify-content: space-around !important;
-    height: 8.2rem !important;
-    padding: 7px !important;
+  justify-content: space-around !important;
+  height: 8.2rem !important;
+  padding: 7px !important;
 }
 
 .content.current .wrap-day {
-    /*active*/
-    border-bottom: 1px solid #fff;
+  /*active*/
+  border-bottom: 1px solid #fff;
 }
 
 .content .wrap-day {
-    padding: 0px 11px 11px 10px;
-    border-bottom: 1px solid #4B454E;
+  padding: 0px 11px 11px 10px;
+  border-bottom: 1px solid #4B454E;
 }
 
 .weekday {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .btn-release-keep {
-    background-color: #EDEDED !important;
-    padding: 9px 25px !important;
-    border-radius: 20px !important;
+  background-color: #EDEDED !important;
+  padding: 9px 25px !important;
+  border-radius: 20px !important;
 }
 
 .wrap-release-keep {
-    margin-bottom: 2rem;
-    text-align: right;
+  margin-bottom: 2rem;
+  text-align: right;
 }
 
 .girl-data {
-    color: #A8A8A8;
+  color: #A8A8A8;
 }
 
 .f-keepList .girl-data {
-    margin-bottom: 0.4rem;
-    font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
 }
 
 .city {
-    color: #1F1C0D;
-    font-size: 1.1rem;
+  color: #1F1C0D;
+  font-size: 1.1rem;
 }
 
 .wrap-sns {
-    display: flex;
-    align-items: flex-end;
-    margin-top: 4px;
-    margin-bottom: 0.6rem;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 4px;
+  margin-bottom: 0.6rem;
+  justify-content: space-between;
 }
 
 .wrap-sns p {
-    padding: 2px 10px 4px 0px;
-    font-size: 1.4rem;
-    font-weight: 700 !important;
-    /* background-color: yellowgreen; */
+  padding: 2px 10px 4px 0px;
+  font-size: 1.4rem;
+  font-weight: 700 !important;
+  /* background-color: yellowgreen; */
 }
 
 .wrap-sns .sns {
-    display: flex;
-    /* background-color: #0065BC; */
+  display: flex;
+  /* background-color: #0065BC; */
 }
 
 .wrap-link {
-    width: 3rem;
-    height: 3rem;
-    background-color: #F7F7F7;
-    border-radius: 50%;
-    position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: #F7F7F7;
+  border-radius: 50%;
+  position: relative;
 }
 
 .wrap-link img {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .keepGirl-list {
-    width: 98%;
-    /* background: red; */
-    /* margin-left: 0 auto; */
-    margin: 0 auto;
+  width: 98%;
+  /* background: red; */
+  /* margin-left: 0 auto; */
+  margin: 0 auto;
 }
 
-/* max幅、高さは各ページで設定 */
+/* maxσ╣àπÇüΘ½ÿπüòπü»σÉäπâÜπâ╝πé╕πüºΦ¿¡σ«Ü */
 .p-imgWrap img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* bottom: 0; */
-    left: 0;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
 }
 
 .count-girl-work {
-    background-color: #fff7f7;
-    padding: 9px;
-    text-align: center;
-    border: 1px solid #fddedb;
-    border-radius: 4px;
-    /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
-    margin-bottom: 8px;
-    font-size: 13px;
-    /* height: 4rem; */
+  background-color: #fff7f7;
+  padding: 9px;
+  text-align: center;
+  border: 1px solid #fddedb;
+  border-radius: 4px;
+  /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
+  margin-bottom: 8px;
+  font-size: 13px;
+  /* height: 4rem; */
 }
 
 /* .wrap-count-girl-work {
@@ -220,27 +221,26 @@ ul.calender-list {
   height: 4rem;
   position: relative;
 } */
-
 .count-girl-work em {
-    color: #FE4A4A;
-    font-weight: 600;
-    font-size: 16px;
+  color: #FE4A4A;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .f-keepList .girl-book {
-    display: flex;
-    align-items: center;
-    /* width: 13rem; */
-    height: 3.5rem;
-    padding-left: 4.4rem;
-    /* background: #fcdd59 url(/assets/img/user/sp/keeplist/icon-calendar.svg) no-repeat 2.7rem center / 1.5rem auto; */
-    background: #FF4A4A url(../../images/history/phone2x.png) no-repeat 1.8rem center / 1.3rem auto;
-    /* box-shadow: 0px 0.1rem 0.8rem #33333333; */
-    /* border-radius: 2.4rem; */
-    border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    /* position: absolute; */
-    /* top: 1rem; */
-    color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  /* width: 13rem; */
+  height: 3.5rem;
+  padding-left: 4.4rem;
+  /* background: #fcdd59 url(/assets/img/user/sp/keeplist/icon-calendar.svg) no-repeat 2.7rem center / 1.5rem auto; */
+  background: #FF4A4A url(../../images/history/phone2x.png) no-repeat 1.8rem center/1.3rem auto;
+  /* box-shadow: 0px 0.1rem 0.8rem #33333333; */
+  /* border-radius: 2.4rem; */
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* position: absolute; */
+  /* top: 1rem; */
+  color: #FFFFFF;
 }

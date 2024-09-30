@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header .g-header .g-header-main-content__logo {
   width: 215px;
   height: auto;
@@ -88,21 +89,24 @@ header .g-header .g-header-main-content__left .button {
   margin-bottom: 10px;
   font-size: 13px;
   height: 4rem;
-
-  display: flex;  
-  align-items: center; /* Căn giữa theo chiều dọc */
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+  /* C─ân giß╗»a theo chiß╗üu dß╗ìc */
+  justify-content: center;
+  /* C─ân giß╗»a theo chiß╗üu ngang */
 }
 
-.call-shop em{
+.call-shop em {
   color: #027DD9;
   font-weight: 600;
   /* font-size: 18px; */
 }
 
 .call-shop img {
-  width: 1.3rem; /* Thay đổi theo kích thước mong muốn */
-  margin-right: 10px; /* Khoảng cách giữa hình ảnh và số điện thoại */
+  width: 1.3rem;
+  /* Thay ─æß╗òi theo k├¡ch th╞░ß╗¢c mong muß╗æn */
+  margin-right: 10px;
+  /* Khoß║úng c├ích giß╗»a h├¼nh ß║únh v├á sß╗æ ─æiß╗çn thoß║íi */
 }
 
 .count-girl-work {
@@ -167,7 +171,6 @@ header .g-header .g-header-main-content__left .button {
 .shop-inner {
   padding-bottom: 1rem !important;
 }
-
 
 .shop-info {
   /* padding: 1.6rem 0 1.5rem; */

@@ -1,13 +1,15 @@
 .f-keepList {
   background: #FAFAFA;
 }
+
 .f-keepList .info-area.rookie .girl-name:after {
-    content: "";
-    width: 1.7rem;
-    height: 1.7rem;
-    margin-left: 0.5rem;
-    background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
-  }
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: 0.5rem;
+  background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+}
+
 .f-keepList .sort-select {
   width: 10.8rem;
   height: 3.2rem;
@@ -17,15 +19,60 @@
   background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
   appearance: none;
 }
+
 .f-keepList .sort-select:disabled {
   color: #ddd;
   background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
+
+.mod-keepListHead .listChange-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 15.8rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  color: #4B454E;
+  background: #F2FAFF;
+  border: 1px solid #D9EFFF;
+  font-size: 1.4rem;
+  font-weight: normal;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.mod-keepListHead .listChange-item:last-child {
+  margin-right: 0;
+}
+
+.mod-keepListHead .listChange-item.active {
+  background: #00356A;
+  color: #fff;
+}
+
+.mod-keepListHead .listChange-item .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: #E7F1FD;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1F1C0D;
+  position: absolute;
+  top: -0.8rem;
+  right: 0;
+}
+
 .shop-recommend {
   display: flex;
   gap: 4px;
   align-items: end;
 }
+
 .shop-tag {
   background: #FFEB7E;
   border-radius: 2px;
@@ -37,6 +84,7 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .shop-genre {
   margin-top: 8px;
   margin-bottom: 15px;
@@ -51,21 +99,26 @@
   height: 16px;
   display: flex;
 }
+
 .shop-rating .rating-star {
   display: flex;
   gap: 4px;
 }
+
 .shop-rating .rating-star .star-wrapper {
   width: 16px;
   height: 16px;
   background: url(/assets/img/user/common/v2/layout/star-sp.svg) no-repeat center;
 }
+
 .shop-rating .rating-star .star-wrapper.no-star {
   background: url(/assets/img/user/common/v2/layout/star-gray-sp.svg) no-repeat center;
 }
+
 .shop-rating .rating-star .star-wrapper.half-star {
   background: url(/assets/img/user/common/v2/layout/star-half-sp.svg) no-repeat left;
 }
+
 .shop-rating .shopReview-rating {
   background: no-repeat left center / 96px auto;
   font-size: 16px;
@@ -74,6 +127,7 @@
   padding: 0 0 0 100px;
   height: 16px;
 }
+
 .shop-rating .shopReview-number {
   font-size: 10px;
   line-height: 18px;
@@ -82,39 +136,50 @@
   border-bottom: 1.5px solid #000;
   padding-bottom: 1px;
 }
+
 .shop-rating .shopReview-number span.num {
   font-size: 12px;
   line-height: 18px;
   font-weight: bold;
   color: #006BC4;
 }
+
 .shop-rating .shopReview-star1 {
   background-image: url(/assets/img/user/sp/common/star-1.svg);
 }
+
 .shop-rating .shopReview-star15 {
   background-image: url(/assets/img/user/sp/common/star-15.svg);
 }
+
 .shop-rating .shopReview-star2 {
   background-image: url(/assets/img/user/sp/common/star-2.svg);
 }
+
 .shop-rating .shopReview-star25 {
   background-image: url(/assets/img/user/sp/common/star-25.svg);
 }
+
 .shop-rating .shopReview-star3 {
   background-image: url(/assets/img/user/sp/common/star-3.svg);
 }
+
 .shop-rating .shopReview-star35 {
   background-image: url(/assets/img/user/sp/common/star-35.svg);
 }
+
 .shop-rating .shopReview-star4 {
   background-image: url(/assets/img/user/sp/common/star-4.svg);
 }
+
 .shop-rating .shopReview-star45 {
   background-image: url(../../images/history/star-45.svg);
 }
+
 .shop-rating .shopReview-star5 {
   background-image: url(/assets/img/user/sp/common/star-5.svg);
 }
+
 .shop-open,
 .shop-location,
 .shop-price,
@@ -125,6 +190,7 @@
   align-items: center;
   height: 13px;
 }
+
 .shop-open img,
 .shop-location img,
 .shop-price img,
@@ -133,12 +199,14 @@
   width: 14px;
   object-fit: contain;
 }
+
 .shop-open img.unit,
 .shop-location img.unit,
 .shop-price img.unit,
 .shop-payment-type img.unit {
   height: 14px;
 }
+
 .shop-open span,
 .shop-location span,
 .shop-price span,
@@ -147,10 +215,12 @@
   line-height: 13px;
   font-weight: normal;
 }
+
 .info-inline {
   display: flex;
   gap: 14px;
 }
+
 .shop-open {
   margin-top: 10px;
 }
@@ -206,18 +276,18 @@
 }
 
 .arrow-icon {
-    width: 2rem;
-    height: 2rem;
-    color: #FE4A4A;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 56%;
-    right: 0;
-    transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  color: #FE4A4A;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 56%;
+  right: 0;
+  transform: translate(-50%, -50%);
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

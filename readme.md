@@ -33,3 +33,12 @@
 - ~~vùng shop-data đang thiếu icon~~
 - button top-right chưa cách button dưới
 - text dưới to hơn
+
+
+## Run build scss
+gulp compileKeeplist
+gulp MyHistory
+gulp MyHistoryShop
+gulp KeeplistAttendance
+gulp KeeplistTheRapist
+gulp KeeplistShop

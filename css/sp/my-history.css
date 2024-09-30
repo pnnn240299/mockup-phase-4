@@ -1,10 +1,11 @@
+@charset "UTF-8";
 header .g-header .g-header-main-content__logo {
   width: 17rem;
   height: auto;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
-  background: #00356A 0% 0% no-repeat padding-box !important; 
+  background: #00356A 0% 0% no-repeat padding-box !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .button {
@@ -181,6 +182,7 @@ header .g-header .g-header-main-content__logo {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFFFFF;
+  position: static !important;
 }
 
 .wrap-link {
@@ -225,7 +227,7 @@ header .g-header .g-header-main-content__logo {
   object-fit: fill;
 }
 
-/* max幅、高さは各ページで設定 */
+/* maxσ╣àπÇüΘ½ÿπüòπü»σÉäπâÜπâ╝πé╕πüºΦ¿¡σ«Ü */
 .p-imgWrap img {
   max-width: 100%;
   height: auto;
@@ -275,7 +277,7 @@ header .g-header .g-header-main-content__logo {
 }
 
 .visible-hidden {
-    visibility: hidden
+  visibility: hidden;
 }
 
 .f-keepList {

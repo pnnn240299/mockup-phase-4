@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* ==================================
+  breadCrumbs
+================================== */
+
+.l-breadCrumbs {
+    background: #F2F2F2;
+    box-shadow: 0px 0.1rem 0.1rem 0px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .bc-list {
+        display: table;
+        table-layout: fixed;
+    }
+
+    .bc-item {
+        display: table-cell;
+        height: 2.3rem;
+        white-space: nowrap;
+        padding-left: 1.1rem;
+        vertical-align: middle;
+        position: relative;
+
+        a,
+        >span {
+            display: inline-block;
+            padding: 0.7rem 1.2rem 0.7rem 0.5rem;
+            text-decoration: none;
+            color: #666666;
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 1.3rem 0 1.3rem 0.8rem;
+                border-color: transparent transparent transparent #dddddd;
+                position: absolute;
+                top: -0.1rem;
+                right: -0.8rem;
+            }
+
+            &:after {
+                border-color: transparent transparent transparent #F2F2F2;
+                right: -0.7rem;
+            }
+        }
+    }
+}
+
+.l-breadCrumbs-search {
+    background: #F2F2F2;
+    box-shadow: 0px 0.1rem 0.1rem 0px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .bc-list {
+        display: table;
+        table-layout: fixed;
+    }
+
+    .bc-item {
+        display: table-cell;
+        height: 2.3rem;
+        white-space: nowrap;
+        padding-left: 1.1rem;
+        vertical-align: middle;
+        position: relative;
+
+        a,
+        >span {
+            display: inline-block;
+            padding: 0.7rem 1.2rem 0.7rem 0.5rem;
+            text-decoration: none;
+            color: #666666;
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 1.3rem 0 1.3rem 0.8rem;
+                border-color: transparent transparent transparent #dddddd;
+                position: absolute;
+                top: -0.1rem;
+                right: -0.8rem;
+            }
+
+            &:after {
+                border-color: transparent transparent transparent #F2F2F2;
+                right: -0.7rem;
+            }
+        }
+    }
+}

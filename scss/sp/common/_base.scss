@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* ==================================
+	base setting
+================================== */
+$img_path: "/assets/img/user/sp/";
+
+@function px2rem($px, $base_width_px: 375) {
+    $t: $base_width_px * 0.02666;
+    $m: $px / $t;
+    @return #{$m * 1rem};
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 2.666vw;
+    word-break: break-all;
+}
+
+body {
+    width: 100%;
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", arial;
+    -webkit-text-size-adjust: none;
+    color: #1f1c0d;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+
+    &.fixed {
+        position: fixed;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* trunk用 */
+*[class*="trunk8_"] {
+    display: block;
+}
+
+/* 複数行省略 */
+.p-crumpContainer {
+    overflow: hidden;
+
+    .crump {
+        display: -webkit-box;
+        overflow: hidden;
+        /*以下ビルド時に消えてしまう対策*/
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        -webkit-line-clamp: 2;
+    }
+}
+
+.p-lineClump {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* clearFix
+---------------------------------------------------------- */
+.clear {
+    clear: both;
+}
+
+.clearFix {
+    zoom: 100%;
+}
+
+.clearFix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: " ";
+}
+
+/* 画像上下左右中央揃え
+---------------------------------------------------------- */
+/* 幅、高さは各ページで設定 */
+.p-imgWrap {
+    display: block;
+    /* aタグの場合が多いから */
+    position: relative;
+    overflow: hidden;
+}
+
+/* max幅、高さは各ページで設定 */
+.p-imgWrap img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* 1行のみ3点リーダー */
+.p-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* テーブルにする */
+.item-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+    >* {
+        display: table-cell;
+    }
+}
+
+/* 電話ボタン */
+.bt-tel {
+    display: block;
+    background-color: #04bd41;
+    box-shadow: inset 0 -0.2rem 0 0 #029432;
+    width: 4rem;
+    height: 3rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 0.3rem;
+
+    img {
+        width: 1.9rem;
+        height: 2rem;
+    }
+}
+
+/* 複数行末尾3点リーダー
+　　2行なのでそれ以外の場合はマルチクラスで上書き　*/
+.u-lineClamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.u-btnBasic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31.5rem;
+    height: 4.4rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #a0aaa7;
+    font-size: 1.2rem;
+
+    &.link-toBack {
+        margin-bottom: 2rem;
+    }
+
+    &.link-toContact {
+        padding-left: 2.2rem;
+        background: #fff url(/assets/img/user/common/ico-email.svg) no-repeat 11rem center / 1.6rem auto;
+    }
+}
+
+#btn-to-top {
+    display: none;
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 30px;
+    right: 8px;
+    z-index: 100;
+}
+
+.g-wrap {
+    padding-top: 64px;
+
+    &.shop {
+        padding: 4.9rem 0 7.5rem;
+    }
+
+    &.withBanner {
+        padding-top: 0;
+    }
+
+    .section-ttl {
+        padding-left: 0.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.2em;
+
+        >em {
+            display: inline-block;
+            height: 2rem;
+            padding-left: 0.8rem;
+            border-left: 1.2rem #00ada6 solid;
+            color: inherit;
+        }
+    }
+}
