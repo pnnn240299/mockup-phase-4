@@ -2571,12 +2571,12 @@ footer .link-sf-index .link-fu-ja:first-child {
     margin-bottom: 5rem;
 }
 
-.f-keepList .keepList-item {
-    margin-bottom: 2rem;
-    background: #fff;
-    border-radius: 0.6rem;
-    box-shadow: 0px 0.2rem 0.6rem #00000033;
-}
+/* .f-keepList .keepList-item {
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0.2rem 0.6rem #00000033;
+} */
 
 /* .f-keepList .keepList-item.girl {
   padding: 2rem 1rem 0;
@@ -3722,9 +3722,9 @@ footer.blur {
     color: #1F1C0D;
 }
 
-.therapistList-count .colored {
+/* .therapistList-count .colored {
     color: #00ada6;
-}
+} */
 
 .therapistList-calendar {
     width: calc(100vw - 1rem);
@@ -3854,6 +3854,11 @@ header .g-header .g-header-main-content__logo {
     height: 15.2rem;
 }
 
+.therapistList-count .colored {
+    color: #FE4A4A;
+}
+
+
 /* button history */
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
     background: #FAFAFA 0% 0% no-repeat padding-box !important;
@@ -3900,10 +3905,6 @@ header .g-header .g-header-main-content__left .button {
     cursor: pointer;
 }
 
-.therapistList-count .colored {
-    color: #FE4A4A;
-}
-
 .f-keepList .sort-select {
     width: 10.8rem;
     height: 3.2rem;
@@ -3918,6 +3919,7 @@ header .g-header .g-header-main-content__left .button {
     color: #ddd;
     background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
+
 
 .wh-full {
     width: 100% !important;
@@ -3954,7 +3956,8 @@ ul.calender-list {
 }
 
 .btn-release-keep {
-    background-color: #EDEDED !important;
+    /* background-color: #EDEDED !important; */
+    background: #D7E5F7 0% 0% no-repeat padding-box;
     padding: 9px 25px !important;
     border-radius: 20px !important;
 }
@@ -4080,4 +4083,26 @@ ul.calender-list {
     /* position: absolute; */
     /* top: 1rem; */
     color: #FFFFFF;
+}
+
+.btn-check {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35%;
+    left: 11px;
+}
+
+.keepList-item {
+    /* padding: 10px 34px 0px 34px !important; */
+    padding: 10px 14px 0px 48px !important;
+    /*có padding để show checkbox*/
+    position: relative;
+}
+
+.f-keepList .keepList-item {
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 0.6rem;
+    box-shadow: 0px 0.2rem 0.6rem #00000033;
 }

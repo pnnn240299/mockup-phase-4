@@ -20,11 +20,11 @@
 - ~~shop-tags: chỉnh nhỏ lại (copy từ history.html)~~
 
 4. keeplist-therapist.html
-- image chưa ngang hàng với cột bên phải
-- sns chưa đúng vị trí
-- button call chưa đúng layout
+- ~~image chưa ngang hàng với cột bên phải~~
+- ~~sns chưa đúng vị trí~~
+- ~~button call chưa đúng layout~~
 - thêm 1 cái li show icon twitter(inactive) và instagram(active)
-- thiếu checkbox bên tay trái mỗi girl
+- ~~thiếu checkbox bên tay trái mỗi girl~~
 
 5. keeplist-shop.html
 - ~~chỉnh lại 2 button~~

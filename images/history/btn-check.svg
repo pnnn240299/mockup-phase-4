@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><g fill="#fff" stroke="#00ada6" stroke-width="1.5"><circle cx="17.5" cy="17.5" r="17.5" stroke="none"/><circle cx="17.5" cy="17.5" r="16.75" fill="none"/></g><path d="M9.118,19.05,3.186,12.992a.591.591,0,0,1,.03-.789.56.56,0,0,1,.772-.03L9.107,17.4l10-10.215a.56.56,0,0,1,.772.03.591.591,0,0,1,.03.789Z" transform="translate(5.951 5.95)" fill="#00ada6" stroke="#00ada6" stroke-width="1"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="グループ_52" data-name="グループ 52" transform="translate(-1240 -270.417)">
+    <g id="楕円形_10" data-name="楕円形 10" transform="translate(1240 270.417)" fill="#fff" stroke="#00356a" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="check" d="M7.641,16.128,3.153,11.545a.447.447,0,0,1,.023-.6.423.423,0,0,1,.584-.023l3.872,3.959L15.2,7.155a.423.423,0,0,1,.584.023.447.447,0,0,1,.023.6Z" transform="translate(1243.76 272.815)" fill="#00356a" stroke="#00356a" stroke-width="1.5"/>
+  </g>
+</svg>
