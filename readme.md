@@ -36,9 +36,9 @@
 
 
 ## Run build scss
-gulp compileKeeplist
-gulp MyHistory
-gulp MyHistoryShop
-gulp KeeplistAttendance
-gulp KeeplistTheRapist
-gulp KeeplistShop
+- gulp compileKeeplist
+- gulp MyHistory
+- gulp MyHistoryShop
+- gulp KeeplistAttendance
+- gulp KeeplistTheRapist
+- gulp KeeplistShop
