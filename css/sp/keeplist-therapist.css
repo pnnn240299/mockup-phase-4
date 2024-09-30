@@ -345,7 +345,7 @@ img {
 }
 
 /* max幅、高さは各ページで設定 */
-.p-imgWrap img {
+/* .p-imgWrap img {
   max-width: 100%;
   width: auto;
   height: auto;
@@ -355,7 +355,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-}
+} */
 
 /* 1行のみ3点リーダー */
 .p-ellipsis {
@@ -2578,14 +2578,14 @@ footer .link-sf-index .link-fu-ja:first-child {
   box-shadow: 0px 0.2rem 0.6rem #00000033;
 }
 
-.f-keepList .keepList-item.girl {
+/* .f-keepList .keepList-item.girl {
   padding: 2rem 1rem 0;
 }
 
 .f-keepList .keepList-item.girl .item-table .p-imgWrap {
   width: 11.4rem;
   height: 15.2rem;
-}
+} */
 
 .f-keepList .keepList-item.shop {
   padding: 2rem 1rem 0;
@@ -2750,10 +2750,10 @@ footer .link-sf-index .link-fu-ja:first-child {
   max-width: 70%;
 }
 
-.f-keepList .girl-data {
+/* .f-keepList .girl-data {
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
-}
+} */
 
 .f-keepList .icon-tel {
   width: 3rem;
@@ -2870,23 +2870,17 @@ footer .link-sf-index .link-fu-ja:first-child {
     background-color: red; */
 }
 
-.f-keepList .girl-book {
+/* .f-keepList .girl-book {
   display: flex;
   align-items: center;
   width: 13rem;
   height: 4rem;
   padding-left: 4rem;
-  /* background: #fcdd59 url("/assets/img/user/sp/keeplist/icon-calendar.svg") no-repeat 2.7rem center/1.5rem auto; */
-  background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.2rem center/1.5rem auto;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
-  /* border-radius: 2.4rem; */
-  border-radius: 3px;
   font-size: 1.2rem;
   font-weight: bold;
-  /* position: absolute; */
-  /* top: 1rem; */
   color: #FFFFFF;
-}
+} */
 
 
 
@@ -3851,6 +3845,15 @@ header .g-header .g-header-main-content__logo {
   background: #FAFAFA;
 }
 
+.f-keepList .keepList-item.girl {
+  padding: 1.5rem 3rem 0;
+}
+
+.f-keepList .keepList-item.girl .item-table .p-imgWrap {
+  width: 11.4rem;
+  height: 15.2rem;
+}
+
 /* button history */
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
   background: #FAFAFA 0% 0% no-repeat padding-box !important;
@@ -3946,6 +3949,11 @@ ul.calender-list {
   color: #A8A8A8;
 }
 
+.f-keepList .girl-data {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
 .city {
   color: #1F1C0D;
   font-size: 1.1rem;
@@ -3955,10 +3963,12 @@ ul.calender-list {
   display: flex;
   align-items: flex-end;
   margin-top: 4px;
+  margin-bottom: 0.6rem;
+  justify-content: space-between;
 }
 
 .wrap-sns p {
-  padding: 10px 10px 10px 0px;
+  padding: 2px 10px 4px 0px;
   font-size: 1.4rem;
   font-weight: 700 !important;
   /* background-color: yellowgreen; */
@@ -3987,26 +3997,68 @@ ul.calender-list {
 }
 
 .keepGirl-list {
-  width: 90%;
+  width: 98%;
   /* background: red; */
   /* margin-left: 0 auto; */
   margin: 0 auto;
 }
 
+/* max幅、高さは各ページで設定 */
+.p-imgWrap img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+}
+
 .count-girl-work {
   background-color: #fff7f7;
-  padding: 13px;
+  padding: 10px;
   text-align: center;
   border: 1px solid #fddedb;
   border-radius: 4px;
   /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
   margin-bottom: 10px;
   font-size: 13px;
-  height: 4rem;
+  /* height: 4rem; */
 }
+
+/* .wrap-count-girl-work {
+  background-color: #fff7f7;
+  text-align: center;
+  border: 1px solid #fddedb;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  height: 4rem;
+  position: relative;
+} */
 
 .count-girl-work em {
   color: #FE4A4A;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.f-keepList .girl-book {
+  display: flex;
+  align-items: center;
+  /* width: 13rem; */
+  height: 3.7rem;
+  padding-left: 3.8rem;
+  /* background: #fcdd59 url(/assets/img/user/sp/keeplist/icon-calendar.svg) no-repeat 2.7rem center / 1.5rem auto; */
+  background: #FF4A4A url(../../images/history/phone2x.png) no-repeat 1.8rem center / 1.3rem auto;
+  /* box-shadow: 0px 0.1rem 0.8rem #33333333; */
+  /* border-radius: 2.4rem; */
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* position: absolute; */
+  /* top: 1rem; */
+  color: #FFFFFF;
 }
