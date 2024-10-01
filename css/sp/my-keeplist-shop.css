@@ -50,6 +50,9 @@ header .g-header .g-header-main-content__left .button {
   display: block;
   top: 0.8rem;
 }
+.f-keepList .keepList-item.shop {
+  padding: 1rem;
+}
 .f-keepList .keepList-item.shop .shop-name {
   margin-bottom: 0;
 }
@@ -263,6 +266,10 @@ header .g-header .g-header-main-content__left .button {
 
 .therapistList-count {
   padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.therapistList-count em.colored {
+  color: #FE4A4A;
 }
 
 .btn-keep {
@@ -280,4 +287,8 @@ header .g-header .g-header-main-content__left .button {
 
 .star-keep {
   width: 3.8rem;
+}
+
+.mod-shopInfo {
+  margin-bottom: 0;
 }
