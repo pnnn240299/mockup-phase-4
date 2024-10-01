@@ -12,14 +12,8 @@ $background-color_4: #fff7f7;
 
 /* button history */
 /* button keeplist */
-/* .mod-keepListHead .listChange-item.active { */
 header {
     .g-header {
-        .g-header-main-content__logo {
-            width: 215px;
-            height: auto;
-        }
-
         .g-header-main-content__left {
             .button {
                 display: flex;
@@ -156,7 +150,7 @@ header {
     em {
         color: $color_3;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     img {
@@ -318,7 +312,7 @@ header {
 
     .listChange-item.active {
         background: #FFC015;
-        color: $color_7;
+        color: $color_7 !important;
     }
 }
 
