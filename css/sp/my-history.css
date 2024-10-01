@@ -28,6 +28,9 @@
   padding: 2rem 1rem 6rem;
   background: #FAFAFA;
 }
+.f-keepList .history-count {
+  color: #FE4A4A;
+}
 .f-keepList .sort-select {
   width: 10.8rem;
   height: 3.2rem;
@@ -83,6 +86,13 @@
   border-radius: 0 0.3rem 0.3rem 0;
   color: #1F1C0D;
   background-color: #FFFCF2;
+}
+.f-keepList .status-tbl.today td:only-child {
+  border: none;
+  border-radius: 0.3rem;
+  background: #EAEAEA;
+  color: inherit;
+  font-weight: normal;
 }
 .f-keepList .status-tbl.next {
   background: #fff8e7;
@@ -200,7 +210,7 @@
 .mod-shopInfo li.tag {
   background: #F7F7F7 0% 0% no-repeat padding-box;
   color: #1F1C0D;
-  padding: 4px 16px;
+  padding: 4px 14px;
   margin-right: 4px;
   text-align: center;
   box-sizing: border-box;
@@ -227,6 +237,7 @@
 
 .p-imgWrap img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   margin: auto;
   position: absolute;
