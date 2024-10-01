@@ -234,8 +234,8 @@ header .g-header .g-header-main-content__left .button {
   height: 4.5rem;
   border-radius: 2.25rem;
   color: #4B454E;
-  background: #F2FAFF;
-  border: 1px solid #D9EFFF;
+  background: #FFF8E7;
+  border: 1px solid #F5EBD1;
   font-size: 1.4rem;
   font-weight: normal;
   position: relative;
@@ -260,7 +260,7 @@ header .g-header .g-header-main-content__left .button {
   right: 0;
 }
 .mod-keepListHead .listChange-item.active {
-  background: #00356A;
+  background: #FFC015;
   color: #fff;
 }
 

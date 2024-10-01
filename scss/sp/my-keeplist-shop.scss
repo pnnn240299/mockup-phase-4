@@ -278,8 +278,8 @@ header {
         height: 4.5rem;
         border-radius: 2.25rem;
         color: $color_5;
-        background: #F2FAFF;
-        border: 1px solid #D9EFFF;
+        background: #FFF8E7;
+        border: 1px solid #F5EBD1;
         font-size: 1.4rem;
         font-weight: normal;
         position: relative;
@@ -307,7 +307,7 @@ header {
     }
 
     .listChange-item.active {
-        background: #00356A;
+        background: #FFC015;
         color: $color_7;
     }
 }
