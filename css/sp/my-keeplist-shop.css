@@ -1,46 +1,10 @@
-@charset "UTF-8";
+/* button history */
+/* button keeplist */
+/* .mod-keepListHead .listChange-item.active { */
 header .g-header .g-header-main-content__logo {
   width: 215px;
   height: auto;
 }
-
-.f-keepList {
-  padding: 2rem 1rem 6rem;
-  background: #FAFAFA;
-}
-
-/* button history */
-.g-header-main-keeplist .g-header-main-content__left .history-is-active {
-  background: #FAFAFA 0% 0% no-repeat padding-box !important;
-}
-
-.g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
-  color: #00356A !important;
-}
-
-.g-header-main-keeplist .g-header-main-content__left .button {
-  display: flex;
-  height: 38px !important;
-  width: 80px !important;
-  background: #ffffff;
-  border-radius: 3px;
-  padding: 6px !important;
-  justify-content: space-between;
-  flex-direction: unset !important;
-  align-items: center;
-  cursor: pointer;
-  border: 1px solid #00356A !important;
-}
-
-/* button keeplist */
-.g-header-main-keeplist .g-header-main-content__left .star {
-  border: 1px solid #FFC015 !important;
-}
-
-.g-header-main-keeplist .g-header-main-content__left .star .button-text {
-  color: #FFFFFF !important;
-}
-
 header .g-header .g-header-main-content__left .button {
   display: flex;
   height: 43px;
@@ -55,6 +19,67 @@ header .g-header .g-header-main-content__left .button {
   cursor: pointer;
 }
 
+.f-keepList {
+  padding: 2rem 1rem 6rem;
+  background: #FAFAFA;
+}
+.f-keepList .girl-book {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 1.5rem);
+  height: 4.8rem;
+  padding-left: 4.7rem;
+  background-color: #FF4A4A;
+  box-shadow: 0px 0.1rem 0.8rem #33333333;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 5rem;
+  color: #FFFFFF;
+}
+.f-keepList .girl-book img {
+  width: 14px;
+  margin-right: 0.5rem;
+}
+.f-keepList .girl-book span {
+  display: inline-block;
+  line-height: 1.8rem;
+}
+.f-keepList .select-wrap {
+  display: block;
+  top: 0.8rem;
+}
+.f-keepList .keepList-item.shop .shop-name {
+  margin-bottom: 0;
+}
+
+.g-header-main-keeplist .g-header-main-content__left .history-is-active {
+  background: #FAFAFA 0% 0% no-repeat padding-box !important;
+}
+.g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
+  color: #00356A !important;
+}
+.g-header-main-keeplist .g-header-main-content__left .button {
+  display: flex;
+  height: 38px !important;
+  width: 80px !important;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 6px !important;
+  justify-content: space-between;
+  flex-direction: unset !important;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00356A !important;
+}
+.g-header-main-keeplist .g-header-main-content__left .star {
+  border: 1px solid #FFC015 !important;
+}
+.g-header-main-keeplist .g-header-main-content__left .star .button-text {
+  color: #FFFFFF !important;
+}
+
 .wh-full {
   width: 100% !important;
   height: 100% !important;
@@ -62,10 +87,6 @@ header .g-header .g-header-main-content__left .button {
 
 .p-0 {
   padding: 0px !important;
-}
-
-.keepList-item {
-  padding: 10px 34px 0px 34px !important;
 }
 
 .btn-release-keep {
@@ -81,32 +102,23 @@ header .g-header .g-header-main-content__left .button {
 
 .call-shop {
   background-color: #FFFFFF;
-  /* padding: 13px; */
   text-align: center;
   border: 1px solid #027DD9;
   border-radius: 3px;
-  /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
   margin-bottom: 10px;
   font-size: 13px;
   height: 4rem;
   display: flex;
   align-items: center;
-  /* C─ân giß╗»a theo chiß╗üu dß╗ìc */
   justify-content: center;
-  /* C─ân giß╗»a theo chiß╗üu ngang */
 }
-
 .call-shop em {
   color: #027DD9;
   font-weight: 600;
-  /* font-size: 18px; */
 }
-
 .call-shop img {
   width: 1.3rem;
-  /* Thay ─æß╗òi theo k├¡ch th╞░ß╗¢c mong muß╗æn */
   margin-right: 10px;
-  /* Khoß║úng c├ích giß╗»a h├¼nh ß║únh v├á sß╗æ ─æiß╗çn thoß║íi */
 }
 
 .count-girl-work {
@@ -115,12 +127,10 @@ header .g-header .g-header-main-content__left .button {
   text-align: center;
   border: 1px solid #fddedb;
   border-radius: 4px;
-  /* background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
   margin-bottom: 10px;
   font-size: 13px;
   height: 4rem;
 }
-
 .count-girl-work em {
   color: #FE4A4A;
   font-weight: 600;
@@ -131,25 +141,60 @@ header .g-header .g-header-main-content__left .button {
   background: url("/assets/img/user/sp/common/icon-clock.svg") no-repeat left center/1.4rem auto;
   background: url("/icon-clock.svg") no-repeat left center/1.4rem auto;
 }
-
 .shop-data .shop-area {
   background: url("/assets/img/user/sp/common/icon-markerBlack.svg") no-repeat left 0.2rem center/1rem auto;
 }
 
-.shop-open,
-.shop-location,
-.shop-price,
+.shop-open {
+  margin-top: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 13px;
+  font-size: 14px;
+}
+.shop-open img {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+
+.shop-location {
+  margin-top: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 13px;
+  font-size: 14px;
+}
+.shop-location img {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+
+.shop-price {
+  margin-top: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 13px;
+  font-size: 14px;
+}
+.shop-price img {
+  height: 14px;
+  width: 14px;
+  object-fit: contain;
+}
+
 .shop-payment-type {
   margin-top: 13px;
   display: flex;
   gap: 8px;
   align-items: center;
   height: 13px;
+  font-size: 14px;
 }
-
-.shop-open img,
-.shop-location img,
-.shop-price img,
 .shop-payment-type img {
   height: 14px;
   width: 14px;
@@ -173,6 +218,65 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .shop-info {
-  /* padding: 1.6rem 0 1.5rem; */
   padding: 1rem 0 !important;
+}
+
+.mod-keepListHead .listChange-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 15.8rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  color: #4B454E;
+  background: #F2FAFF;
+  border: 1px solid #D9EFFF;
+  font-size: 1.4rem;
+  font-weight: normal;
+  position: relative;
+  margin-right: 1rem;
+}
+.mod-keepListHead .listChange-item:last-child {
+  margin-right: 0;
+}
+.mod-keepListHead .listChange-item .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: #E7F1FD;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1F1C0D;
+  position: absolute;
+  top: -0.8rem;
+  right: 0;
+}
+.mod-keepListHead .listChange-item.active {
+  background: #00356A;
+  color: #fff;
+}
+
+.therapistList-count {
+  padding-top: 2rem;
+}
+
+.btn-keep {
+  width: 3.9rem;
+  height: 3.9rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  z-index: 1;
+  -webkit-tap-highlight-color: #000;
+  box-shadow: none;
+}
+
+.star-keep {
+  width: 3.8rem;
 }
