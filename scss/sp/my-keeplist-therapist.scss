@@ -246,8 +246,8 @@ ul.calender-list {
 }
 
 .wrap-link {
-    width: 3rem;
-    height: 3rem;
+    width: 2.7rem;
+    height: 2.7rem;
     border-radius: 50%;
     position: relative;
 
@@ -266,6 +266,7 @@ ul.calender-list {
 .p-imgWrap {
     img {
         max-width: 100%;
+        width: 100%;
         height: auto;
         margin: auto;
         position: absolute;
@@ -319,7 +320,7 @@ ul.calender-list {
         background: #FFF8E7;
         border: 1px solid #F5EBD1;
         font-size: 1.4rem;
-        font-weight: normal;
+        font-weight: bold;
         position: relative;
         margin-right: 1rem;
 

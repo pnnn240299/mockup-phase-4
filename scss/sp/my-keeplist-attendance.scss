@@ -7,6 +7,7 @@ $color_6: inherit;
 $color_7: #FFFFFF;
 $color_8: #00356A;
 $color_9: #fff;
+$color_10: #333333;
 $background-color_1: #FFFCF2;
 $background-color_2: #E7F3FC;
 
@@ -158,7 +159,7 @@ header {
         width: 13rem;
         height: 4rem;
         padding-left: 4rem;
-        background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.2rem center/1.5rem auto;
+        background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.8rem center/1.2rem auto;
         box-shadow: 0px 0.1rem 0.8rem #33333333;
         border-radius: 3px;
         font-size: 1.2rem;
@@ -196,6 +197,11 @@ header {
                 background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
             }
         }
+    }
+
+    .keepGirl-list {
+        padding-bottom: 1.5rem;
+        position: relative;
     }
 }
 
@@ -265,6 +271,10 @@ ul.calender-list {
             border: none;
             color: $color_9;
             pointer-events: none;
+
+            p {
+                color: $color_9;
+            }
         }
     }
 }
@@ -281,6 +291,11 @@ ul.calender-list {
     .wrap-day {
         padding: 0px 10px 10px 10px;
         border-bottom: 1px solid #DDDDDD;
+        color: $color_10;
+    }
+
+    .people {
+        color: $color_10;
     }
 }
 
@@ -307,7 +322,7 @@ ul.calender-list {
         background: #FFF8E7;
         border: 1px solid #F5EBD1;
         font-size: 1.4rem;
-        font-weight: normal;
+        font-weight: bold;
         position: relative;
         margin-right: 1rem;
 
@@ -339,8 +354,8 @@ ul.calender-list {
 }
 
 .wrap-link {
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 2.7rem;
+    height: 2.7rem;
     border-radius: 50%;
     position: relative;
 }
@@ -353,7 +368,7 @@ ul.calender-list {
     li.tag {
         background: #F7F7F7 0% 0% no-repeat padding-box;
         color: $color_5;
-        padding: 4px 16px;
+        padding: 4px 14px;
         margin-right: 4px;
         text-align: center;
         box-sizing: border-box;
@@ -385,6 +400,7 @@ ul.calender-list {
 .p-imgWrap {
     img {
         max-width: 100%;
+        width: 100%;
         height: auto;
         margin: auto;
         position: absolute;
