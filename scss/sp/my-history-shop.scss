@@ -44,6 +44,14 @@ $background-color_1: #fff7f7;
     .history-count {
         color: $color_2;
     }
+
+    .keepList-item.shop {
+        padding: 1rem;
+    }
+
+    .shop-inner {
+        border-bottom: none;
+    }
 }
 
 .mod-keepListHead {

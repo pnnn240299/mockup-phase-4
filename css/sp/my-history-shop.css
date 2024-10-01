@@ -353,3 +353,11 @@
 .btn-keep.on .star-keep .g {
   stroke: #fb0;
 }
+
+.f-keepList .keepList-item.shop {
+    padding: 1rem;
+}
+
+.f-keepList .shop-inner {
+    border-bottom: none;
+}
