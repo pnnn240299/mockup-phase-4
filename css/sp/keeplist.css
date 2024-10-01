@@ -1816,12 +1816,14 @@ footer .link-sf-index .link-fu-ja:first-child {
   padding-left: 1rem;
   border-radius: 0.2rem;
   border: none;
-  background: #fff url("/assets/img/user/sp/keeplist/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  /* background: #fff url("/assets/img/user/sp/keeplist/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto; */
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
   appearance: none;
 }
 .f-keepList .sort-select:disabled {
   color: #ddd;
-  background: #fafafa url("/assets/img/user/sp/keeplist/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+  /* background: #fafafa url("/assets/img/user/sp/keeplist/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto; */
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
 .history .f-keepList {
   background: #f5fcfb;
