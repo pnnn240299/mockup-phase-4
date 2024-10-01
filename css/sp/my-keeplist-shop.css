@@ -1,10 +1,5 @@
 /* button history */
 /* button keeplist */
-/* .mod-keepListHead .listChange-item.active { */
-header .g-header .g-header-main-content__logo {
-  width: 215px;
-  height: auto;
-}
 header .g-header .g-header-main-content__left .button {
   display: flex;
   height: 43px;
@@ -122,7 +117,7 @@ header .g-header .g-header-main-content__left .button {
 .call-shop em {
   color: #027DD9;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 .call-shop img {
   width: 1.3rem;
@@ -269,7 +264,7 @@ header .g-header .g-header-main-content__left .button {
 }
 .mod-keepListHead .listChange-item.active {
   background: #FFC015;
-  color: #fff;
+  color: #fff !important;
 }
 
 .therapistList-count {
