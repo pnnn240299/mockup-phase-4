@@ -118,8 +118,7 @@ ul.calender-list {
     margin-top: 4px;
 }
 
-.btn-release-keep {
-    /* background-color: #EDEDED !important; */
+/* .btn-release-keep {
     background: #D7E5F7 0% 0% no-repeat padding-box;
     padding: 9px 25px !important;
     border-radius: 20px !important;
@@ -128,7 +127,7 @@ ul.calender-list {
 .wrap-release-keep {
     margin-bottom: 2rem;
     text-align: right;
-}
+} */
 
 .girl-data {
     color: #A8A8A8;
