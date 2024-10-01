@@ -1,11 +1,3 @@
-@charset "UTF-8";
-/* status-tbl start*/
-/* max╧âΓòú├á╧Ç├ç├╝╬ÿ┬╜├┐╧Ç├╝├▓╧Ç├╝┬╗╧â├ë├ñ╧Ç├ó├£╧Ç├óΓò¥╧Ç├⌐Γòò╧Ç├╝┬║╬ª┬┐┬í╧â┬½├£ */
-header .g-header .g-header-main-content__logo {
-  width: 17rem;
-  height: auto;
-}
-
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
   background: #00356A 0% 0% no-repeat padding-box !important;
 }
