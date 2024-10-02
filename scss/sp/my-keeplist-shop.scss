@@ -36,11 +36,27 @@ header {
     padding: 2rem 1rem 6rem;
     background: #FAFAFA;
 
+    .keepList-item.shop {
+        padding: 1.6rem;
+
+        .item-table {
+            .p-imgWrap {
+                width: 11.1rem;
+                height: 11.1rem;
+            }
+        }
+
+        .shop-name {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+        }
+    }
+
     .girl-book {
         display: flex;
         align-items: center;
         width: calc(100% - 1.5rem);
-        height: 4.1rem;
+        height: 3.5rem;
         padding-left: 4.7rem;
         background-color: $background-color_1;
         box-shadow: 0px 0.1rem 0.8rem #33333333;
@@ -48,11 +64,11 @@ header {
         font-size: 1.2rem;
         font-weight: bold;
         position: absolute;
-        top: 5rem;
+        top: 4.5rem;
         color: $color_1;
 
         img {
-            width: 14px;
+            width: 12px;
             margin-right: 0.5rem;
         }
 
@@ -65,14 +81,6 @@ header {
     .select-wrap {
         display: block;
         top: 0.8rem;
-    }
-
-    .keepList-item.shop {
-        padding: 1rem;
-
-        .shop-name {
-            margin-bottom: 0;
-        }
     }
 }
 
@@ -142,7 +150,7 @@ header {
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: 13px;
-    height: 4rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,12 +158,12 @@ header {
     em {
         color: $color_3;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1.3rem;
     }
 
     img {
         width: 1.3rem;
-        margin-right: 10px;
+        margin-right: 4px;
     }
 }
 
@@ -250,13 +258,14 @@ header {
 .shop-tag {
     background: #ffeb7e;
     border-radius: 2px;
-    padding: 4px 10px;
+    padding: 5px 16px;
     height: 100%;
     width: fit-content;
     font-size: 10px;
     line-height: 10px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 0.8rem;
+    margin-top: -0.7rem;
 }
 
 .shop-inner {
@@ -347,5 +356,6 @@ header {
 }
 
 .f-keepList.keep {
+    padding: 1rem 1rem 6rem;
     background: #FAFAFA !important;
 }

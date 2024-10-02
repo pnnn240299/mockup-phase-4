@@ -18,11 +18,22 @@ header .g-header .g-header-main-content__left .button {
   padding: 2rem 1rem 6rem;
   background: #FAFAFA;
 }
+.f-keepList .keepList-item.shop {
+  padding: 1.6rem;
+}
+.f-keepList .keepList-item.shop .item-table .p-imgWrap {
+  width: 11.1rem;
+  height: 11.1rem;
+}
+.f-keepList .keepList-item.shop .shop-name {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
 .f-keepList .girl-book {
   display: flex;
   align-items: center;
   width: calc(100% - 1.5rem);
-  height: 4.1rem;
+  height: 3.5rem;
   padding-left: 4.7rem;
   background-color: #FF4A4A;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
@@ -30,11 +41,11 @@ header .g-header .g-header-main-content__left .button {
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
-  top: 5rem;
+  top: 4.5rem;
   color: #FFFFFF;
 }
 .f-keepList .girl-book img {
-  width: 14px;
+  width: 12px;
   margin-right: 0.5rem;
 }
 .f-keepList .girl-book span {
@@ -44,12 +55,6 @@ header .g-header .g-header-main-content__left .button {
 .f-keepList .select-wrap {
   display: block;
   top: 0.8rem;
-}
-.f-keepList .keepList-item.shop {
-  padding: 1rem;
-}
-.f-keepList .keepList-item.shop .shop-name {
-  margin-bottom: 0;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
@@ -109,7 +114,7 @@ header .g-header .g-header-main-content__left .button {
   border-radius: 3px;
   margin-bottom: 10px;
   font-size: 13px;
-  height: 4rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,11 +122,11 @@ header .g-header .g-header-main-content__left .button {
 .call-shop em {
   color: #027DD9;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3rem;
 }
 .call-shop img {
   width: 1.3rem;
-  margin-right: 10px;
+  margin-right: 4px;
 }
 
 .count-girl-work {
@@ -207,13 +212,14 @@ header .g-header .g-header-main-content__left .button {
 .shop-tag {
   background: #ffeb7e;
   border-radius: 2px;
-  padding: 4px 10px;
+  padding: 5px 16px;
   height: 100%;
   width: fit-content;
   font-size: 10px;
   line-height: 10px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 0.8rem;
+  margin-top: -0.7rem;
 }
 
 .shop-inner {
@@ -297,5 +303,6 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .f-keepList.keep {
+  padding: 1rem 1rem 6rem;
   background: #FAFAFA !important;
 }
