@@ -3,8 +3,9 @@ $color_2: #FE4A4A;
 $color_3: #4B454E;
 $color_4: #1F1C0D;
 $color_5: #fff;
-$color_6: #006BC4;
-$color_7: #FFFFFF;
+$color_6: #8B8B8B;
+$color_7: #006BC4;
+$color_8: #FFFFFF;
 $background-color_1: #fff7f7;
 
 * {
@@ -12,8 +13,6 @@ $background-color_1: #fff7f7;
 }
 
 .f-keepList {
-    background: #FAFAFA;
-
     .info-area.rookie {
         .girl-name {
             &:after {
@@ -46,15 +45,24 @@ $background-color_1: #fff7f7;
     }
 
     .keepList-item.shop {
+        padding: 1rem;
+        padding: 1rem;
+
         .shop-name {
             margin-bottom: 0.5em;
         }
-
-        padding: 1rem;
     }
 
     .shop-inner {
         border-bottom: none;
+        border-bottom: none;
+    }
+
+    background: #FAFAFA;
+    padding: 2rem 1rem;
+
+    .keepList-list {
+        margin-bottom: 4rem;
     }
 }
 
@@ -126,7 +134,7 @@ $background-color_1: #fff7f7;
     font-size: 12px;
     line-height: 12px;
     font-weight: normal;
-    color: $color_4;
+    color: $color_6;
 }
 
 .shop-rating {
@@ -173,7 +181,7 @@ $background-color_1: #fff7f7;
             font-size: 12px;
             line-height: 18px;
             font-weight: bold;
-            color: $color_6;
+            color: $color_7;
         }
     }
 
@@ -240,7 +248,7 @@ $background-color_1: #fff7f7;
 }
 
 .shop-location {
-    margin-top: 13px;
+    margin-top: 0.7rem;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -264,7 +272,7 @@ $background-color_1: #fff7f7;
 }
 
 .shop-price {
-    margin-top: 13px;
+    margin-top: 0.7rem;
     display: flex;
     gap: 8px;
     align-items: center;
@@ -365,6 +373,7 @@ $background-color_1: #fff7f7;
     font-size: 13px;
     height: 4rem;
     position: relative;
+    font-weight: 600;
 }
 
 .count-girl-work {
@@ -386,7 +395,7 @@ $background-color_1: #fff7f7;
     border-radius: 3px !important;
     font-size: 1.2rem;
     font-weight: bold;
-    color: $color_7;
+    color: $color_8;
     position: unset !important;
 }
 
@@ -429,4 +438,8 @@ $background-color_1: #fff7f7;
             stroke: #fb0;
         }
     }
+}
+
+.l-breadcrumb {
+    background: #F2F2F2 !important;
 }

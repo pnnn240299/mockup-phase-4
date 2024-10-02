@@ -17,6 +17,8 @@ $background-color_3: #E7F3FC;
     .breadcrumb-list {
         color: $color_1;
     }
+
+    background: #F2F2F2 !important;
 }
 
 .therapistList-calendar {
@@ -76,9 +78,7 @@ header {
 }
 
 .f-keepList {
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
-    padding: 2rem 1rem 6rem;
+    padding: 2rem 1rem;
     background: #FAFAFA;
 
     .sort-select {
@@ -225,11 +225,6 @@ header {
         padding-bottom: 1.2rem;
         position: relative;
     }
-}
-
-.f-keepList.keep {
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
 }
 
 .g-header-main-keeplist {
@@ -480,4 +475,9 @@ ul.calender-list {
 
 .visible-hidden {
     visibility: hidden;
+}
+
+.f-keepList.keep {
+    padding: 2rem 1rem;
+    background: #FAFAFA !important;
 }

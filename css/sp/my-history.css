@@ -27,6 +27,8 @@
 .f-keepList {
   padding: 2rem 1rem 6rem;
   background: #FAFAFA;
+  background: #FAFAFA;
+  padding: 2rem 1rem;
 }
 .f-keepList .history-count {
   color: #FE4A4A;
@@ -154,6 +156,15 @@
 .f-keepList .keepGirl-list {
   padding-bottom: 1.2rem;
   position: relative;
+}
+.f-keepList .keepList-item.shop {
+  padding: 1rem;
+}
+.f-keepList .shop-inner {
+  border-bottom: none;
+}
+.f-keepList .keepList-list {
+  margin-bottom: 4rem;
 }
 
 .star-keep {
@@ -284,23 +295,6 @@
 
 .visible-hidden {
   visibility: hidden;
-}
-
-.f-keepList {
-  background: #FAFAFA;
-  padding: 2rem 1rem;
-}
-
-.f-keepList .keepList-item.shop {
-    padding: 1rem;
-}
-
-.f-keepList .shop-inner {
-    border-bottom: none;
-}
-
-.f-keepList .keepList-list {
-    margin-bottom: 4rem;
 }
 
 .l-breadcrumb {

@@ -2,7 +2,10 @@
   box-sizing: border-box;
 }
 
-
+.f-keepList {
+  background: #FAFAFA;
+  padding: 2rem 1rem;
+}
 .f-keepList .info-area.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
@@ -28,12 +31,17 @@
 }
 .f-keepList .keepList-item.shop {
   padding: 1rem;
+  padding: 1rem;
 }
 .f-keepList .keepList-item.shop .shop-name {
   margin-bottom: 0.5em;
 }
 .f-keepList .shop-inner {
   border-bottom: none;
+  border-bottom: none;
+}
+.f-keepList .keepList-list {
+  margin-bottom: 4rem;
 }
 
 .mod-keepListHead .listChange-item {
@@ -360,23 +368,6 @@
 
 .btn-keep.on .star-keep .g {
   stroke: #fb0;
-}
-
-.f-keepList {
-  background: #FAFAFA;
-  padding: 2rem 1rem;
-}
-
-.f-keepList .keepList-item.shop {
-  padding: 1rem;
-}
-
-.f-keepList .shop-inner {
-  border-bottom: none;
-}
-
-.f-keepList .keepList-list {
-  margin-bottom: 4rem;
 }
 
 .l-breadcrumb {
