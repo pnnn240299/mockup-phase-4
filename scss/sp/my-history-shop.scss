@@ -46,6 +46,10 @@ $background-color_1: #fff7f7;
     }
 
     .keepList-item.shop {
+        .shop-name {
+            margin-bottom: 0.5em;
+        }
+
         padding: 1rem;
     }
 
@@ -117,8 +121,8 @@ $background-color_1: #fff7f7;
 }
 
 .shop-genre {
-    margin-top: 8px;
-    margin-bottom: 15px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
     font-size: 12px;
     line-height: 12px;
     font-weight: normal;
@@ -377,7 +381,7 @@ $background-color_1: #fff7f7;
     width: 100% !important;
     height: 4rem !important;
     padding-left: 7rem !important;
-    background: #FF4A4A url("../../images/history/phone2x.png") no-repeat 4.5rem center/1.5rem auto !important;
+    background: #FF4A4A url("../../images/history/phone2x.png") no-repeat 4.4rem center/1.2rem auto !important;
     box-shadow: 0px 0.1rem 0.8rem #33333333;
     border-radius: 3px !important;
     font-size: 1.2rem;
