@@ -5,10 +5,16 @@ $color_4: #00356A;
 $color_5: #FE4A4A;
 $color_6: #A8A8A8;
 $color_7: #1F1C0D;
-$color_8: #1f1c0d;
-$color_9: #fff;
+$color_8: #FF4A4A;
+$color_9: #1f1c0d;
+$color_10: #fff;
+$color_11: #59595F;
+$color_12: inherit;
+$color_13: #858585;
 $background-color_1: #FFF5F5;
 $background-color_2: #FFF8E7;
+$background-color_3: #FFFCF2;
+$background-color_4: #E7F3FC;
 
 @charset "UTF-8";
 
@@ -24,7 +30,7 @@ $background-color_2: #FFF8E7;
     margin-bottom: 2rem;
     text-align: right;
 } */
-/* max幅、高さは各ページで設定 */
+/* maxσ╣àπÇüΘ½ÿπüòπü»σÉäπâÜπâ╝πé╕πüºΦ¿¡σ«Ü */
 /* .wrap-count-girl-work {
   background-color: #fff7f7;
   text-align: center;
@@ -35,12 +41,20 @@ $background-color_2: #FFF8E7;
   height: 4rem;
   position: relative;
 } */
+/* .f-keepList .keepList-item.girl .item-table {
+    position: relative;
+} */
 .l-breadcrumb {
+    background: #F2F2F2 !important;
+    background: #F2F2F2 !important;
+
     .breadcrumb-list {
         color: $color_1;
     }
 
-    background: #F2F2F2 !important;
+    a {
+        color: $color_1 !important;
+    }
 }
 
 header {
@@ -69,9 +83,6 @@ header {
 }
 
 .f-keepList {
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
-
     .keepList-item {
         margin-bottom: 1.2rem;
         background: #fff;
@@ -86,12 +97,18 @@ header {
             .p-imgWrap {
                 width: 12.7rem;
                 height: 16.9rem;
+                width: 11.4rem;
+                height: 15.2rem;
             }
         }
     }
 
     .keepGirl-list {
         padding-bottom: 0;
+        position: relative;
+        padding-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 1.2rem;
         position: relative;
     }
 
@@ -103,8 +120,17 @@ header {
         border: none;
         background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
         appearance: none;
+        width: 10.8rem;
+        height: 3.2rem;
+        padding-left: 1rem;
+        border-radius: 0.2rem;
+        border: none;
+        background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+        appearance: none;
 
         &:disabled {
+            color: $color_2;
+            background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
             color: $color_2;
             background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
         }
@@ -113,6 +139,9 @@ header {
     .girl-data {
         margin-bottom: 0.6rem;
         font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: $color_11;
     }
 
     .girl-book {
@@ -127,42 +156,163 @@ header {
         color: $color_3;
         position: static;
         width: unset;
+        display: flex;
+        align-items: center;
+        width: 13rem;
+        height: 3.9rem;
+        padding-left: 3.5rem;
+        background: #FF4A4A url(../../images/history/phone.png) no-repeat 1.6rem center / 1.2rem auto;
+        box-shadow: 0px 0.1rem 0.8rem #33333333;
+        border-radius: 3px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $color_3;
+        position: static;
     }
 
     .info-area {
         padding-left: 2rem;
         position: relative;
     }
+
+    .info-area.rookie {
+        .girl-name {
+            &:after {
+                content: "";
+                width: 1.1rem;
+                height: 1.7rem;
+                margin-left: 0.5rem;
+                background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+                content: "";
+                width: 1.1rem;
+                height: 1.7rem;
+                margin-left: 0.5rem;
+                background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
+            }
+        }
+    }
+
+    padding: 2rem 1rem;
+    background: #FAFAFA;
+
+    .status-tbl {
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 2.3rem;
+        font-size: 1.2rem;
+        text-align: center;
+
+        td {
+            height: 4.2rem;
+            vertical-align: middle;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    .status-tbl.today {
+        border-collapse: separate;
+        border-spacing: 0;
+
+        th {
+            width: 8.5rem;
+            background: #FCDD59;
+            border: 0.1rem solid #FCDD59;
+            border-radius: 0.3rem 0 0 0.3rem;
+            color: $color_7;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        td {
+            border: 0.1rem solid #FCDD59;
+            border-radius: 0 0.3rem 0.3rem 0;
+            color: $color_7;
+            background-color: $background-color_3;
+
+            &:only-child {
+                border: none;
+                border-radius: 0.3rem;
+                background: #EAEAEA;
+                color: $color_12;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .status-tbl.next {
+        background: #fff8e7;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 0.3rem;
+
+        th {
+            width: 7rem;
+            vertical-align: middle;
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon-tel {
+        width: 3rem;
+        height: auto;
+    }
+
+    .btn-tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.6rem;
+        height: 4.6rem;
+        border-radius: 2.8rem;
+        box-shadow: 0px 0.1rem 0.8rem #33333333;
+        background: #FFFFFF;
+        position: absolute;
+        top: 1.3rem;
+        right: 0.3rem;
+        z-index: 4;
+    }
 }
 
 .btn-keep {
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 0rem;
-    right: -2px;
+    top: 0;
     z-index: 1;
     box-shadow: none;
 }
 
 .star-keep {
-    width: 2.8rem;
+    width: 100%;
     margin: auto;
     position: absolute;
     top: 0;
     right: -2px;
     left: 0;
-    bottom: 6px;
+    width: 3.8rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    left: 0;
 }
 
 .g-header-main-keeplist {
     .g-header-main-content__left {
         .history-is-active {
             background: #FAFAFA 0% 0% no-repeat padding-box !important;
+            background: #FAFAFA 0% 0% no-repeat padding-box !important;
 
             .button-text {
+                color: $color_4 !important;
                 color: $color_4 !important;
             }
         }
@@ -179,6 +329,22 @@ header {
             align-items: center;
             cursor: pointer;
             border: 1px solid #00356A !important;
+            display: flex;
+            height: 38px !important;
+            width: 80px !important;
+            background: #ffffff;
+            border-radius: 3px;
+            padding: 6px !important;
+            justify-content: space-between;
+            flex-direction: unset !important;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid #00356A !important;
+
+            .button-text {
+                text-align: left !important;
+                margin-left: 3px;
+            }
         }
 
         .star {
@@ -191,11 +357,20 @@ header {
     }
 }
 
+.therapistList-calendar {
+    .therapistList-count {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 0rem;
+    }
+}
+
 .therapistList-count {
-    margin-bottom: 2rem;
+    margin-bottom: 2.7rem;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 1rem;
+    padding-top: 0rem;
 
     .colored {
         color: $color_5;
@@ -293,38 +468,46 @@ ul.calender-list {
         bottom: 0;
         left: 0;
         object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
 
 .count-girl-work {
     background-color: $background-color_1;
-    padding: 9px;
+    padding: 0.9rem;
     text-align: center;
-    border: 1px solid #FCEAEA;
+    border: 0.1rem solid #FCEAEA;
     border-radius: 4px;
-    margin-bottom: 8px;
-    font-size: 13px;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
 
     em {
-        color: $color_5;
+        color: $color_8;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
 
 .count-girl-work.next {
     background-color: $background-color_2;
-    padding: 9px;
-    text-align: center;
-    border: 1px solid #FDF2D6;
+    padding: 0.9rem;
+    border: 0.1rem solid #FDF2D6;
     border-radius: 4px;
-    margin-bottom: 8px;
-    font-size: 13px;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
 
     em {
         color: $color_7;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1.6rem;
+        text-align: center;
     }
 }
 
@@ -359,7 +542,7 @@ ul.calender-list {
             background: #E7F1FD;
             font-size: 1rem;
             font-weight: bold;
-            color: $color_8;
+            color: $color_9;
             position: absolute;
             top: -0.8rem;
             right: 0;
@@ -368,11 +551,101 @@ ul.calender-list {
 
     .listChange-item.active {
         background: #FFC015;
-        color: $color_9;
+        color: $color_10;
     }
 }
 
 .f-keepList.keep {
+    padding: 2rem 1rem !important;
+    background: #FAFAFA !important;
     padding: 2rem 1rem;
-    background: #FAFAFA;
+    background: #FAFAFA !important;
+}
+
+.mod-shopInfo {
+    .shop-info {
+        overflow: hidden;
+        padding: 1.2rem 0 1.6rem;
+        position: relative;
+    }
+
+    ul.shop-tags {
+        display: flex;
+    }
+
+    li.tag {
+        background: #F7F7F7 0% 0% no-repeat padding-box;
+        color: $color_7;
+        padding: 0.4rem 1.3rem;
+        margin-right: 4px;
+        text-align: center;
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 3px;
+    }
+
+    .tag.active {
+        background-color: $background-color_4;
+    }
+
+    .contents-wrap {
+        padding-left: 7.7rem;
+        position: relative;
+        z-index: 3;
+    }
+
+    .shop-thumb {
+        width: 6.4rem;
+        height: 6.4rem;
+        position: absolute;
+        top: unset;
+        left: 0rem;
+        z-index: 2;
+        object-fit: fill;
+    }
+
+    .shop-genre {
+        margin-bottom: 0.8rem;
+        color: $color_13;
+        font-size: 1.1rem;
+    }
+
+    .shop-name {
+        max-width: 26rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}
+
+.visible-hidden {
+    visibility: hidden;
+}
+
+.g-wrap {
+    .l-breadcrumb {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0 1rem 0 !important;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        em {
+            color: $color_5;
+        }
+    }
+}
+
+.select-wrap {
+    border: 1px solid #EFEFEF;
 }
