@@ -328,6 +328,6 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .f-keepList.keep {
-    padding: 1rem 1rem 6rem;
-    background: #FAFAFA !important;
+  padding: 1rem;
+  background: #FAFAFA !important;
 }

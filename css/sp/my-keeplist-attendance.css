@@ -393,6 +393,7 @@ ul.calender-list {
 }
 .f-keepList.keep {
   padding: 2rem 1rem;
+  background: #FAFAFA !important;
 }
 .l-breadcrumb {
   background: #F2F2F2 !important;
