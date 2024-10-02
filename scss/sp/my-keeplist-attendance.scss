@@ -19,11 +19,20 @@ $background-color_3: #E7F3FC;
     }
 }
 
+.therapistList-calendar {
+    .therapistList-count {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 0rem;
+    }
+}
+
 .therapistList-count {
-    margin-bottom: 2rem;
+    margin-bottom: 2.9rem;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
 
     .colored {
         color: $color_2;
@@ -272,12 +281,10 @@ header {
     }
 }
 
-ul.calender-list {
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-
 .calender-list {
+    display: flex;
+    margin-bottom: 3.3rem;
+
     .calenderList-day {
         .content.current {
             background: #FE4A4A;
@@ -290,6 +297,11 @@ ul.calender-list {
             }
         }
     }
+}
+
+ul.calender-list {
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .calenderList-day {
