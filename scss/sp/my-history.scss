@@ -8,6 +8,7 @@ $color_7: #1F1C0D;
 $color_8: #4B454E;
 $color_9: #fff;
 $color_10: #858585;
+$color_11: #41493B;
 $background-color_1: #FFFCF2;
 $background-color_2: #E7F3FC;
 
@@ -23,8 +24,8 @@ $background-color_2: #E7F3FC;
 
         .button {
             display: flex;
-            height: 38px !important;
-            width: 80px !important;
+            height: 3.8rem !important;
+            width: 8rem !important;
             background: #ffffff;
             border-radius: 3px;
             padding: 6px !important;
@@ -120,6 +121,7 @@ $background-color_2: #E7F3FC;
             border-radius: 0.3rem 0 0 0.3rem;
             color: $color_7;
             vertical-align: middle;
+            font-weight: bold;
         }
 
         td {
@@ -188,13 +190,14 @@ $background-color_2: #E7F3FC;
         position: absolute;
         top: 1.3rem;
         right: 0.3rem;
+        z-index: 4;
     }
 
     .info-area.rookie {
         .girl-name {
             &:after {
                 content: "";
-                width: 1.7rem;
+                width: 1.1rem;
                 height: 1.7rem;
                 margin-left: 0.5rem;
                 background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
@@ -301,6 +304,7 @@ $background-color_2: #E7F3FC;
         box-sizing: border-box;
         display: inline-block;
         border-radius: 3px;
+        z-index: 10;
     }
 
     .tag.active {
@@ -368,4 +372,20 @@ $background-color_2: #E7F3FC;
 
 .l-breadcrumb {
     background: #F2F2F2 !important;
+
+    a {
+        color: $color_11;
+    }
+}
+
+.g-wrap {
+    .l-breadcrumb {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.select-wrap {
+    border: 1px solid #EFEFEF;
 }

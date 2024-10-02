@@ -377,10 +377,14 @@
 .l-breadcrumb {
   background: #F2F2F2 !important;
 }
-
-.l-breadcrumb a{
+.l-breadcrumb a {
   color: #41493B;
 }
-.g-wrap .l-breadcrumb span{
+
+.g-wrap .l-breadcrumb span {
   font-weight: 600;
+}
+
+.select-wrap {
+  border: 1px solid #EFEFEF;
 }

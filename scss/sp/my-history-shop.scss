@@ -7,6 +7,7 @@ $color_6: #fff;
 $color_7: #8B8B8B;
 $color_8: #006BC4;
 $color_9: #FFFFFF;
+$color_10: #41493B;
 $background-color_1: #fff7f7;
 
 * {
@@ -58,7 +59,7 @@ $background-color_1: #fff7f7;
     }
 
     .shop-inner {
-        border-bottom: none;
+        padding-bottom: 1rem;
         border-bottom: none;
     }
 
@@ -450,4 +451,20 @@ $background-color_1: #fff7f7;
 
 .l-breadcrumb {
     background: #F2F2F2 !important;
+
+    a {
+        color: $color_10;
+    }
+}
+
+.g-wrap {
+    .l-breadcrumb {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.select-wrap {
+    border: 1px solid #EFEFEF;
 }

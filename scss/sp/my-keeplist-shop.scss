@@ -5,6 +5,7 @@ $color_4: #FE4A4A;
 $color_5: #4B454E;
 $color_6: #1F1C0D;
 $color_7: #fff;
+$color_8: #41493B;
 $background-color_1: #FF4A4A;
 $background-color_2: #EDEDED;
 $background-color_3: #FFFFFF;
@@ -81,6 +82,7 @@ header {
     .select-wrap {
         display: block;
         top: 0.8rem;
+        position: static !important;
     }
 }
 
@@ -340,7 +342,7 @@ header {
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     right: 0;
     z-index: 1;
     -webkit-tap-highlight-color: #000;
@@ -356,6 +358,42 @@ header {
 }
 
 .f-keepList.keep {
-    padding: 1rem;
+    padding: 2rem 1rem;
     background: #FAFAFA !important;
+}
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0 1rem 0;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        em {
+            color: $color_4;
+        }
+    }
+}
+
+.l-breadcrumb {
+    background: #F2F2F2 !important;
+
+    a {
+        color: $color_8 !important;
+    }
+}
+
+.g-wrap {
+    .l-breadcrumb {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.select-wrap {
+    border: 1px solid #EFEFEF;
 }

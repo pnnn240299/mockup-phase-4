@@ -13,17 +13,23 @@ $background-color_1: #FFFCF2;
 $background-color_2: #DDDDDD;
 $background-color_3: #E7F3FC;
 
+/*  */
 .l-breadcrumb {
+    background: #F2F2F2 !important;
+    background: #F2F2F2 !important;
+
     .breadcrumb-list {
         color: $color_1;
     }
 
-    background: #F2F2F2 !important;
+    a {
+        color: $color_1 !important;
+    }
 }
 
 .therapistList-calendar {
     .therapistList-count {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-size: 1.5rem;
         font-weight: bold;
         padding-top: 0rem;
@@ -31,7 +37,7 @@ $background-color_3: #E7F3FC;
 }
 
 .therapistList-count {
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.7rem;
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 0rem;
@@ -50,17 +56,6 @@ header {
 
         .g-header-main-content__left {
             .button {
-                display: flex;
-                height: 43px;
-                width: 43px;
-                background: #FFC015;
-                border: unset;
-                border-radius: 3px;
-                padding: 4px 0 6px 0;
-                justify-content: space-between;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
                 display: flex;
                 height: 43px;
                 width: 43px;
@@ -137,6 +132,7 @@ header {
             border-radius: 0.3rem 0 0 0.3rem;
             color: $color_5;
             vertical-align: middle;
+            font-weight: bold;
         }
 
         td {
@@ -178,8 +174,8 @@ header {
         align-items: center;
         width: 13rem;
         height: 3.9rem;
-        padding-left: 4rem;
-        background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.8rem center/1.2rem auto;
+        padding-left: 3.5rem;
+        background: #FF4A4A url(../../images/history/phone.png) no-repeat 1.6rem center / 1.2rem auto;
         box-shadow: 0px 0.1rem 0.8rem #33333333;
         border-radius: 3px;
         font-size: 1.2rem;
@@ -205,13 +201,14 @@ header {
         position: absolute;
         top: 1.3rem;
         right: 0.3rem;
+        z-index: 4;
     }
 
     .info-area.rookie {
         .girl-name {
             &:after {
                 content: "";
-                width: 1.7rem;
+                width: 1.1rem;
                 height: 1.7rem;
                 margin-left: 0.5rem;
                 background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
@@ -231,10 +228,8 @@ header {
     .g-header-main-content__left {
         .history-is-active {
             background: #FAFAFA 0% 0% no-repeat padding-box !important;
-            background: #FAFAFA 0% 0% no-repeat padding-box !important;
 
             .button-text {
-                color: $color_8 !important;
                 color: $color_8 !important;
             }
         }
@@ -251,25 +246,17 @@ header {
             align-items: center;
             cursor: pointer;
             border: 1px solid #00356A !important;
-            display: flex;
-            height: 38px !important;
-            width: 80px !important;
-            background: #ffffff;
-            border-radius: 3px;
-            padding: 6px !important;
-            justify-content: space-between;
-            flex-direction: unset !important;
-            align-items: center;
-            cursor: pointer;
-            border: 1px solid #00356A !important;
+
+            .button-text {
+                text-align: left !important;
+                margin-left: 3px;
+            }
         }
 
         .star {
             border: 1px solid #FFC015 !important;
-            border: 1px solid #FFC015 !important;
 
             .button-text {
-                color: $color_7 !important;
                 color: $color_7 !important;
             }
         }
@@ -312,6 +299,7 @@ ul.calender-list {
         position: relative;
         padding: 0rem 0.4rem 0.6rem 0.4rem;
         color: $color_10;
+        text-align: center;
 
         &::after {
             content: '';
@@ -331,6 +319,29 @@ ul.calender-list {
 
 .weekday {
     margin-top: 4px;
+}
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem !important;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        em {
+            color: $color_2;
+            color: $color_2;
+        }
+    }
 }
 
 .mod-keepListHead {
@@ -480,4 +491,16 @@ ul.calender-list {
 .f-keepList.keep {
     padding: 2rem 1rem;
     background: #FAFAFA !important;
+}
+
+.g-wrap {
+    .l-breadcrumb {
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.select-wrap {
+    border: 1px solid #EFEFEF;
 }
