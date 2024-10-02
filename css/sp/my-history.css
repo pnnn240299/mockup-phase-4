@@ -146,6 +146,7 @@
   position: absolute;
   top: 1.3rem;
   right: 0.3rem;
+  z-index: 4;
 }
 .f-keepList .info-area.rookie .girl-name:after {
   content: "";
@@ -241,6 +242,7 @@
   box-sizing: border-box;
   display: inline-block;
   border-radius: 3px;
+  z-index: 10;
 }
 .mod-shopInfo .tag.active {
   background-color: #E7F3FC;

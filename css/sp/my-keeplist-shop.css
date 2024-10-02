@@ -331,3 +331,25 @@ header .g-header .g-header-main-content__left .button {
   padding: 1rem;
   background: #FAFAFA !important;
 }
+
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap-therapist-count p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrap-therapist-count p em{
+    color: #FE4A4A;
+}
+
+.f-keepList .select-wrap {
+    /* float: right; */
+    position: static !important;
+    /* display: block; */
+}
