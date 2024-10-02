@@ -687,7 +687,7 @@ header .g-header .txt-removeKeep.active {
   content: "";
   background: url(../../images/history/chevron-right-gray.svg) no-repeat center;
   display: block;
-  width: 1px;
+  width: 6px;
   height: 15px;
   background-size: 100% 100%;
   position: absolute;
@@ -701,7 +701,7 @@ header .g-header .txt-removeKeep.active {
 
 .hero-section {
   background: #ffffff;
-  box-shadow: 0px 9px 6px -6px #00000029;
+  box-shadow: 0px 9px 6px -6px #00000029; 
   padding-bottom: 24px;
   position: relative;
   margin-top: unset;

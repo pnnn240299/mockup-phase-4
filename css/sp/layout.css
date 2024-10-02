@@ -28,7 +28,7 @@
 .g-header .g-header-main-content__logo {
   width: 172px;
   height: 25px;
-  background: url("../../images/layout/logo.svg") no-repeat center;
+  /* background: url("../../images/layout/logo.svg") no-repeat center; */
 }
 .g-header .g-header-main-content__left {
   display: flex;

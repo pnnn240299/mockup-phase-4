@@ -297,5 +297,6 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .f-keepList.keep {
+  padding: 2rem 1rem;
   background: #FAFAFA !important;
 }

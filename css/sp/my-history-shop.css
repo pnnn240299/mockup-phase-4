@@ -2,10 +2,7 @@
   box-sizing: border-box;
 }
 
-.f-keepList {
-  background: #FAFAFA;
-  padding: 2rem 1rem 3rem 1rem;
-}
+
 .f-keepList .info-area.rookie .girl-name:after {
   content: "";
   width: 1.7rem;
@@ -28,6 +25,15 @@
 }
 .f-keepList .history-count {
   color: #FE4A4A;
+}
+.f-keepList .keepList-item.shop {
+  padding: 1rem;
+}
+.f-keepList .keepList-item.shop .shop-name {
+  margin-bottom: 0.5em;
+}
+.f-keepList .shop-inner {
+  border-bottom: none;
 }
 
 .mod-keepListHead .listChange-item {
@@ -88,8 +94,8 @@
 }
 
 .shop-genre {
-  margin-top: 8px;
-  margin-bottom: 15px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   font-size: 12px;
   line-height: 12px;
   font-weight: normal;
@@ -318,7 +324,7 @@
   width: 100% !important;
   height: 4rem !important;
   padding-left: 7rem !important;
-  background: #FF4A4A url("../../images/history/phone2x.png") no-repeat 4.5rem center/1.5rem auto !important;
+  background: #FF4A4A url("../../images/history/phone2x.png") no-repeat 4.4rem center/1.2rem auto !important;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
   border-radius: 3px !important;
   font-size: 1.2rem;
@@ -356,14 +362,19 @@
   stroke: #fb0;
 }
 
+.f-keepList {
+  background: #FAFAFA;
+  padding: 2rem 1rem;
+}
+
 .f-keepList .keepList-item.shop {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .f-keepList .shop-inner {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .f-keepList .keepList-list {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }

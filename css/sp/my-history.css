@@ -285,3 +285,20 @@
 .visible-hidden {
   visibility: hidden;
 }
+
+.f-keepList {
+  background: #FAFAFA;
+  padding: 2rem 1rem;
+}
+
+.f-keepList .keepList-item.shop {
+    padding: 1rem;
+}
+
+.f-keepList .shop-inner {
+    border-bottom: none;
+}
+
+.f-keepList .keepList-list {
+    margin-bottom: 4rem;
+}
