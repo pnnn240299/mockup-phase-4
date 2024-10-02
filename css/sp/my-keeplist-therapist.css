@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* button history */
 /* button keeplist */
 /* .btn-release-keep {
@@ -50,12 +49,14 @@ header .g-header .g-header-main-content__left .button {
   padding: 2rem 1rem 6rem;
   background: #FAFAFA;
 }
+
 .f-keepList .keepList-item {
   margin-bottom: 1.2rem;
   background: #fff;
   border-radius: 0.6rem;
   box-shadow: 0px 0.2rem 0.6rem #00000033;
 }
+
 .f-keepList .keepList-item.girl {
   padding: 1.6rem 1.6rem 1.6rem;
 }

@@ -7,6 +7,7 @@ $color_6: inherit;
 $color_7: #1F1C0D;
 $color_8: #4B454E;
 $color_9: #fff;
+$color_10: #858585;
 $background-color_1: #FFFCF2;
 $background-color_2: #E7F3FC;
 
@@ -45,12 +46,12 @@ $background-color_2: #E7F3FC;
 }
 
 .f-keepList {
+    padding: 2rem 1rem 6rem;
+    background: #FAFAFA;
+
     .history-count {
         color: $color_3;
     }
-
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
 
     .sort-select {
         width: 10.8rem;
@@ -71,6 +72,15 @@ $background-color_2: #E7F3FC;
         margin-bottom: 0.8rem;
         font-size: 1.2rem;
         color: $color_5;
+    }
+
+    .keepList-item.girl {
+        .item-table {
+            .p-imgWrap {
+                width: 11.4rem;
+                height: 15.2rem;
+            }
+        }
     }
 
     .status-tbl {
@@ -147,7 +157,7 @@ $background-color_2: #E7F3FC;
         display: flex;
         align-items: center;
         width: 13rem;
-        height: 4rem;
+        height: 3.9rem;
         padding-left: 4rem;
         background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.2rem center/1.5rem auto;
         box-shadow: 0px 0.1rem 0.8rem #33333333;
@@ -167,13 +177,13 @@ $background-color_2: #E7F3FC;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 4.9rem;
-        height: 4.9rem;
+        width: 4.6rem;
+        height: 4.6rem;
         border-radius: 2.8rem;
         box-shadow: 0px 0.1rem 0.8rem #33333333;
         background: #FFFFFF;
         position: absolute;
-        top: 2rem;
+        top: 1.3rem;
         right: 0.3rem;
     }
 
@@ -187,6 +197,11 @@ $background-color_2: #E7F3FC;
                 background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
             }
         }
+    }
+
+    .keepGirl-list {
+        padding-bottom: 1.2rem;
+        position: relative;
     }
 }
 
@@ -245,13 +260,19 @@ $background-color_2: #E7F3FC;
 }
 
 .wrap-link {
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     position: relative;
 }
 
 .mod-shopInfo {
+    .shop-info {
+        overflow: hidden;
+        padding: 1.2rem 0 1.6rem;
+        position: relative;
+    }
+
     ul.shop-tags {
         display: flex;
     }
@@ -259,7 +280,7 @@ $background-color_2: #E7F3FC;
     li.tag {
         background: #F7F7F7 0% 0% no-repeat padding-box;
         color: $color_7;
-        padding: 4px 14px;
+        padding: 0.4rem 1.3rem;
         margin-right: 4px;
         text-align: center;
         box-sizing: border-box;
@@ -278,13 +299,26 @@ $background-color_2: #E7F3FC;
     }
 
     .shop-thumb {
-        width: 6.9rem;
-        height: 6.9rem;
+        width: 6.4rem;
+        height: 6.4rem;
         position: absolute;
-        top: 1.6rem;
+        top: unset;
         left: 0rem;
         z-index: 2;
         object-fit: fill;
+    }
+
+    .shop-genre {
+        margin-bottom: 0.8rem;
+        color: $color_10;
+        font-size: 1.1rem;
+    }
+
+    .shop-name {
+        max-width: 26rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.7rem;
+        font-weight: bold;
     }
 }
 

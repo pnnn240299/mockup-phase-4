@@ -61,8 +61,8 @@ header .g-header .g-header-main-content__left .button {
   background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
 .f-keepList .keepList-item.girl .item-table .p-imgWrap {
-    width: 11.4rem;
-    height: 15.2rem;
+  width: 11.4rem;
+  height: 15.2rem;
 }
 .f-keepList .girl-data {
   margin-bottom: 0.8rem;
@@ -163,6 +163,8 @@ header .g-header .g-header-main-content__left .button {
 .f-keepList .keepGirl-list {
   padding-bottom: 1.5rem;
   position: relative;
+  padding-bottom: 1.2rem;
+  position: relative;
 }
 
 .f-keepList.keep {
@@ -238,7 +240,6 @@ ul.calender-list {
 .content .wrap-day {
   position: relative;
   padding: 0rem 0.4rem 0.6rem 0.4rem;
-  /* border-bottom: 1px solid #DDDDDD; */
   color: #333333;
 }
 .content .wrap-day::after {
@@ -247,7 +248,7 @@ ul.calender-list {
   left: -10px;
   right: -10px;
   bottom: 0;
-  height: 1.9px;
+  height: 1.4px;
   background-color: #DDDDDD;
 }
 .content .people {
@@ -296,16 +297,14 @@ ul.calender-list {
   background: #FFC015;
   color: #fff;
 }
-.f-keepList .keepGirl-list {
-  padding-bottom: 1.2rem;
-  position: relative;
-}
+
 .wrap-link {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
   position: relative;
 }
+
 .mod-shopInfo .shop-info {
   overflow: hidden;
   padding: 1.2rem 0 1.6rem;
@@ -317,7 +316,7 @@ ul.calender-list {
 .mod-shopInfo li.tag {
   background: #F7F7F7 0% 0% no-repeat padding-box;
   color: #1F1C0D;
-    padding: 0.4rem 1.3rem;
+  padding: 0.4rem 1.3rem;
   margin-right: 4px;
   text-align: center;
   box-sizing: border-box;
@@ -352,6 +351,7 @@ ul.calender-list {
   font-size: 1.7rem;
   font-weight: bold;
 }
+
 .p-imgWrap img {
   max-width: 100%;
   width: 100%;
