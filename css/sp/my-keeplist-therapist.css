@@ -341,3 +341,6 @@ ul.calender-list {
   padding-left: 2rem;
   position: relative;
 }
+.l-breadcrumb {
+  background: #F2F2F2 !important;
+}

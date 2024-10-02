@@ -302,3 +302,7 @@
 .f-keepList .keepList-list {
     margin-bottom: 4rem;
 }
+
+.l-breadcrumb {
+  background: #F2F2F2 !important;
+}
