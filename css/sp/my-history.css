@@ -22,6 +22,7 @@
 }
 .g-header-main-keeplist .g-header-main-content__left .star .button-text {
   color: #FFC015 !important;
+  text-align: unset !important;
 }
 
 .f-keepList {
@@ -121,7 +122,7 @@
   width: 13rem;
   height: 3.9rem;
   padding-left: 4rem;
-  background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.2rem center/1.5rem auto;
+  background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.8rem center/1.2rem auto;
   box-shadow: 0px 0.1rem 0.8rem #33333333;
   border-radius: 3px;
   font-size: 1.2rem;
@@ -281,8 +282,8 @@
 }
 
 .btn-keep {
-  width: 3.9rem;
-  height: 3.9rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;

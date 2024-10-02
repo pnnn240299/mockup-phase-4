@@ -44,6 +44,14 @@
   margin-bottom: 4rem;
 }
 
+.g-header-main-keeplist .g-header-main-content__left .star .button-text {
+  color: #FFC015 !important;
+  text-align: unset !important;
+}
+.g-header-main-keeplist .g-header-main-content__left .history-is-active {
+  background: #00356A 0% 0% no-repeat padding-box !important;
+}
+
 .mod-keepListHead .listChange-item {
   display: flex;
   align-items: center;
@@ -356,10 +364,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.g-header-main-keeplist .g-header-main-content__left .history-is-active {
-  background: #00356A 0% 0% no-repeat padding-box !important;
 }
 
 .g-header .g-header-main-content__left .button {
