@@ -337,6 +337,7 @@ header .g-header .g-header-main-content__left .button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1.5rem 0 1rem 0;
 }
 
 .wrap-therapist-count p {
@@ -349,7 +350,16 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .f-keepList .select-wrap {
-    /* float: right; */
     position: static !important;
-    /* display: block; */
+}
+
+.l-breadcrumb {
+  background: #F2F2F2 !important;
+}
+
+.l-breadcrumb a{
+  color: #41493B !important;
+}
+.g-wrap .l-breadcrumb span{
+  font-weight: 600;
 }
