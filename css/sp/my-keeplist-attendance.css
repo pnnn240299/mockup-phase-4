@@ -49,10 +49,9 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .f-keepList {
-  padding: 2rem 1rem 6rem;
+  padding: 2rem 1rem;
   background: #FAFAFA;
-  padding: 2rem 1rem 6rem;
-  background: #FAFAFA;
+
 }
 .f-keepList .sort-select {
   width: 10.8rem;
@@ -172,11 +171,6 @@ header .g-header .g-header-main-content__left .button {
   position: relative;
   padding-bottom: 1.2rem;
   position: relative;
-}
-
-.f-keepList.keep {
-  padding: 2rem 1rem 6rem;
-  background: #FAFAFA;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
@@ -396,4 +390,10 @@ ul.calender-list {
 
 .visible-hidden {
   visibility: hidden;
+}
+.f-keepList.keep {
+  padding: 2rem 1rem;
+}
+.l-breadcrumb {
+  background: #F2F2F2 !important;
 }

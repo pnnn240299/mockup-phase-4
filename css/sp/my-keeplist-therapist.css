@@ -333,11 +333,14 @@ ul.calender-list {
 }
 
 .f-keepList.keep {
-  padding: 2rem 1.5rem 6rem;
+  padding: 2rem 1rem;
   background: #FAFAFA;
 }
 
 .f-keepList .info-area {
   padding-left: 2rem;
   position: relative;
+}
+.l-breadcrumb {
+  background: #F2F2F2 !important;
 }
