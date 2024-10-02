@@ -295,6 +295,9 @@ ul.calender-list {
 }
 
 
+
+
+
 /*  */
 
 .mod-keepListHead .listChange-item {
@@ -438,4 +441,33 @@ ul.calender-list {
 .f-keepList.keep {
     padding: 2rem 1rem;
     background: #FAFAFA !important;
+}
+
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem !important;
+}
+
+.wrap-therapist-count p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrap-therapist-count p em {
+    color: #FE4A4A;
+}
+
+.l-breadcrumb {
+    background: #F2F2F2 !important;
+}
+
+.l-breadcrumb a {
+    color: #41493B !important;
+}
+
+.g-wrap .l-breadcrumb span {
+    font-weight: 600;
 }

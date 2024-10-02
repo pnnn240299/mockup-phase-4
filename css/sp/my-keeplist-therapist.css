@@ -435,6 +435,7 @@ ul.calender-list {
   border-radius: 0.3rem 0 0 0.3rem;
   color: #1F1C0D;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .f-keepList .status-tbl.today td {
@@ -635,4 +636,16 @@ ul.calender-list {
 .f-keepList.keep {
   padding: 2rem 1rem;
   background: #FAFAFA !important;
-}
+
+  .l-breadcrumb {
+    background: #F2F2F2 !important;
+  }
+
+  .l-breadcrumb a {
+    color: #41493B !important;
+  }
+
+  .g-wrap .l-breadcrumb span {
+    font-weight: 600;
+
+  }
