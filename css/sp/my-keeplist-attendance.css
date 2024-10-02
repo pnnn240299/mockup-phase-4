@@ -257,6 +257,7 @@ ul.calender-list {
     position: relative;
     padding: 0rem 0.4rem 0.6rem 0.4rem;
     color: #333333;
+    text-align: center;
 }
 
 .content .wrap-day::after {
