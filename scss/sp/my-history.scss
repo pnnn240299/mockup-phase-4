@@ -48,6 +48,8 @@ $background-color_2: #E7F3FC;
 .f-keepList {
     padding: 2rem 1rem 6rem;
     background: #FAFAFA;
+    background: #FAFAFA;
+    padding: 2rem 1rem;
 
     .history-count {
         color: $color_3;
@@ -203,6 +205,18 @@ $background-color_2: #E7F3FC;
         padding-bottom: 1.2rem;
         position: relative;
     }
+
+    .keepList-item.shop {
+        padding: 1rem;
+    }
+
+    .shop-inner {
+        border-bottom: none;
+    }
+
+    .keepList-list {
+        margin-bottom: 4rem;
+    }
 }
 
 .star-keep {
@@ -349,4 +363,8 @@ $background-color_2: #E7F3FC;
 
 .visible-hidden {
     visibility: hidden;
+}
+
+.l-breadcrumb {
+    background: #F2F2F2 !important;
 }
