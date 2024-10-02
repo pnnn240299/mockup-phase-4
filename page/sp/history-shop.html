@@ -2,7 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../../css/sp/reset.css" />
-<link rel="stylesheet" href="../../css/sp/layout.css" />
+<!-- <link rel="stylesheet" href="../../css/sp/layout.css" /> -->
 <!-- PAGE CSS -->
 <!-- <link rel="stylesheet" href="../../css/sp/history-shop.css" /> -->
 <!-- <link rel="stylesheet" href="../../css/sp/keeplist.css" /> -->
@@ -29,13 +29,12 @@
                         <div class="g-header-main-content__left">
                             <a class="button history-is-active" href="https://dev.mens-est.jp/history/">
                                 <img class="button-img" alt=""
-                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/time-headerhistory-is-active.svg?1727333512" />
+                                    src="https://mens-est.jp/assets/img/user/common/v2/layout/time-headerhistory-is-active.svg?1727333512" />
                                 <span class="button-text">最近見た</span>
                             </a>
-                            <a href="https://dev.mens-est.jp/history/?keeplist=1"
-                                class="button star star-border-yellow">
+                            <a href="https://dev.mens-est.jp/history/?keeplist=1" class="button star star-border-yellow">
                                 <img class="button-img" alt=""
-                                    src="https://dev.mens-est.jp/assets/img/user/common/v2/layout/starstar-border-yellow.png?1727333512" />
+                                    src="https://mens-est.jp/assets/img/user/common/v2/layout/starstar-border-yellow.png?1727333512" />
                                 <span class="button-text">キープ</span>
                             </a>
                         </div>
@@ -118,7 +117,7 @@
                                     </div>
                                 </div>
 
-                                <div class="" style="margin-top: 20px; position: relative;">
+                                <div class="" style="margin-top: 1.4rem; position: relative;">
                                     <div class="wrap-name" style="border-bottom: 0.1rem solid #e6e6e6;">
                                         <h2 class="shop-title shop-name">
                                             <a href="#">DELIJA MENESTH SPA 新宿店</a>
@@ -218,7 +217,7 @@
                                     </div>
                                 </div>
 
-                                <div class="" style="margin-top: 20px; position: relative;">
+                                <div class="" style="margin-top: 1.4rem; position: relative;">
                                     <div class="wrap-name" style="border-bottom: 0.1rem solid #e6e6e6;">
                                         <h2 class="shop-title shop-name">
                                             <a href="#">DELIJA MENESTH SPA 新宿店</a>
@@ -318,7 +317,7 @@
                                     </div>
                                 </div>
 
-                                <div class="" style="margin-top: 20px; position: relative;">
+                                <div class="" style="margin-top: 1.4rem; position: relative;">
                                     <div class="wrap-name" style="border-bottom: 0.1rem solid #e6e6e6;">
                                         <h2 class="shop-title shop-name">
                                             <a href="#">DELIJA MENESTH SPA 新宿店</a>
@@ -396,37 +395,47 @@
         </section>
     </div>
 
-    <footer class="g-footer">
-        <div class="g-footer__inner g-container">
-            <img class="g-footer__logo" src="../../images/layout/logo-white.svg" alt="" />
+  <nav class="l-breadcrumb g-container">
+      <ul class="breadcrumb-list">
+          <li class="breadcrumb-item">
+              <a href="https://mens-est.jp/" class="breadcrumb-link">メンエスじゃぱん</a>
+          </li>
+          <li class="breadcrumb-item">
+              <span>キープ中</span>
+          </li>
+      </ul>
+  </nav>
 
-            <div class="g-footer__nav">
-                <ul class="g-footer__nav-list">
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">お客様意見箱</a>
-                    </li>
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">利用規約</a>
-                    </li>
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">プライバシーポリシー</a>
-                    </li>
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">掲載店舗募集</a>
-                    </li>
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">リンクについて</a>
-                    </li>
-                    <li class="g-footer__nav-item">
-                        <a href="" class="g-footer__nav-link">お問い合わせ</a>
-                    </li>
-                </ul>
-                <div class="copyright">
-                    (C) 2020 メンエスじゃぱん All rights reserved.
-                </div>
-            </div>
-        </div>
-    </footer>
+  <footer class="g-footer">
+      <div class="g-footer__inner g-container">
+          <div class="g-footer__nav">
+              <ul class="g-footer__nav-list">
+                  <li class="g-footer__nav-item">
+                      <a href="https://mens-est.jp/about/" class="g-footer__nav-link">運営者情報</a>
+                  </li>
+                  <li class="g-footer__nav-item">
+                      <a href="https://mens-est.jp/ikenbako/" class="g-footer__nav-link">お客様意見箱</a>
+                  </li>
+                  <li class="g-footer__nav-item">
+                      <a href="https://mens-est.jp/otoiawase/" class="g-footer__nav-link">掲載お問い合わせ</a>
+                  </li>
+              </ul>
+              <ul class="g-footer__nav-list list__footer-second">
+                  <li class="g-footer__nav-item">
+                      <a href="https://mens-est.jp/sales/rules.html" target="_blank" class="g-footer__nav-link"
+                          rel="noopener">利用規約</a>
+                  </li>
+                  <li class="g-footer__nav-item">
+                      <a href="https://mens-est.jp/sales/privacy.html" target="_blank" class="g-footer__nav-link"
+                          rel="noopener">プライバシーポリシー</a>
+                  </li>
+              </ul>
+              <div class="copyright">
+                  Copyright © メンエスじゃぱん！
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 
 </html>
