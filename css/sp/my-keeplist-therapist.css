@@ -354,3 +354,14 @@ ul.calender-list {
   padding: 2rem 1rem;
   background: #FAFAFA;
 }
+
+.l-breadcrumb {
+  background: #F2F2F2 !important;
+}
+
+.l-breadcrumb a{
+  color: #41493B !important;
+}
+.g-wrap .l-breadcrumb span{
+  font-weight: 600;
+}
