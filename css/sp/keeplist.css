@@ -685,9 +685,9 @@ header .g-header .txt-removeKeep.active {
 }
 .l-breadcrumb .breadcrumb-list .breadcrumb-item:after {
   content: "";
-  background: url(/assets/img/user/common/v2/layout/chevron-right-gray.svg) no-repeat center;
+  background: url(../../images/history/chevron-right-gray.svg) no-repeat center;
   display: block;
-  width: 4px;
+  width: 1px;
   height: 15px;
   background-size: 100% 100%;
   position: absolute;

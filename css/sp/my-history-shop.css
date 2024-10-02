@@ -4,6 +4,7 @@
 
 .f-keepList {
   background: #FAFAFA;
+  padding: 2rem 1rem 3rem 1rem;
 }
 .f-keepList .info-area.rookie .girl-name:after {
   content: "";
@@ -92,7 +93,7 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: normal;
-  color: #1F1C0D;
+  color: #8B8B8B;
 }
 
 .shop-rating {
@@ -187,7 +188,7 @@
 }
 
 .shop-location {
-  margin-top: 13px;
+  margin-top: 0.7rem;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -208,7 +209,7 @@
 }
 
 .shop-price {
-  margin-top: 13px;
+  margin-top: 0.7rem;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -302,6 +303,7 @@
   font-size: 13px;
   height: 4rem;
   position: relative;
+  font-weight: 600;
 }
 
 .count-girl-work em {
@@ -360,4 +362,8 @@
 
 .f-keepList .shop-inner {
     border-bottom: none;
+}
+
+.f-keepList .keepList-list {
+    margin-bottom: 4rem;
 }
