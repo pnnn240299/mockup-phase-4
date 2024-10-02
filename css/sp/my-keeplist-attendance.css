@@ -168,6 +168,7 @@ header .g-header .g-header-main-content__left .button {
     position: absolute;
     top: 1.3rem;
     right: 0.3rem;
+    z-index: 4;
 }
 
 .f-keepList .info-area.rookie .girl-name:after {
@@ -417,4 +418,20 @@ ul.calender-list {
 .f-keepList.keep {
     padding: 2rem 1rem;
     background: #FAFAFA !important;
+}
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem !important;
+}
+
+.wrap-therapist-count p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrap-therapist-count p em{
+    color: #FE4A4A;
 }
