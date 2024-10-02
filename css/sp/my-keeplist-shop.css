@@ -276,8 +276,8 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .btn-keep {
-  width: 3.9rem;
-  height: 3.9rem;
+  width: 2.8rem;
+  height: 2.8rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
@@ -289,7 +289,7 @@ header .g-header .g-header-main-content__left .button {
 }
 
 .star-keep {
-  width: 3.8rem;
+  width: 100%;
 }
 
 .mod-shopInfo {
