@@ -7,14 +7,14 @@
 }
 
 .therapistList-calendar .therapistList-count {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 0rem;
 }
 
 .therapistList-count {
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.7rem;
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 0rem;
@@ -141,8 +141,8 @@ header .g-header .g-header-main-content__left .button {
     align-items: center;
     width: 13rem;
     height: 3.9rem;
-    padding-left: 4rem;
-    background: #FF4A4A url("../../images/history/phone.png") no-repeat 1.8rem center/1.2rem auto;
+    padding-left: 3.5rem;
+    background: #FF4A4A url(../../images/history/phone.png) no-repeat 1.6rem center / 1.2rem auto;
     box-shadow: 0px 0.1rem 0.8rem #33333333;
     border-radius: 3px;
     font-size: 1.2rem;
@@ -173,7 +173,7 @@ header .g-header .g-header-main-content__left .button {
 
 .f-keepList .info-area.rookie .girl-name:after {
     content: "";
-    width: 1.7rem;
+    width: 1.1rem;
     height: 1.7rem;
     margin-left: 0.5rem;
     background: url(../../images/history/ico-rookie.svg) no-repeat center/auto 1.7rem;
@@ -277,6 +277,28 @@ ul.calender-list {
 .weekday {
     margin-top: 4px;
 }
+
+.wrap-therapist-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem !important;
+}
+
+.wrap-therapist-count p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrap-therapist-count p em {
+    color: #FE4A4A;
+}
+
+
+
+
+
+/*  */
 
 .mod-keepListHead .listChange-item {
     display: flex;
@@ -421,6 +443,7 @@ ul.calender-list {
     background: #FAFAFA !important;
 }
 
+
 .wrap-therapist-count {
     display: flex;
     align-items: center;
@@ -433,17 +456,18 @@ ul.calender-list {
     font-weight: bold;
 }
 
-.wrap-therapist-count p em{
+.wrap-therapist-count p em {
     color: #FE4A4A;
 }
 
 .l-breadcrumb {
-  background: #F2F2F2 !important;
+    background: #F2F2F2 !important;
 }
 
-.l-breadcrumb a{
-  color: #41493B !important;
+.l-breadcrumb a {
+    color: #41493B !important;
 }
-.g-wrap .l-breadcrumb span{
-  font-weight: 600;
+
+.g-wrap .l-breadcrumb span {
+    font-weight: 600;
 }
