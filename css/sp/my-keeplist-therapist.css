@@ -24,331 +24,333 @@
   position: relative;
 } */
 .l-breadcrumb {
-    background: #F2F2F2 !important;
+  background: #F2F2F2 !important;
 }
 
 .l-breadcrumb .breadcrumb-list {
-    color: #41493B;
+  color: #41493B;
 }
 
 header .g-header .g-header-main-content__logo {
-    width: 17rem;
-    height: auto;
+  width: 17rem;
+  height: auto;
 }
 
 header .g-header .g-header-main-content__left .button {
-    display: flex;
-    height: 43px;
-    width: 43px;
-    background: #FFC015;
-    border: unset;
-    border-radius: 3px;
-    padding: 4px 0 6px 0;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  height: 43px;
+  width: 43px;
+  background: #FFC015;
+  border: unset;
+  border-radius: 3px;
+  padding: 4px 0 6px 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .f-keepList {
-    padding: 2rem 1rem 6rem;
-    background: #FAFAFA;
+  padding: 2rem 1rem 6rem;
+  background: #FAFAFA;
 }
 
 .f-keepList .keepList-item {
-    margin-bottom: 1.2rem;
-    background: #fff;
-    border-radius: 0.6rem;
-    box-shadow: 0px 0.2rem 0.6rem #00000033;
+  margin-bottom: 1.2rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0.2rem 0.6rem #00000033;
 }
 
 .f-keepList .keepList-item.girl {
-    padding: 1.6rem 1.6rem 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem;
 }
 
 .f-keepList .keepList-item.girl .item-table .p-imgWrap {
-    width: 12.7rem;
-    height: 16.9rem;
+  width: 12.7rem;
+  height: 16.9rem;
 }
 
 .f-keepList .keepGirl-list {
-    padding-bottom: 0;
-    position: relative;
+  padding-bottom: 0;
+  position: relative;
 }
 
 .f-keepList .sort-select {
-    width: 10.8rem;
-    height: 3.2rem;
-    padding-left: 1rem;
-    border-radius: 0.2rem;
-    border: none;
-    background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
-    appearance: none;
+  width: 10.8rem;
+  height: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  background: #fff url("../../images/history/arr-down.svg") no-repeat right 0.8rem center/1.2rem auto;
+  appearance: none;
 }
 
 .f-keepList .sort-select:disabled {
-    color: #ddd;
-    background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
+  color: #ddd;
+  background: #fafafa url("../../images/history/arr-downOff.svg") no-repeat right 0.8rem center/1.2rem auto;
 }
 
 .f-keepList .girl-data {
-    margin-bottom: 0.6rem;
-    font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
 }
 
 .f-keepList .girl-book {
-    display: flex;
-    align-items: center;
-    height: 3.5rem;
-    padding-left: 5.8rem;
-    background: #FF4A4A url(../../images/history/phone2x.png) no-repeat 3.6rem center/1.1rem auto;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #FFFFFF;
-    position: static;
-    width: unset;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  padding-left: 5.8rem;
+  background: #FF4A4A url(../../images/history/phone2x.png) no-repeat 3.6rem center/1.1rem auto;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: static;
+  width: unset;
 }
 
 .f-keepList .info-area {
-    padding-left: 2rem;
-    position: relative;
+  padding-left: 2rem;
+  position: relative;
 }
 
 .btn-keep {
-    width: 3.8rem;
-    height: 3.8rem;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 0rem;
-    right: -2px;
-    z-index: 1;
-    box-shadow: none;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0rem;
+  z-index: 1;
+  box-shadow: none;
 }
 
 .star-keep {
-    width: 2.8rem;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: -2px;
-    left: 0;
-    bottom: 6px;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: unset;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  left: 0;
+  bottom: 6px;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active {
-    background: #FAFAFA 0% 0% no-repeat padding-box !important;
+  background: #FAFAFA 0% 0% no-repeat padding-box !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .history-is-active .button-text {
-    color: #00356A !important;
+  color: #00356A !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .button {
-    display: flex;
-    height: 38px !important;
-    width: 80px !important;
-    background: #ffffff;
-    border-radius: 3px;
-    padding: 6px !important;
-    justify-content: space-between;
-    flex-direction: unset !important;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid #00356A !important;
+  display: flex;
+  height: 38px !important;
+  width: 80px !important;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 6px !important;
+  justify-content: space-between;
+  flex-direction: unset !important;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00356A !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .button .button-text {
-    text-align: left !important;
-    margin-left: 3px;
+  text-align: left !important;
+  margin-left: 3px;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .star {
-    border: 1px solid #FFC015 !important;
+  border: 1px solid #FFC015 !important;
 }
 
 .g-header-main-keeplist .g-header-main-content__left .star .button-text {
-    color: #FFFFFF !important;
+  color: #FFFFFF !important;
 }
 
 
 .therapistList-count {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
 }
 
 .therapistList-count .colored {
-    color: #FE4A4A;
+  color: #FE4A4A;
 }
 
 .wh-full {
-    width: 100% !important;
-    height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 ul.calender-list {
-    overflow-x: auto;
-    scrollbar-width: none;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .calenderList-day {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .content {
-    justify-content: space-around !important;
-    height: 8.2rem !important;
-    padding: 7px !important;
+  justify-content: space-around !important;
+  height: 8.2rem !important;
+  padding: 7px !important;
 }
 
 .content .wrap-day {
-    padding: 0px 11px 11px 10px;
-    border-bottom: 1px solid #4B454E;
+  padding: 0px 11px 11px 10px;
+  border-bottom: 1px solid #4B454E;
 }
 
 .content.current .wrap-day {
-    border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .weekday {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .girl-data {
-    color: #A8A8A8;
+  color: #A8A8A8;
 }
 
 .city {
-    color: #1F1C0D;
-    font-size: 1.1rem;
+  color: #1F1C0D;
+  font-size: 1.1rem;
 }
 
 .wrap-sns {
-    display: flex;
-    align-items: flex-end;
-    margin-top: 4px;
-    margin-bottom: 0.6rem;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 4px;
+  margin-bottom: 0.6rem;
+  justify-content: space-between;
 }
 
 .wrap-sns p {
-    padding: 2px 10px 2px 0px;
-    font-size: 1.2rem;
-    font-weight: 700 !important;
-    color: #1F1C0D;
+  padding: 2px 10px 2px 0px;
+  font-size: 1.2rem;
+  font-weight: 700 !important;
+  color: #1F1C0D;
 }
 
 .wrap-sns .sns {
-    display: flex;
+  display: flex;
 }
 
 .wrap-link {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: relative;
 }
 
 .wrap-link img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .keepGirl-list {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .p-imgWrap img {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 .count-girl-work {
-    background-color: #FFF5F5;
-    padding: 9px;
-    text-align: center;
-    border: 1px solid #FCEAEA;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    font-size: 13px;
+  background-color: #FFF5F5;
+  padding: 0.9rem;
+  text-align: center;
+  border: 0.1rem solid #FCEAEA;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .count-girl-work em {
-    color: #FE4A4A;
-    font-weight: 600;
-    font-size: 13px;
+  color: #FF4A4A;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .count-girl-work.next {
-    background-color: #FFF8E7;
-    padding: 9px;
-    text-align: center;
-    border: 1px solid #FDF2D6;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    font-size: 13px;
+  background-color: #FFF8E7;
+  padding: 0.9rem;
+  border: 0.1rem solid #FDF2D6;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .count-girl-work.next em {
-    color: #1F1C0D;
-    font-weight: 600;
-    font-size: 16px;
+  color: #1F1C0D;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
+
 .mod-keepListHead .listChange-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 15.8rem;
-    height: 4.5rem;
-    border-radius: 2.25rem;
-    color: #1F1C0D;
-    background: #FFF8E7;
-    border: 1px solid #F5EBD1;
-    font-size: 1.4rem;
-    font-weight: bold;
-    position: relative;
-    margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 15.8rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  color: #1F1C0D;
+  background: #FFF8E7;
+  border: 1px solid #F5EBD1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+  margin-right: 1rem;
 }
 
 .mod-keepListHead .listChange-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .mod-keepListHead .listChange-item .counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.3rem;
-    height: 2.3rem;
-    border-radius: 50%;
-    background: #E7F1FD;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #1f1c0d;
-    position: absolute;
-    top: -0.8rem;
-    right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: #E7F1FD;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1f1c0d;
+  position: absolute;
+  top: -0.8rem;
+  right: 0;
 }
 
 .mod-keepListHead .listChange-item.active {
-    background: #FFC015;
-    color: #fff;
+  background: #FFC015;
+  color: #fff;
 }
 
 .f-keepList.keep {
-    padding: 2rem 1rem;
-    background: #FAFAFA;
+  padding: 2rem 1rem;
+  background: #FAFAFA;
 }
